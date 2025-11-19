@@ -43,52 +43,58 @@
 
         <!-- Navigation desktop -->
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
-          <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Accueil</a></li>
-            <li><a href="tarifs.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Tarifs</a></li>
-            <li><a href="securite.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sécurité</a></li>
-            <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Démo</a></li>
-            <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Contact</a></li>
+          <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
+            <li><a href="index.html"
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Accueil</a>
+            </li>
+            <li><a href="tarifs.html"
+                class="px-4  py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Tarifs</a>
+            </li>
+            <li><a href="securite.html"
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sécurité</a>
+            </li>
+            <li><a href="demo.html"
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Démo</a>
+            </li>
+            <li><a href="a_propos.html"
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À propos</a>
+            </li>
+            <li><a href="contact.html"
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Contact</a>
+            </li>
           </ul>
-          <div id="languageSwitcher" class="hidden lg:flex space-x-2 ml-5">
-            <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-            <span>|</span>
-            <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-            <span>|</span>
-            <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
-          </div>
         </nav>
-
         <!-- Login / Signup + Lang switch -->
-        <!-- <div class="flex items-center"> -->
-        <!-- <div class="hidden md:flex items-center space-x-4">
-              <a href="/login?lang=fr" target="_blank"
-                class="px-4 py-2 rounded-md font-bold text-center text-sm xl:text-lg button-login">
-                Se connecter
-              </a>
-              <a href="/signup?lang=fr" target="_blank"
-                class="px-4 rounded-md font-bold text-center text-sm xl:text-lg button-signup">
-                Créer un compte
-              </a>
-              <div id="languageSwitcher" class="hidden lg:flex space-x-2">
-                <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-              </div>
-            </div> -->
+        <div class="flex items-center">
+          <div class="hidden md:flex items-center space-x-5">
+            <a href="/login?lang=fr" target="_blank"
+              class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
+              Connexion
+            </a>
+            <a href="#" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+              Essayer
+            </a>
+            <div id="languageSwitcher" class="hidden lg:flex items-center space-x-4">
+              <a href="/fr/" class="lang-link">FR</a>
+              <a href="/de/" class="lang-link">DE</a>
+              <a href="/en/" class="lang-link">EN</a>
+            </div>
+          </div>
 
-        <!-- Mobile menu button -->
-        <div class="block lg:hidden mx-4">
-          <button id="toggleDrawer" class="focus:outline-none">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-            </svg>
-          </button>
+          <!-- Mobile menu button -->
+          <div class="block lg:hidden mx-4">
+            <button id="toggleDrawer" class="focus:outline-none">
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <!-- </div> -->
         </div>
-        <!-- </div> -->
       </div>
-    </div>
 
-    <!-- Drawer menu (mobile) -->
+      <!-- Drawer menu (mobile) -->
       <div
         class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
         <div class="p-4 md:p-3">
@@ -103,26 +109,7 @@
             <li><a href="tarifs.html" class="drawer-btn px-2 py-1 hover:opacity-80">Tarifs</a></li>
             <li><a href="securite.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sécurité</a></li>
             <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Démo</a></li>
-            <li class="relative">
-                <button id="aboutMobileBtn"
-                  class="px-2 py-1 w-full flex items-center hover:opacity-80">
-                  À propos
-              <svg id="aboutMobileIcon"
-                  class="icon-chevron w-4 h-4 text-[#8961FF] transition-transform duration-200"
-                  fill="none" stroke="currentColor" stroke-width="2"
-                  viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>
-              </button>
-
-              <ul id="aboutMobileDropdown" class="hidden mt-1 pl-4 space-y-2">
-                <li><a href="equipe.html" class="drawer-btn px-2 py-1 hover:opacity-80">Équipe</a></li>
-                <li><a href="support.html" class="drawer-btn px-2 py-1 hover:opacity-80">Support</a></li>
-              </ul>
-            </li>
-
-
+            <li><a href="a_propos.html" class="drawer-btn px-2 py-1 hover:opacity-80">À propos</a></li>
             <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
           </ul>
 
@@ -142,37 +129,6 @@
             class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
             Essayer
           </a>
-        </div>
-      </div>
-
-      <!-- Drawer menu (mobile) -->
-      <div
-        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-        <div class="p-4 md:p-3">
-          <div class="flex items-center pt-6 pb-4">
-            <a href="index.html" class="font-bold">
-              <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
-            </a>
-          </div>
-          <ul class="space-y-3">
-            <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Accueil</a></li>
-            <li><a href="tarifs.html" class="drawer-btn px-2 py-1 hover:opacity-80">Tarifs</a></li>
-            <li><a href="securite.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sécurité</a></li>
-            <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Démo</a></li>
-            <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
-          </ul>
-          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
-            <a href="/fr/" class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300">FR</a>
-          </div>
-        </div>
-        <div class="flex flex-col gap-1">
-          <a href="/login?lang=fr" target="_blank"
-            class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-            Connexion
-          </a>
-          <a href="#" target="_blank" class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
-                Essayer
-            </a>
         </div>
       </div>
 
@@ -599,7 +555,7 @@
           <ul>
             <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="newsletter.html">Être informé des nouveautés</a></li>
+            <!-- <li><a href="newsletter.html">Être informé des nouveautés</a></li> -->
           </ul>
         </div>
       </div>
