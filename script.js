@@ -101,37 +101,35 @@ function updateLanguageUrl(newLang) {
 document.querySelectorAll('.lang-link').forEach(link => {
   const lang = link.getAttribute('href').split('/')[1];
   if (lang === currentLang) {
-    link.classList.add('active'); 
+    link.classList.add('active');
   } else {
     link.classList.remove('active');
   }
 
   link.addEventListener('click', function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
     const newLang = this.getAttribute('href').split('/')[1];
     updateLanguageUrl(newLang);
   });
 });
 
 // FAQ
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const questions = document.querySelectorAll('.faq-question');
-  
+
   questions.forEach(question => {
-      question.addEventListener('click', function() {
-          this.classList.toggle('active');
-          const answer = this.nextElementSibling;
-          answer.classList.toggle('show');
-      });
+    question.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const answer = this.nextElementSibling;
+      answer.classList.toggle('show');
+    });
   });
 });
 
-// A PROPOS MOBILE
-  const aboutBtn = document.getElementById("aboutMobileBtn");
-  const aboutDropdown = document.getElementById("aboutMobileDropdown");
-  const aboutIcon = document.getElementById("aboutMobileIcon");
+// RESTER INFORME
+const wrap = document.querySelector(".notify-wrap");
+const toggle = document.getElementById("notifyToggle");
 
-  aboutBtn.addEventListener("click", () => {
-    aboutDropdown.classList.toggle("hidden");
-    aboutIcon.classList.toggle("rotate-180");
-  });
+toggle.addEventListener("click", () => {
+  wrap.classList.toggle("open");
+});
