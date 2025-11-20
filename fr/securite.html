@@ -17,7 +17,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://swisstranscript.com/fr/securite.html" />
-    <meta property="og:title" content="Sécurité & Confidentialité des Données | Transcription RGPD | Swiss Transcript" />
+    <meta property="og:title"
+        content="Sécurité & Confidentialité des Données | Transcription RGPD | Swiss Transcript" />
     <meta property="og:description"
         content="Découvrez comment nous protégeons vos données sensibles: traitement 100% en Suisse, chiffrement de bout en bout, IA locale et conformité RGPD/LPD. Aucun stockage permanent de vos fichiers." />
     <meta property="og:image" content="https://swisstranscript.com/images/og-image-securite-fr.jpg" />
@@ -76,105 +77,109 @@
                     </a>
                 </div>
 
-        <!-- Navigation desktop -->
-        <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
-          <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a href="index.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Accueil</a>
-            </li>
-            <li><a href="tarifs.html"
-                class="px-4  py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Tarifs</a>
-            </li>
-            <li><a href="securite.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sécurité</a>
-            </li>
-            <li><a href="demo.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Démo</a>
-            </li>
-            <li><a href="a_propos.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À propos</a>
-            </li>
-            <li><a href="contact.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Login / Signup + Lang switch -->
-        <div class="flex items-center">
-          <div class="hidden md:flex items-center space-x-5">
-            <a href="/login?lang=fr" target="_blank"
-              class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
-              Connexion
-            </a>
-            <a href="#" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
-              Essayer
-            </a>
-            <div id="languageSwitcher" class="hidden lg:flex items-center space-x-4">
-              <a href="/fr/" class="lang-link">FR</a>
-              <a href="/de/" class="lang-link">DE</a>
-              <a href="/en/" class="lang-link">EN</a>
+                <!-- Navigation desktop -->
+                <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
+                    <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
+                        <li><a href="index.html"
+                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Accueil</a>
+                        </li>
+                        <li><a href="tarifs.html"
+                                class="px-4  py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Tarifs</a>
+                        </li>
+                        <li><a href="securite.html"
+                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sécurité</a>
+                        </li>
+                        <li><a href="demo.html"
+                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Démo</a>
+                        </li>
+                        <li><a href="a_propos.html"
+                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À
+                                propos</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Login / Signup + Lang switch -->
+                <div class="flex items-center">
+                    <div class="hidden md:flex items-center space-x-5">
+                        <a href="/login?lang=fr" target="_blank"
+                            class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
+                            Connexion
+                        </a>
+                        <a href="#" target="_blank"
+                            class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+                            Essayer
+                        </a>
+                        <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+                            <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm active">FR</a>
+                            <span>|</span>
+                            <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm ">DE</a>
+                            <span>|</span>
+                            <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm ">EN</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="block lg:hidden mx-4">
+                        <button id="toggleDrawer" class="focus:outline-none">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- </div> -->
+                </div>
             </div>
-          </div>
 
-          <!-- Mobile menu button -->
-          <div class="block lg:hidden mx-4">
-            <button id="toggleDrawer" class="focus:outline-none">
-              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-              </svg>
-            </button>
-          </div>
-          <!-- </div> -->
-        </div>
-      </div>
+            <!-- Drawer menu (mobile) -->
+            <div
+                class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+                <div class="p-4 md:p-3">
+                    <div class="flex items-center pt-6 pb-4">
+                        <a href="index.html" class="font-bold">
+                            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+                        </a>
+                    </div>
 
-      <!-- Drawer menu (mobile) -->
-      <div
-        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-        <div class="p-4 md:p-3">
-          <div class="flex items-center pt-6 pb-4">
-            <a href="index.html" class="font-bold">
-              <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
-            </a>
-          </div>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Accueil</a></li>
+                        <li><a href="tarifs.html" class="drawer-btn px-2 py-1 hover:opacity-80">Tarifs</a></li>
+                        <li><a href="securite.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sécurité</a></li>
+                        <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Démo</a></li>
+                        <li><a href="a_propos.html" class="drawer-btn px-2 py-1 hover:opacity-80">À propos</a></li>
+                        <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
+                    </ul>
 
-          <ul class="space-y-3">
-            <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Accueil</a></li>
-            <li><a href="tarifs.html" class="drawer-btn px-2 py-1 hover:opacity-80">Tarifs</a></li>
-            <li><a href="securite.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sécurité</a></li>
-            <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Démo</a></li>
-            <li><a href="a_propos.html" class="drawer-btn px-2 py-1 hover:opacity-80">À propos</a></li>
-            <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
-          </ul>
+                    <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
+                        <a href="/fr/" class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300">FR</a>
+                        <a href="/en/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">EN</a>
+                        <a href="/de/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">DE</a>
+                    </div>
+                </div>
 
-          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
-            <a href="/fr/" class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300">FR</a>
-            <a href="/en/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">EN</a>
-            <a href="/de/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">DE</a>
-          </div>
-        </div>
+                <div class="flex flex-col gap-1">
+                    <a href="/login?lang=fr" target="_blank"
+                        class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
+                        Connexion
+                    </a>
+                    <a href="#" target="_blank"
+                        class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
+                        Essayer
+                    </a>
+                </div>
+            </div>
 
-        <div class="flex flex-col gap-1">
-          <a href="/login?lang=fr" target="_blank"
-            class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-            Connexion
-          </a>
-          <a href="#" target="_blank"
-            class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
-            Essayer
-          </a>
-        </div>
-      </div>
-
-        <!-- Drawer overlay -->
-        <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+            <!-- Drawer overlay -->
+            <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
     </header>
     <section class="page-header">
-        <div class="container">
+        <!-- <div class="container">
             <h1>Sécurisé sur nos serveurs en Suisse</h1>
             <p>Votre confidentialité est notre priorité absolue</p>
-        </div>
+        </div> -->
     </section>
 
     <section class="security-container">
@@ -224,7 +229,8 @@
                     <div class="feature-card">
                         <div class="feature-number  mx-auto">3</div>
                         <h3>Conformité LPD et RGPD</h3>
-                        <p>Nos pratiques sont en parfaite conformité avec la Loi fédérale sur la protection des données (LPD) le Règlement Général sur la Protection des Données (RGPD) de l'UE,
+                        <p>Nos pratiques sont en parfaite conformité avec la Loi fédérale sur la protection des données
+                            (LPD) le Règlement Général sur la Protection des Données (RGPD) de l'UE,
                             garantissant une gestion légale et sécurisée de toutes les informations personnelles et
                             médicales.</p>
                     </div>
@@ -269,17 +275,20 @@
             <div class="compliance-cards">
                 <div class="compliance-card">
                     <h3>App mobile d'authentification</h3>
-                    <p>Vous utilisez l’application d'authentification de votre choix pour générer des codes d’accès OTP (one-time password).</p>
+                    <p>Vous utilisez l’application d'authentification de votre choix pour générer des codes d’accès OTP
+                        (one-time password).</p>
                 </div>
 
                 <div class="compliance-card">
                     <h3>Clé de sécurité FIDO U2F</h3>
-                    <p>Nous supportons les clés de sécurité physiques de type FIDO U2F. La compatibilité avec les clés YubiKey, Nitrokey, et Token2 est notamment assurée.</p>
+                    <p>Nous supportons les clés de sécurité physiques de type FIDO U2F. La compatibilité avec les clés
+                        YubiKey, Nitrokey, et Token2 est notamment assurée.</p>
                 </div>
 
                 <div class="compliance-card">
                     <h3>Reconnaissance biométrique </h3>
-                    <p>L'authentification biométrique, telle que les empreintes digitales ou la reconnaissance faciale, est également utilisable pour accéder à votre compte si votre matériel le supporte.
+                    <p>L'authentification biométrique, telle que les empreintes digitales ou la reconnaissance faciale,
+                        est également utilisable pour accéder à votre compte si votre matériel le supporte.
                     </p>
                 </div>
             </div>
@@ -303,7 +312,8 @@
 
                 <div class="compliance-card">
                     <h3>LPD Suisse</h3>
-                    <p>Nous respectons la Loi fédérale sur la protection des données personnelles et définit les règles pour leur traitement par des personnes privées et des organes fédéraux.</p>
+                    <p>Nous respectons la Loi fédérale sur la protection des données personnelles et définit les règles
+                        pour leur traitement par des personnes privées et des organes fédéraux.</p>
                 </div>
 
                 <div class="compliance-card">
@@ -317,37 +327,56 @@
         </div>
     </section>
 
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
         <div class="container">
             <h2>Questions fréquentes sur la sécurité</h2>
-
             <div class="faq-item">
-                <div class="faq-question">Où sont stockées mes données ?</div>
-                <div class="faq-answer">Toutes vos données sont traitées et stockées exclusivement sur nos serveurs
-                    sécurisés en Suisse. Nous n'utilisons aucun service cloud tiers américain ou chinois pour le
-                    traitement ou le stockage de vos informations.</div>
+                <div class="faq-question">Où sont stockées mes données&nbsp;?</div>
+                <div class="faq-answer">
+                    <p>
+                        Toutes vos données sont <strong>traitées et stockées en Suisse</strong> sur nos serveurs
+                        sécurisés.
+                        Aucun service cloud tiers américain ou chinois n’est utilisé pour le traitement ou le stockage.
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Combien de temps conservez-vous mes fichiers audio ?</div>
-                <div class="faq-answer">Nous ne conservons pas vos fichiers audio après la transcription. Une fois le
-                    processus de transcription terminé, les fichiers sources sont immédiatement et définitivement
-                    supprimés de nos systèmes.</div>
+                <div class="faq-question">Mes données sont-elles en sécurité avec Swiss Transcript&nbsp;?</div>
+                <div class="faq-answer">
+                    <p>
+                        Oui. Nous appliquons des normes strictes de protection&nbsp;: <strong>chiffrement</strong> en
+                        transfert et
+                        au repos,
+                        suppression <strong>automatique</strong> des fichiers source après transcription, et
+                        cloisonnement des
+                        accès.
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Comment protégez-vous mes transcriptions ?</div>
-                <div class="faq-answer">Vos transcriptions sont stockées de manière sécurisée et ne sont accessibles
-                    qu'à vous via votre compte protégé par mot de passe. Nous vous recommandons d'activer
-                    l'authentification à deux facteurs pour une sécurité renforcée. Vous pouvez supprimer vos
-                    transcriptions à tout moment.</div>
+                <div class="faq-question">Utilisez-vous mes données pour entraîner vos modèles d’IA&nbsp;?</div>
+                <div class="faq-answer">
+                    <p>
+                        <strong>Non</strong>. Vos fichiers, transcriptions et résumés ne sont utilisés que pour vous
+                        fournir le
+                        service.
+                        Ils ne servent jamais à entraîner des modèles d’IA.
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Utilisez-vous mes données pour entraîner vos modèles d'IA ?</div>
-                <div class="faq-answer">Non, nous n'utilisons jamais vos données pour entraîner nos modèles d'IA. Vos
-                    fichiers et transcriptions sont strictement confidentiels et ne sont utilisés que pour vous fournir
-                    le service demandé.</div>
+                <div class="faq-question">Swiss Transcript est-il conforme au RGPD et à la LPD&nbsp;?</div>
+                <div class="faq-answer">
+                    <p>
+                        Oui. Nous sommes conformes au <strong>RGPD</strong> et à la <strong>LPD</strong> suisse,
+                        garantissant un
+                        haut niveau
+                        de protection des données personnelles.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -362,38 +391,38 @@
     </section>
 
     <!-- Section 11 -->
-  <footer>
-    <div class="container">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
-          <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
-        </div>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
+                    <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
+                </div>
 
-        <div class="footer-col">
-          <h3>Légal</h3>
-          <ul>
-            <li><a href="./legal.html#politique-confidentialite">Conditions d'utilisation</a></li>
-            <li><a href="./legal.html#cgu">Politique de confidentialité</a></li>
-            <li><a href="./legal.html#mentions-legales">Mentions légales</a></li>
-          </ul>
-        </div>
+                <div class="footer-col">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="./legal.html#politique-confidentialite">Conditions d'utilisation</a></li>
+                        <li><a href="./legal.html#cgu">Politique de confidentialité</a></li>
+                        <li><a href="./legal.html#mentions-legales">Mentions légales</a></li>
+                    </ul>
+                </div>
 
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <ul>
-            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="newsletter.html">Être informé des nouveautés</a></li>
-          </ul>
-        </div>
-      </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="newsletter.html">Être informé des nouveautés</a></li>
+                    </ul>
+                </div>
+            </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Tous droits réservés.</p>
-      </div>
-    </div>
-  </footer>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swiss Transcript. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
     <script src="../script.js"></script>
     <script src="../form.js"></script>
 </body>

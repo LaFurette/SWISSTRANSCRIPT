@@ -106,7 +106,8 @@
                 class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Démo</a>
             </li>
             <li><a href="a_propos.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À propos</a>
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À
+                propos</a>
             </li>
             <li><a href="contact.html"
                 class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Contact</a>
@@ -123,10 +124,12 @@
             <a href="#" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Essayer
             </a>
-            <div id="languageSwitcher" class="hidden lg:flex items-center space-x-4">
-              <a href="/fr/" class="lang-link">FR</a>
-              <a href="/de/" class="lang-link">DE</a>
-              <a href="/en/" class="lang-link">EN</a>
+            <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm active">FR</a>
+              <span>|</span>
+              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm ">DE</a>
+              <span>|</span>
+              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm ">EN</a>
             </div>
           </div>
 
@@ -187,32 +190,35 @@
   </header>
   <section class="hero-solution">
     <div class="container-solution">
+
+      <!-- COLONNE TEXTE -->
       <div class="hero-text">
         <h1>De la réunion à la décision</h1>
 
+        <!-- IMAGE RONDE : version MOBILE -->
         <div class="hero-image flex justify-center mb-6 lg:hidden">
           <div class="image-circle"></div>
         </div>
 
         <p>
-          Transformez vos réunions en texte clair et en compte rendu structuré, <br>avec la confidentialité d’une
-          solution suisse.
+          Transformez vos réunions en texte clair et en compte rendu structuré,
+          avec la confidentialité d’une solution suisse.
         </p>
 
         <div class="hero-buttons">
           <a href="tarifs.html" class="btn primary">Essayer 30 min gratuitement</a>
-          <br>
-          <a href="/login?lang=fr" target="_blank" class="px-4 py-2 rounded-md font-bold text-center btn button-login">
-              Connexion
-          </a>
+          <a href="/login?lang=fr" target="_blank" class="btn button-login">Connexion</a>
         </div>
       </div>
 
+      <!-- COLONNE PHOTO RONDE : version DESKTOP -->
       <div class="hero-image hidden lg:flex justify-end">
         <div class="image-circle"></div>
       </div>
+
     </div>
   </section>
+
 
   <section class="usp">
     <div class="container">
@@ -222,7 +228,7 @@
       <div class="usp-cards">
         <div class="usp-card">
           <div class="usp-card-image">
-            <img src="../images/home/securite-des-données.png" alt="Confidentialité garantie">
+            <img src="../images/home/1_SecuriteConfidentialite.jpg" alt="Confidentialité garantie">
           </div>
           <div class="usp-card-content">
             <h3>Sécurité & confidentialité</h3>
@@ -308,8 +314,8 @@
         </tr>
         <tr>
           <td>Utilisation des données pour entraîner l'IA</td>
-          <td><span class="cross">✗</span> Jamais</td>
-          <td><span class="check">✓</span> Souvent</td>
+          <td><span class="check">✓</span> Jamais</td>
+          <td><span class="cross">✗</span> Souvent</td>
         </tr>
         <tr>
           <td>Accès à vos enregistrements</td>
@@ -372,54 +378,64 @@
     </section> -->
 
   </section>
-  <section class="features">
-    <div class="container">
-      <div class="section-title">
-        <h2>Fonctionnalités exclusives</h2>
-        <p class="w-100">Des outils conçus pour vous faire gagner du temps et simplifier votre prise de décision</p>
-      </div>
+<section class="features">
+  <div class="container">
 
-      <div class="features-container">
-        <div class="feature-item">
-          <img class="feature-visual" src="../images/fonctions/1_Intervenants.jpg"
-            alt="Différenciation des intervenants">
-          <h3>Différenciation des intervenants</h3>
-          <p>Notre technologie identifie automatiquement les différents intervenants, pour une lecture et une
-            compréhension facilitées.</p>
-        </div>
-
-        <div class="feature-item">
-          <img class="feature-visual" src="../images/fonctions/2_Horodatage.jpg" alt="Horodatage précis">
-          <h3>Horodatage précis</h3>
-          <p>Chaque segment de texte est lié à un horodatage pour retrouver instantanément le moment correspondant dans
-            l'audio.</p>
-        </div>
-
-        <div class="feature-item">
-          <img class="feature-visual" src="../images/fonctions/3_Re╠üsume╠ü.jpg" alt="Plusieurs résumés à choix">
-          <h3>
-            Personnalisez vos résumés
-            <span class="info-icon" tabindex="0">i
-              <span class="tooltip">
-                <strong>Fonctionnalité en cours de développement (version bêta)</strong><br>
-                Nous prenons volontiers en considération vos besoins afin de développer une fonctionnalité de résumé
-                qui corresponde à vos attentes.<br>
-                Contactez-nous à <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a> pour partager
-                vos suggestions.
-              </span>
-            </span>
-          </h3>
-
-          <p>
-            Choisissez 3 modèles de résumés parmi nos propositions.
-            Et si besoin, nous créons votre <span class="highlight-purple-text">version sur mesure</span>, adaptée à vos
-            usage. <a href="#" class="inline-link-purple">En savoir plus</a>
-          </p>
-        </div>
-
-      </div>
+    <!-- SECTION TITLE -->
+    <div class="section-title">
+      <h2>Fonctionnalités exclusives</h2>
+      <p class="w-100">
+        Des outils conçus pour vous faire gagner du temps et simplifier votre prise de décision
+      </p>
     </div>
-  </section>
+
+    <!-- FEATURES GRID -->
+    <div class="features-container">
+
+      <div class="feature-item">
+        <h3>Différenciation des intervenants</h3>
+        <img class="feature-visual" src="../images/fonctions/1_Intervenants.jpg" 
+             alt="Différenciation des intervenants">
+        <p>Notre technologie identifie automatiquement les différents intervenants, pour une lecture et une
+          compréhension facilitées.</p>
+      </div>
+
+      <div class="feature-item">
+        <h3>Horodatage précis</h3>
+        <img class="feature-visual" src="../images/fonctions/2_Horodatage.jpg" 
+             alt="Horodatage précis">
+        <p>Chaque segment de texte est lié à un horodatage pour retrouver instantanément le moment correspondant dans
+          l'audio.</p>
+      </div>
+
+      <div class="feature-item">
+        <h3>
+          Personnalisez vos résumés
+          <span class="info-icon" tabindex="0">i
+            <span class="tooltip">
+              <strong>Fonctionnalité en cours de développement (version bêta)</strong><br>
+              Nous prenons volontiers en considération vos besoins afin de développer une fonctionnalité de résumé
+              qui corresponde à vos attentes.<br>
+              Contactez-nous à <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a> pour partager
+              vos suggestions.
+            </span>
+          </span>
+        </h3>
+
+        <img class="feature-visual" src="../images/fonctions/3_Re╠üsume╠ü.jpg" 
+             alt="Plusieurs résumés à choix">
+
+        <p>
+          Choisissez 3 modèles de résumés parmi nos propositions.
+          Et si besoin, nous créons votre <span class="highlight-purple-text">version sur mesure</span>,
+          adaptée à vos usages. <a href="#" class="inline-link-purple">En savoir plus</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <section class="pricing">
     <div class="container">
@@ -644,13 +660,13 @@
           <div class="device-icon">
             <img src="../images/home/Smartphone.jpg" alt="Smartphone">
           </div>
-          <h3 class="device-title">Smartphone, tablette, ordinateu</h3>
+          <h3 class="device-title">Smartphone, tablette, ordinateur</h3>
           <p class="device-description mb-4">Enregistrez votre réunion en direct ou importez un fichier déjà enregistré.
           </p>
         </div>
         <div class="device-card  flex flex-col">
           <div class="device-icon">
-            <img src="../images/home/dictaphone.jpg" alt="Dictaphone">
+            <img src="../images/home/Dictaphone.jpg" alt="Dictaphone">
           </div>
           <h3 class="device-title">Dictaphone</h3>
           <p class="device-description">Importez facilement les fichiers de votre dictaphone professionnel.</p>

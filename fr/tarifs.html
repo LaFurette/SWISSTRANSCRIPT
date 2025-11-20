@@ -103,10 +103,12 @@
             <a href="#" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Essayer
             </a>
-            <div id="languageSwitcher" class="hidden lg:flex items-center space-x-4">
-              <a href="/fr/" class="lang-link">FR</a>
-              <a href="/de/" class="lang-link">DE</a>
-              <a href="/en/" class="lang-link">EN</a>
+            <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm active">FR</a>
+              <span>|</span>
+              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm ">DE</a>
+              <span>|</span>
+              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm ">EN</a>
             </div>
           </div>
 
@@ -167,11 +169,11 @@
   </header>
 
   <section class="page-header">
-    <div class="container">
+    <!-- <div class="container">
       <h1>Nos formules</h1>
       <p>Des solutions adaptées à tous les volumes de transcription, de l'utilisateur
         occasionnel au professionnel intensif.</p>
-    </div>
+    </div> -->
   </section>
 
   <section class="pricing-container">
@@ -258,30 +260,69 @@
         </div>
       </div>
 
-      <div class="faq-section">
-        <h3 class="faq-title">Questions fréquentes sur les tarifs</h3>
+      <div class="faq-section" id="faq">
+        <h3 class="faq-section-title">Questions fréquentes sur les tarifs</h3>
 
         <div class="faq-item">
-          <p class="faq-question">Comment est calculée la durée facturée ?</p>
-          <p class="faq-answer">La durée facturée correspond à la durée réelle de votre fichier audio, arrondie à la
-            minute supérieure. Par exemple, un fichier de 10 minutes et 15 secondes sera facturé pour 11 minutes.</p>
+          <div class="faq-question">Comment fonctionne la tarification&nbsp;?</div>
+          <div class="faq-answer">
+            <p>
+              Vous bénéficiez de <strong>30&nbsp;minutes gratuites</strong> et jusqu’à <strong>3 résumés</strong> pour
+              tester.
+              Ensuite, tarification à la minute avec deux options&nbsp;:
+            </p>
+            <ul>
+              <li><strong>Pay-as-you-go</strong>&nbsp;: paiement à la minute, jusqu’à 3 résumés téléchargeables par
+                fichier.</li>
+              <li><strong>Abonnement</strong>&nbsp;: 12&nbsp;CHF/heure ou 90&nbsp;CHF pour 10&nbsp;heures.</li>
+            </ul>
+            <p>
+              La facturation est à la minute, arrondie à la minute supérieure (ex.&nbsp;10:15 → facturé
+              11&nbsp;minutes).
+              Pour des besoins importants, voir nos <a href="tarifs.html">offres</a> ou
+              <a href="contact.html">contactez-nous</a>.
+            </p>
+          </div>
         </div>
 
         <div class="faq-item">
-          <p class="faq-question">Puis-je essayer le service avant de payer ?</p>
-          <p class="faq-answer">Oui, vous pouvez créer un compte gratuitement et bénéficier de 30 minutes de
-            transcription offertes pour tester notre service.</p>
+          <div class="faq-question">Proposez-vous des forfaits ou tarifs dégressifs&nbsp;?</div>
+          <div class="faq-answer">
+            <p>
+              Oui, via des <strong>packs de crédit</strong> (ex.&nbsp;10&nbsp;heures&nbsp;: env.&nbsp;25&nbsp;% de
+              réduction).
+              Des tarifs personnalisés sont possibles pour les entreprises (<a href="contact.html">nous contacter</a>).
+            </p>
+          </div>
         </div>
 
         <div class="faq-item">
-          <p class="faq-question">Les crédits du Pack 10 heures expirent-ils ?</p>
-          <p class="faq-answer">Non, les crédits achetés n'expirent pas. Vous pouvez les utiliser quand vous le
-            souhaitez.</p>
+          <div class="faq-question">Comment acheter un pack de crédit&nbsp;?</div>
+          <div class="faq-answer">
+            <p>
+              Connectez-vous à votre compte, section <em>Acheter du crédit</em>. Sélectionnez le pack souhaité et réglez
+              en ligne&nbsp;:
+              le crédit est ajouté immédiatement à votre compte.
+            </p>
+          </div>
         </div>
 
         <div class="faq-item">
-          <p class="faq-question">Puis-je payer par facture ?</p>
-          <p class="faq-answer">Uniquement pour les entreprises avec compte multi-utilisateurs. </p>
+          <div class="faq-question">Le crédit a-t-il une date d’expiration&nbsp;?</div>
+          <div class="faq-answer">
+            <p><strong>Non</strong>, aucun délai d’expiration&nbsp;: utilisez-le quand vous le souhaitez.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Puis-je obtenir une facture&nbsp;?</div>
+          <div class="faq-answer">
+            <p>
+              Oui. Après chaque transcription, une facture est disponible dans votre compte. Pour des besoins
+              récurrents,
+              nous proposons aussi des <strong>facturations périodiques</strong> (mensuelle/annuelle) adaptées.
+            </p>
+          </div>
         </div>
       </div>
 
