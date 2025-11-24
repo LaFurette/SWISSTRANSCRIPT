@@ -410,24 +410,21 @@ nav ul li a:hover {
 .hero-solution {
   position: relative;
   padding: 160px 20px 100px 20px;
-
-  background-image: url('./images/hero_full.png');
+  background-image: url('./images/hero_bg.jpg');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   color: #fff;
 }
-
 
 .hero-solution::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg,
-      rgba(11, 12, 76, 0.9) 0%,
-      rgba(11, 12, 76, 0.75) 30%,
-      rgba(11, 12, 76, 0.35) 60%,
-      rgba(11, 12, 76, 0.0) 95%);
+      rgba(11, 12, 76, 0.85) 0%,
+      rgba(11, 12, 76, 0.6) 35%,
+      rgba(11, 12, 76, 0.0) 70%);
   z-index: 0;
 }
 
@@ -449,14 +446,18 @@ nav ul li a:hover {
 
 .hero-text {
   text-align: center;
-  color: #fff !important;
   width: 100%;
+  color: white;
 }
 
-.hero-image {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+.image-circle {
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background-image: url('./images/hero_circle.jpg');
+  background-size: cover;
+  background-position: 30% 20%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text h1 {
@@ -464,7 +465,7 @@ nav ul li a:hover {
   font-weight: 700;
   line-height: 1.3;
   font-size: 30px;
-  color: #fff !important;
+  color: #fff;
 }
 
 .hero-text p {
@@ -473,13 +474,11 @@ nav ul li a:hover {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
 }
-
-.hero-text .subtext {
-  display: block;
-  margin-top: 10px;
-  font-size: 15px;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.65);
+.hero-small {
+  font-size: 15px!important;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 12px;
 }
 
 .hero-buttons {
@@ -504,17 +503,6 @@ nav ul li a:hover {
   background: linear-gradient(135deg, #1e88e5 0%, #64b5f6 100%);
 }
 
-.btn.secondary {
-  border: 1px solid #8636c1;
-  background: transparent;
-  color: #8636c1;
-}
-
-.btn.secondary:hover {
-  border-color: #1e88e5;
-  color: #1e88e5;
-}
-
 .hero-solution .button-login {
   background: #FFFFFF !important;
   border: 1px solid #4b2383 !important;
@@ -523,12 +511,8 @@ nav ul li a:hover {
 
 @media (max-width: 1025px) {
   .hero-solution::before {
-    background: linear-gradient(180deg,
-        rgba(11, 12, 76, 0.85) 0%,
-        rgba(11, 12, 76, 0.6) 65%,
-        rgba(11, 12, 76, 0.0) 100%);
+    background: rgba(11, 12, 76, 0.6);
   }
-
 }
 
 @media (min-width: 768px) {
@@ -546,9 +530,8 @@ nav ul li a:hover {
   }
 
   .hero-text {
-    width: 55%;
+    width: 65%;
     text-align: left;
-    font-weight: 600;
   }
 
   .hero-image {
@@ -560,6 +543,7 @@ nav ul li a:hover {
     justify-content: flex-start;
   }
 }
+
 
 /* USP Section */
 .usp {
