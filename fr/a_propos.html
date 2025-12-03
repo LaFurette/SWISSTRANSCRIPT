@@ -261,71 +261,13 @@
     </div>
 
   </div>
-  <div
-    class="flex flex-col bg-[#011e61] text-center lg:flex-row lg:justify-between lg:text-left p-4 mg:p-8 lg:p-16 w-100"
-    id="contacts">
-    <div class="w-full flex justify-center">
-      <form class="p-2 md:p-4 md:p-8 lg:p-16" id="contactForm">
-        <div class="grid grid-cols-2 gap-4">
-          <div class="mb-4">
-            <label for="lastname" class="block text-sm font-medium">Nom</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Votre nom"
-              class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required="">
-          </div>
-          <div class="mb-4">
-            <label for="firstname" class="block text-sm font-medium">Prénom</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom"
-              class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required="">
-          </div>
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-sm font-medium">Email</label>
-          <input type="email" id="email" name="email" placeholder="Votre adresse email" autocomplete="email"
-            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required="">
-        </div>
-        <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium">Téléphone <small>(optionnel)</small></label>
-          <input type="text" id="phone" name="phone" placeholder="Votre numéro de téléphone" autocomplete="tel"
-            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none">
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block text-sm font-medium">Message</label>
-          <textarea id="message" name="message" placeholder="Écrivez votre message ici..." maxlength="800"
-            minlength="15" rows="3"
-            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none min-h-16 max-h-36"
-            required=""></textarea>
-        </div>
-
-        <!-- Altcha -->
-        <div id="altcha_div" class="mt-4 mb-4 captcha-invisible">
-          <div class="d-inline-block">
-            <altcha-widget hidelogo="" hidefooter=""
-              strings="{&quot;label&quot; : &quot;Je ne suis pas un robot&quot;, &quot;verifying&quot; : &quot;Vérification en cours...&quot;, &quot;verified&quot; : &quot;Vérifié&quot;}"
-              style="--altcha-color-base: #ffffff; --altcha-color-border: #ced4da; --altcha-color-text: #011e61; --altcha-max-width: 300px"
-              challengeurl="/srv/api/captcha.php?action=challenge"><!----><!---->
-              <div class="altcha svelte-ddsc3z" data-state="unverified">
-                <div class="altcha-main svelte-ddsc3z"><!---->
-                  <div class="altcha-checkbox svelte-ddsc3z"><input type="checkbox" class="svelte-ddsc3z"
-                      id="altcha_checkbox" required=""></div>
-                  <div class="altcha-label svelte-ddsc3z"><label class="svelte-ddsc3z" for="altcha_checkbox">Je ne suis
-                      pas un robot<!----></label><!----></div> <!---->
-                </div> <!----> <!----> <!---->
-              </div>
-            </altcha-widget>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-center lg:justify-start">
-          <button id="submit_button" type="submit"
-            class="bg-gradient-to-r from-[#011e61] to-[#2b4ca1] text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:from-[#2b4ca1] hover:to-[#011e61] hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-            Envoyer le message
-          </button>
-          <p class="p-5" id="form-message"></p>
-        </div>
-      </form>
+  <section class="cta-section">
+    <div class="container">
+      <h2>Vous avez d'autres questions ?</h2>
+      <p>Notre équipe est à votre disposition pour répondre à toutes vos questions</p>
+      <a href="mailto:info@swisstranscript.com" class="btn">Contactez-nous</a>
     </div>
-  </div>
-
+  </section>
 
 
   <footer>

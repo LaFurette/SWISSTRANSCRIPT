@@ -81,6 +81,41 @@
     <span class="text-2xl font-bold px-2">&#8679;</span>
   </button>
   <header id="main">
+    <div id="alternating-banner">
+      <div class="banner-wrapper">
+        <div class="messages-container">
+          <div class="banner-message">
+            <span class="banner-text">
+              Bientôt sur Swiss Transcript : API disponible début 2026 pour intégration !
+            </span>
+            <a href="#features" class="learn-more">En savoir plus</a>
+          </div>
+
+          <div class="banner-message">
+            <span class="banner-text">
+              Gros volumes à transcrire ? Nous proposons des offres et accompagnement sur mesure.
+            </span>
+            <a href="contact.html" class="learn-more">Nous contacter</a>
+          </div>
+
+          <!-- Duplicate for continuous scroll -->
+          <div class="banner-message">
+            <span class="banner-text">
+              Bientôt sur Swiss Transcript : API disponible début 2026 pour intégration !
+            </span>
+            <a href="#features" class="learn-more">En savoir plus →</a>
+          </div>
+
+          <div class="banner-message">
+            <span class="banner-text">
+              Gros volumes à transcrire ? Nous proposons des offres et accompagnement sur mesure.
+            </span>
+            <a href="#contact" class="learn-more">Nous contacter →</a>
+          </div>
+        </div>
+      </div>
+      <button class="close-btn" id="close-alternating-banner" title="Fermer cette annonce">×</button>
+    </div>
     <div class="container">
       <div class="header-container flex justify-between items-center px-2">
         <!-- Logo -->
@@ -188,52 +223,131 @@
       <!-- Drawer overlay -->
       <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
   </header>
-<section class="hero-solution">
-  <div class="container-solution">
+  <section class="hero-solution">
+    <div class="container-solution">
 
-    <div class="hero-text">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Gagnez du temps. Améliorez la qualité. Protégez vos données.</p>
+        <div class="hero-image flex justify-center mb-6 lg:hidden">
+          <div class="image-circle"></div>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line slide-left">Enregistrez vos réunions</span><br>
+          <span class="title-line slide-right">Obtenez une transcription fiable</span><br>
+          <span class="title-line slide-left">Générez un compte rendu structuré</span>
+        </h1>
+        <p class="hero-subtitle">Hébergés en Suisse pour une confidentialité totale</p>
+        <div class="hero-buttons">
+          <a href="tarifs.html" class="btn primary">Essayer 30 min gratuitement</a>
+          <a href="/login?lang=fr" target="_blank" class="btn button-login">Connexion</a>
+        </div>
+      </div>
 
-      <h1>De la réunion à la décision</h1>
-
-      <div class="hero-image flex justify-center mb-6 lg:hidden">
+      <div class="hero-image hidden lg:flex justify-end">
         <div class="image-circle"></div>
       </div>
 
-      <p>
-        Simplifiez votre travail, gagnez du temps et protégez vos informations sensibles.
-      </p>
+    </div>
+  </section>
+<section class="features features-sticky">
+  <div class="container">
 
-      <p>
-        Recevez en quelques instants une transcription et un résumé structuré de vos réunions et entretiens en présentiel.
-      </p>
+    <h2 class="features-title">
+      Des outils pensés pour les besoins des professionnels
+    </h2>
 
-      <p>
-        Idéal pour les équipes RH, les chercheurs, les professionnels de la santé et les travailleurs sociaux.
-      </p>
+    <div class="features-grid">
 
-      <p><strong>
-        Concentrez-vous sur l’essentiel : la conversation !
-      </strong></p>
-
-      <p class="hero-small">
-        Obtenez également des comptes rendus sur mesure, adaptés à vos trames d’entretien récurrentes
-        et aux besoins spécifiques de votre organisation.<br>
-        Contactez-nous pour en discuter et créer ensemble un format qui vous correspond parfaitement.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="tarifs.html" class="btn primary">Essayer 30 min gratuitement</a>
-        <a href="/login?lang=fr" target="_blank" class="btn button-login">Connexion</a>
+      <div class="features-sticky-image">
+        <img id="featureImage"
+             src="../lucie_tentative_files/enregistrement ecran.png"
+             alt="Feature preview">
       </div>
 
+      <div class="features-scroll">
+
+        <div class="features-line"></div>
+
+        <div class="feature-step active"
+             data-image="../lucie_tentative_files/enregistrement ecran.png">
+          <h3>Enregistrement</h3>
+          <p>
+            Enregistrez vos réunions en toute simplicité, directement depuis notre interface sécurisée, aucun logiciel supplémentaire n’est nécessaire.
+            Vous pouvez même enregistrer en mode hors ligne : tout est automatiquement synchronisé dès que la connexion revient.
+            Et si vous avez déjà un fichier audio ou vidéo, importez-le en quelques secondes (MP3, MP4, WAV, etc.) pour lancer immédiatement la transcription
+            et le résumé structuré.
+          </p>
+          <div class="tags">
+            <span class="tag">Source audio</span>
+            <span class="tag">Fonctionnement hors ligne</span>
+            <span class="tag">Facile d'utilisation</span>
+          </div>
+        </div>
+
+        <div class="feature-step"
+             data-image="../lucie_tentative_files/transcription_exemple.png">
+          <h3>Transcription</h3>
+          <p>
+            Obtenez une transcription fiable générée en quelques secondes, compatible suisse allemand, allemand, français et anglais.
+            La plateforme identifie automatiquement les intervenants pour clarifier qui dit quoi à chaque moment de l'entretien.
+            Chaque passage est horodaté, vous permettant de naviguer facilement dans l'audio et de retrouver instantanément les informations essentielles.
+          </p>
+          <div class="tags">
+            <span class="tag">Fiable</span>
+            <span class="tag">Multilingue</span>
+            <span class="tag">Horodatage</span>
+          </div>
+        </div>
+
+        <div class="feature-step"
+             data-image="../lucie_tentative_files/compte_rendu_exemple.jpeg">
+          <h3>Compte-rendu</h3>
+          <p>
+            Générez en quelques secondes des comptes rendus clairs, structurés et immédiatement exploitables.
+            Swiss Transcript propose plusieurs structures différentes de compte rendu, pour vous offrir une traçabilité parfaite.
+            Et parce que chaque métier a ses propres exigences, nous personnalisons vos synthèses lors d’un projet pilote dédié,
+            afin qu’elles reflètent exactement vos trames internes ou vos guides d’entretien.
+          </p>
+          <div class="tags">
+            <span class="tag">Synthèses sur mesure</span>
+            <span class="tag">Modèles de résumés</span>
+            <span class="tag">Gain de temps</span>
+          </div>
+        </div>
+
+        <div class="feature-step"
+             data-image="../lucie_tentative_files/Api_bientot.png">
+          <h3>API</h3>
+          <p>
+            Dès mars 2026, notre API vous permettra d’intégrer Swiss Transcript directement dans vos outils internes,
+            sans changer vos habitudes. SIRH, plateformes métiers, applications web ou environnements internes : tout se connecte
+            en quelques lignes de code, avec une intégration simple et fiable.
+            Un bouton “Enregistrer” suffit pour déclencher la transcription et le compte rendu, exactement comme sur notre plateforme.
+          </p>
+          <div class="tags">
+            <span class="tag">Mars 2026</span>
+            <span class="tag">API</span>
+            <span class="tag">Entreprise</span>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="hero-image hidden lg:flex justify-end">
-      <div class="image-circle"></div>
+    <div class="text-center mt-8">
+      <a href="https://lafurette.github.io/signup" class="btn btn-primary mr-4">
+        Essayez gratuitement
+      </a>
+      <a href="https://lafurette.github.io/SWISTRANSCRIPT/fr/contact.html"
+         class="btn button-login">
+        Contactez-nous
+      </a>
     </div>
 
   </div>
 </section>
+
+
 
   <section class="usp">
     <div class="container">
@@ -247,11 +361,10 @@
           </div>
           <div class="usp-card-content">
             <h3>Sécurité & confidentialité</h3>
-            <ul class="ml-5 list-disc list-inside">
-              <li>Traitement 100 % local <strong><br>sur serveurs suisses </strong></li>
-              <li><strong>Aucune donnée transmise</strong> à OpenAI, ChatGPT ou aux GAFAM</li>
-              <li><strong>Suppression automatique</strong> des fichiers après traitement</li>
-            </ul>
+            <p>Vos données sont traitées et hébergées exclusivement en Suisse, sans aucun recours
+              aux GAFAM ou clouds étrangers.<br><br>
+              Votre sécurité est garantie grâce au chiffrement avancé, à la suppression automatique des fichiers et à la
+              conformité LPD & RGPD.</p>
           </div>
         </div>
 
@@ -260,12 +373,11 @@
             <img src="../images/home/3_AccompagnementProximite.png" alt="Indépendance technologique">
           </div>
           <div class="usp-card-content">
-            <h3 class="lg:text-nowrap">Proximité & collaboration</h3>
-            <ul class="ml-5 list-disc list-inside">
-              <li><strong>Basés à Lausanne</strong>, disponibles pour un contact direct B2B</li>
-              <li><strong>Accompagnement personnalisé</strong> pour adapter les comptes rendus à votre métier</li>
-              <li>Une approche <strong>humaine et réactive</strong>, au service des organisations suisses</li>
-            </ul>
+            <h3>Proximité & collaboration</h3>
+            <p>Nous vous accompagnons avec un support local, réactif et personnalisé pour créer une
+              solution adaptée à vos besoins.<br><br>
+              Notre approche multilingue; français, allemand, suisse allemand et anglais, reflète la réalité des
+              organisations suisses.</p>
           </div>
         </div>
 
@@ -274,13 +386,10 @@
             <img src="../images/home/2_PratiqueRapide.png" alt="Simple et rapide">
           </div>
           <div class="usp-card-content">
-            <h3>Simple, rapide & adapté à la Suisse</h3>
-            <ul class="ml-5 list-disc list-inside">
-              <li>Enregistrement, transcription et compte rendu automatiques</li>
-              <li><strong>Prise en charge du français, de l’allemand et du suisse allemand</strong></li>
-              <li>Gain de temps significatif pour vos équipes et contribution à la <strong>digitalisation des PME
-                  suisses</strong></li>
-            </ul>
+            <h3>Efficacité & flexibilité</h3>
+            <p>Vous réduisez instantanément 50 à 70 % du temps dédié aux notes, comptes rendus et
+              tâches administratives.<br><br>
+              La solution fonctionne partout; en présentiel, en visio, en déplacement et même hors réseau.</p>
           </div>
         </div>
       </div>
@@ -291,6 +400,82 @@
 
     </div>
   </section>
+
+  <section class="pricing">
+    <div class="container">
+      <div class="section-title">
+        <h2>Tarifs transparents</h2>
+        <p>
+          Le tarif à la minute est de 0.20 CHF / min (12 CHF / heure).<br>
+          Profitez également de nos packs avantageux.
+        </p>
+      </div>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3 class="t-pack">PACK 1</h3>
+          <p class="t-hours"><strong>1 h créditée</strong><br><span>sans limite de validité</span></p>
+
+          <div class="price-box">
+            <strong>10 CHF</strong>
+            <span>= 10.00 CHF /heure</span>
+          </div>
+
+          <a href="/signup" class="btn button-login w-full text-center">Commencer</a>
+          <p class="note">Essayez 30 min gratuitement</p>
+        </div>
+
+        <div class="pricing-card">
+          <h3 class="t-pack">PACK 5</h3>
+          <p class="t-hours"><strong>5 h créditées</strong><br><span>sans limite de validité</span></p>
+
+          <div class="price-box">
+            <strong>40 CHF</strong>
+            <span>= 8.00 CHF /heure</span>
+          </div>
+
+          <a href="/signup" class="btn primary w-full text-center">Commencer</a>
+          <p class="note">Essayez 30 min gratuitement</p>
+        </div>
+
+        <div class="pricing-card">
+          <h3 class="t-pack">PACK 10</h3>
+          <p class="t-hours"><strong>10 h créditées</strong><br><span>sans limite de validité</span></p>
+
+          <div class="price-box">
+            <strong>70 CHF</strong>
+            <span>= 7.00 CHF /heure</span>
+          </div>
+
+          <a href="/signup" class="btn primary w-full text-center">Commencer</a>
+          <p class="note">Essayez 30 min gratuitement</p>
+        </div>
+      </div>
+
+      <div class="pricing-footer">
+        <h3>
+          Des abonnements mensuels ou annuels ainsi qu’une API seront prochainement disponibles.
+        </h3>
+
+        <div class="notify-wrap">
+          <button id="notifyToggle" class="notify-btn">Rester informé</button>
+          <input type="email" id="notifyInput" class="notify-input" placeholder="Votre email">
+          <button id="notifySend" class="notify-send">
+            <span class="send-text">Envoyer</span>
+            <svg class="send-icon" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
   <section class="comparison pt-14">
     <div class="section-title">
       <h2 class="comparison-title">Swiss Transcript <span class="vs">vs.</span> Solutions internationales</h2>
@@ -339,7 +524,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="mt-4 text-center">
+    <div class="mt-8 text-center">
       <a href="/signup" class="btn button-login mr-2">Essayer gratuitement</a>
       <a href="securite.html" class="btn mt-4 lg:mt-0">Voir la sécurité</a>
     </div>
@@ -393,139 +578,6 @@
     </section> -->
 
   </section>
-  <section class="features">
-    <div class="container">
-
-      <!-- SECTION TITLE -->
-      <div class="section-title">
-        <h2>Fonctionnalités exclusives</h2>
-        <p class="w-100">
-          Des outils conçus pour vous faire gagner du temps et simplifier votre prise de décision
-        </p>
-      </div>
-
-      <!-- FEATURES GRID -->
-      <div class="features-container">
-
-        <div class="feature-item">
-          <h3>Différenciation des intervenants</h3>
-          <img class="feature-visual" src="../images/fonctions/1_Intervenants.jpg"
-            alt="Différenciation des intervenants">
-          <p>Notre technologie identifie automatiquement les différents intervenants, pour une lecture et une
-            compréhension facilitées.</p>
-        </div>
-
-        <div class="feature-item">
-          <h3>Horodatage précis</h3>
-          <img class="feature-visual" src="../images/fonctions/2_Horodatage.jpg" alt="Horodatage précis">
-          <p>Chaque segment de texte est lié à un horodatage pour retrouver instantanément le moment correspondant dans
-            l'audio.</p>
-        </div>
-
-        <div class="feature-item">
-          <h3>
-            Personnalisez vos résumés
-            <span class="info-icon" tabindex="0">i
-              <span class="tooltip">
-                <strong>Fonctionnalité en cours de développement (version bêta)</strong><br>
-                Nous prenons volontiers en considération vos besoins afin de développer une fonctionnalité de résumé
-                qui corresponde à vos attentes.<br>
-                Contactez-nous à <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a> pour partager
-                vos suggestions.
-              </span>
-            </span>
-          </h3>
-
-          <img class="feature-visual" src="../images/fonctions/3_Re╠üsume╠ü.jpg" alt="Plusieurs résumés à choix">
-
-          <p>
-            Choisissez 3 modèles de résumés parmi nos propositions.
-            Et si besoin, nous créons votre <span class="grey-bold">version sur mesure</span>,
-            adaptée à vos usages.
-            <!-- <a href="#" class="inline-link-purple">En savoir plus</a> -->
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class="pricing">
-    <div class="container">
-      <div class="section-title">
-        <h2>Tarifs transparents</h2>
-        <p>
-          Le tarif à la minute est de 0.20 CHF / min (12 CHF / heure)<br>
-          mais vous avez la possibilité d’économiser en profitant de nos packs avantageux.
-        </p>
-      </div>
-
-      <div class="pricing-cards">
-        <div class="pricing-card">
-          <h3 class="t-pack">PACK 1</h3>
-          <p class="t-hours"><strong>1 h créditée</strong><br><span>sans limite de validité</span></p>
-
-          <div class="price-box">
-            <strong>10 CHF</strong>
-            <span>= 10.00 CHF /heure</span>
-          </div>
-
-          <a href="/signup" class="btn primary w-full text-center">Commencer</a>
-          <p class="note">Essayez 30 min gratuitement</p>
-        </div>
-
-        <div class="pricing-card">
-          <h3 class="t-pack">PACK 5</h3>
-          <p class="t-hours"><strong>5 h créditées</strong><br><span>sans limite de validité</span></p>
-
-          <div class="price-box">
-            <strong>40 CHF</strong>
-            <span>= 8.00 CHF /heure</span>
-          </div>
-
-          <a href="/signup" class="btn primary w-full text-center">Commencer</a>
-          <p class="note">Essayez 30 min gratuitement</p>
-        </div>
-
-        <div class="pricing-card">
-          <h3 class="t-pack">PACK 10</h3>
-          <p class="t-hours"><strong>10 h créditées</strong><br><span>sans limite de validité</span></p>
-
-          <div class="price-box">
-            <strong>70 CHF</strong>
-            <span>= 7.00 CHF /heure</span>
-          </div>
-
-          <a href="/signup" class="btn primary w-full text-center">Commencer</a>
-          <p class="note">Essayez 30 min gratuitement</p>
-        </div>
-      </div>
-
-      <div class="pricing-footer">
-        <p>
-          Des abonnements mensuels ou annuels ainsi qu’une API seront prochainement disponibles.
-        </p>
-
-        <div class="notify-wrap">
-          <button id="notifyToggle" class="notify-btn">Rester informé</button>
-          <input type="email" id="notifyInput" class="notify-input" placeholder="Votre email">
-          <button id="notifySend" class="notify-send">
-            <span class="send-text">Envoyer</span>
-            <svg class="send-icon" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-
 
   <section class="use-cases">
     <div class="container">
@@ -546,21 +598,12 @@
 
         <div class="use-case-card">
           <div class="use-case-image">
-            <img src="../images/secteurs/Icon_2_MedicalSante.svg" alt="Médical et santé">
+            <img src="../images/secteurs/Icon_6_ChercheuresMondeAcademique.svg"
+              alt="Chercheurs et monde académique">
           </div>
           <div class="use-case-content">
-            <h3>Médical et santé</h3>
-            <p>Simplifiez la prise de notes nomade pour gagner du temps et vous concentrer sur vos patients.</p>
-          </div>
-        </div>
-
-        <div class="use-case-card">
-          <div class="use-case-image">
-            <img src="../images/secteurs/Icon_3_AssuranceMaladieSociale.svg" alt="Assurance maladie et sociale">
-          </div>
-          <div class="use-case-content">
-            <h3>Assurance maladie et sociale</h3>
-            <p>Simplifiez la rédaction de rapports et de suivis, tout en protégeant les données sensibles.</p>
+            <h3>Chercheurs et monde académique</h3>
+            <p>Libérez-vous de la transcription et concentrez-vous sur l'analyse et votre recherche.</p>
           </div>
         </div>
 
@@ -586,13 +629,25 @@
 
         <div class="use-case-card">
           <div class="use-case-image">
-            <img src="../images/secteurs/Icon_6_ChercheuresMondeAcademique.svg" alt="Chercheurs et monde académique">
+            <img src="../images/secteurs/Icon_2_MedicalSante.svg" alt="Médical et santé">
           </div>
           <div class="use-case-content">
-            <h3>Chercheurs et monde académique</h3>
-            <p>Libérez-vous de la transcription et concentrez-vous sur l’analyse et votre recherche.</p>
+            <h3>Réseaux de soins et santé mentale</h3>
+            <p>Simplifiez la prise de notes facile pour gagner du temps et vous concentrer sur vos patients.</p>
           </div>
         </div>
+
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <img src="../images/secteurs/Icon_3_AssuranceMaladieSociale.svg" alt="Assurance maladie et sociale">
+          </div>
+          <div class="use-case-content">
+            <h3>Assurance maladie et sociale</h3>
+            <p>Simplifiez la rédaction de rapports et de suivis, tout en protégeant les données sensibles.</p>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </section>
