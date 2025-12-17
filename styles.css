@@ -106,42 +106,21 @@ details[open] summary::after {
 }
 
 .lang-link {
-  color: #aca3b4;
-  text-decoration: none;
-  font-size: 13px;
-  transition: color 0.3s ease-in-out;
-}
-
-.lang-link.active {
-  color: #fff;
-}
-
-.lang-link:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.lang-separator {
-  color: #fff;
-  margin: 0 8px;
-}
-
-
-#main .lang-link {
   color: #000;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
-#main .lang-separator {
+.lang-separator {
   color: rgba(255, 255, 255, 0.6);
   margin: 0 8px;
 }
 
-#main .lang-link.active {
+.lang-link.active {
   color: #8933c9;
 }
 
-#main .lang-link:hover {
+.lang-link:hover {
   color: #8933c9;
 }
 
@@ -252,8 +231,8 @@ h6 {
 
 /* Header */
 header {
-  background-color: transparent;
-  color: white;
+  background-color: #fff;
+  color: #000;
   padding:15px 0 15px 0;
   position: absolute;
   width: 100%;
@@ -301,12 +280,12 @@ nav ul li {
   margin-left: 20px;
 }
 
-nav ul li a {
+/* nav ul li a {
   color: white !important;
   text-decoration: none;
   font-weight: 500;
   transition: opacity 0.3s;
-}
+} */
 
 nav ul li a:hover {
   opacity: 0.8;
@@ -937,99 +916,294 @@ nav ul li a:hover {
 }
 
 /* SECTION */
-.pricing {
-  padding: 50px 20px 0px 20px;
-  background: #fff;
-  font-family: "Inter", sans-serif;
-  color: #202020;
+.pricing{
+  padding:60px 20px;
+  background:#ffffff;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+.section-title h2{
+  text-align:center;
+  font-size:26px;
+  font-weight:900;
+  color:#12207a;
+  margin:0 0 26px 0;
+}
+.pricing-cards{
+  display:flex;
+  gap:28px;
+  justify-content:center;
+  align-items:stretch;
+  flex-wrap:wrap;
+}
+.pricing-card{
+  width:360px;
+  background:#ffffff;
+  border-radius:18px;
+  padding:22px 22px 20px;
+  box-shadow:0 10px 26px rgba(0,0,0,0.14);
+    display: flex;
+  flex-direction: column;
+  
+}
+.pricing-card .cta-btn,
+.pricing-card .btn {
+  margin-top: auto;
 }
 
-.section-title p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
+.pricing-card .card-title{
+  margin:0;
+  font-size:24px;
+  font-weight:900!important;
+  color:#13207c;
+}
+.card-subtitle{
+  margin:8px 0 14px 0;
+  font-size:15px;
+  color:#6f6f6f;
+  line-height:1.35;
 }
 
-.pricing-cards {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
+.minute-pill{
+  background:#eaf3ff;
+  border-radius:12px;
+  padding:14px 14px 10px;
+  text-align:center;
+  margin-bottom:14px;
+}
+.minute-pill-main{
+  display:flex;
+  justify-content:center;
+  align-items:baseline;
+  gap:8px;
+}
+.minute-value{
+  font-size:34px;
+  font-weight:900;
+  color:#000000;
+  letter-spacing:-0.5px;
+}
+.minute-unit{
+  font-size:18px;
+  font-weight:700;
+  color:#2d7bd9;
+}
+.minute-pill-sub{
+  margin-top:6px;
+  font-size:11px;
+  color:#7aa6d6;
 }
 
-.pricing-card {
-  width: 260px;
-  background: #fff;
-  border-radius: 18px;
-  padding: 20px 22px 10px 22px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
-  text-align: left;
+.packs-wrap{
+  background:#f2e9fb;
+  border-radius:14px;
+  padding:16px 14px;
+  margin:10px 0 16px;
+}
+.packs-intro{
+  margin:0 0 12px 0;
+  font-size:13px;
+  color:#7e23be;
+  font-weight:700;
+  line-height:1.45;
 }
 
-.t-pack {
-  font-size: 20px;
-  font-weight: 900 !important;
-  color: #7e23be;
-  margin-bottom: 0px;
-  text-transform: uppercase;
+.pack-row{
+  background:#ffffff;
+  border:2px solid #cfe1ff;
+  border-radius:14px;
+  padding:12px 14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:12px;
+}
+.pack-left strong{
+  display:block;
+  font-size:16px;
+  font-weight:900;
+  color:#000000;
+}
+.pack-left span{
+  display:block;
+  font-size:13px;
+  color:#2461c8;
+  font-weight:700;
+  margin-top:4px;
+}
+.pack-right{
+  text-align:right;
+}
+.pack-right strong{
+  display:block;
+  font-size:16px;
+  font-weight:900;
+  color:#000000;
+}
+.pack-right span{
+  display:block;
+  font-size:10px;
+  color:#7aa6d6;
+  margin-top:6px;
 }
 
-.t-hours strong {
-  font-size: 18px;
-  color: #131f7c;
-  font-weight: 900;
+.trial-box{
+  background:#f2e9fb;
+  border-radius:12px;
+  padding:14px 14px;
+  text-align:center;
+  color:#7e23be;
+  font-weight:800;
+  font-size:13px;
+  margin-bottom:16px;
 }
-
-.t-hours span {
-  color: #90b5de;
-  font-size: 13px;
-}
-
-.t-hours {
-  line-height: 23px;
-}
-
-.price-box {
-  border: 2px solid #d9eaff;
-  border-radius: 12px;
-  padding: 10px 0;
-  margin: 10px 0 20px 0;
+.trial-note {
+  margin-top: 6px;
   text-align: center;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #8a8a8a;
 }
 
-.price-box strong {
-  font-size: 18px;
-  color: #1a237e;
+.billing-switch{
+  display:flex;
+  background:#eaf3ff;
+  border-radius:14px;
+  overflow:hidden;
+  margin:14px 0 16px;
+}
+.billing-tab{
+  flex:1;
+  border:none;
+  background:transparent;
+  padding:10px 0;
+  font-size:13px;
+  font-weight:800;
+  color:#7aa6d6;
+  cursor:pointer;
+}
+.billing-tab.is-active{
+  background:#12207a;
+  color:#ffffff;
+}
+.discount{
+  font-size:11px;
+  font-weight:900;
+  color:#7e23be;
+  margin-left:6px;
 }
 
-.price-box span {
-  display: block;
-  font-size: 12px;
-  color: #7e8ba3;
+.plans{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
 
-.note {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #7e23be;
+.plan{
+  width:100%;
+  text-align:left;
+  border:2px solid #9fc0ef;
+  border-radius:14px;
+  background:#ffffff;
+  padding:0;
+  cursor:pointer;
+  transition:all .18s ease;
+  overflow:hidden;
+}
+.plan-top{
+  background:#eaf3ff;
+  padding:10px 14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.plan-name{
+  font-size:18px;
+  font-weight:900;
+  color:#000000;
+}
+.plan-hours{
+  font-size:14px;
+  font-weight:900;
+  color:#2461c8;
+}
+.plan-bottom{
+  padding:10px 14px 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:10px;
+}
+.plan-price{
+  font-size:14px;
+  font-weight:900;
+  color:#000000;
+}
+.plan-price .per{
+  font-weight:800;
+  color:#000000;
+}
+.plan-hint{
+  font-size:10px;
+  color:#7aa6d6;
+  font-weight:700;
+  text-align:right;
+  line-height:1.25;
 }
 
+.plan:hover{
+  border-color:#7e23be;
+  border-width:2px;
+}
+
+.plan.is-selected{
+  border-color:#7e23be;
+  border-width:2px;
+}
+
+.subs-footer{
+  margin:14px 0 14px 0;
+  font-size:13px;
+  color:#7aa6d6;
+}
+.subs-link{
+  color:#2461c8;
+  font-weight:800;
+  text-decoration:none;
+}
+.subs-link:hover{ text-decoration:underline; }
+
+.cta-btn{
+  display:block;
+  margin-top:16px;
+  padding:14px 18px;
+  border-radius:999px;
+  text-align:center;
+  font-weight:900;
+  text-decoration:none;
+  transition:all .18s ease;
+}
+.prepaid-btn{
+  background:#7e23be;
+  color:#ffffff;
+}
+.prepaid-btn:hover{
+  background:#5b1a8f;
+}
+.subs-btn{
+  background:#7e23be;
+  color:#ffffff;
+}
+.subs-btn:hover{
+  background:#5b1a8f;
+}
 .pricing-footer {
-  text-align: center;
-  margin-top: 30px;
+   color: #6A6A6A;
+   max-width: 1100px;
+   margin-left: auto;
+   margin-right: auto;
 }
-
-.pricing-footer p {
-  font-size: 15px;
-  color: #6a6a6a;
-  margin-bottom: 18px;
-}
-
-.pricing-footer {
-  text-align: center;
-  margin-top: 30px;
+@media (max-width:420px){
+  .pricing-card{ width: 92vw; }
 }
 
 .notify-wrap {
@@ -1137,7 +1311,6 @@ nav ul li a:hover {
     border-radius: 8px;
   }
 }
-
 
 
 /* Testimonials Section */
@@ -1360,6 +1533,9 @@ nav ul li a:hover {
 #a_propos #contacts {
   padding: 30px 0;
 }
+.a-propos-text h2 {
+  font-size: 32px;
+}
 
 #equipe .container {
   display: flex;
@@ -1542,12 +1718,16 @@ footer {
 
 /* DEMO */
 .page-header.demo {
-  padding: 80px 0 20px 0;
+  padding: 130px 0 40px 0;
 }
-
+.page-header.demo h2 {
+font-size: 32px;
+color: #fff;
+margin-bottom: 15px;
+}
 /* Pricing Section */
 #tarif .pricing-container {
-  padding: 80px 0;
+padding:130px 0 80px 0;
 }
 
 #tarif .pricing-intro {
@@ -1600,45 +1780,6 @@ footer {
   padding: 5px 30px;
   font-size: 12px;
   transform: rotate(45deg);
-}
-
-#tarif .card-header {
-  background-color: #1a237e;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-#tarif .card-title {
-  font-size: 20px;
-  color: white;
-  margin-bottom: 5px;
-}
-
-#tarif .card-subtitle {
-  opacity: 0.8;
-  font-size: 17px;
-}
-
-#tarif .card-price {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #e8eaf6;
-  color: #1a237e;
-}
-
-#tarif .card-price .period {
-  display: block;
-  font-size: 17px;
-  font-weight: normal;
-  color: #666;
-  margin-top: 5px;
-}
-
-#tarif .card-features {
-  padding: 20px;
 }
 
 #tarif .feature-item {
@@ -2008,7 +2149,7 @@ footer {
 
 /* SECURITE */
 .security-container {
-  padding: 80px 0;
+  padding:130px 0 80px 0;
 }
 
 .security-intro {
@@ -2846,8 +2987,10 @@ td:not(:first-child) {
 
 .features-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* CARD */
