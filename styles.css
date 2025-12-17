@@ -1175,7 +1175,7 @@ nav ul li a:hover {
 .cta-btn{
   display:block;
   margin-top:16px;
-  padding:14px 18px;
+  padding:9px 18px;
   border-radius:999px;
   text-align:center;
   font-weight:900;
@@ -1805,18 +1805,6 @@ padding:130px 0 80px 0;
   margin-top: auto;
 }
 
-#tarif .btn {
-  display: inline-block;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
-  width: 100%;
-  text-align: center;
-}
-
 #tarif .cta-note {
   font-size: 12px;
   color: #666;
@@ -1826,7 +1814,7 @@ padding:130px 0 80px 0;
 
 /* Info Boxes */
 #tarif .info-boxes {
-  margin-bottom: 50px;
+  margin: 50px 0 ;
 }
 
 #tarif .info-box {
