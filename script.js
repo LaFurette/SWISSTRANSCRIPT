@@ -3,8 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const plans = document.querySelectorAll('.plan');
   const chooseBtn = document.getElementById('chooseBtn');
 
+  // Colonne 1 (Prepaid) éléments sélectionnables
+  const prepaidChoices = document.querySelectorAll('.minute-pill, .pack-row, .trial-box');
+
   let billing = 'monthly';
   let selectedPlan = null;
+  let selectedPrepaid = null;
 
   /* ======================
      SWITCH MENSUEL / ANNUEL
@@ -13,11 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     plans.forEach(plan => {
       const priceVal = plan.querySelector('.price-val');
       const hint = plan.querySelector('.plan-hint');
+      if (!priceVal) return;
 
       const monthly = plan.dataset.monthly;
-      const annual = plan.dataset.annual;
-
-      if (!priceVal) return;
+      const annual = plan.dataset.annual; // prix / mois même en annuel
 
       if (billing === 'annual') {
         priceVal.textContent = annual;
@@ -33,43 +36,57 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       billingTabs.forEach(t => t.classList.remove('is-active'));
       tab.classList.add('is-active');
-      billing = tab.dataset.billing;
+      billing = tab.dataset.billing || 'monthly';
       applyBilling();
     });
   });
 
   /* ======================
-     SÉLECTION DES ABOS
-     (checkbox-like mais radio)
+     COLONNE 2 : SÉLECTION ABO
   ====================== */
   plans.forEach(plan => {
     plan.addEventListener('click', () => {
-      // Désélectionner tous les plans
+      // sélection plan unique
       plans.forEach(p => p.classList.remove('is-selected'));
-
-      // Sélectionner celui cliqué
       plan.classList.add('is-selected');
       selectedPlan = plan.dataset.plan;
 
-      // Changer le texte du bouton
-      if (chooseBtn) {
-        chooseBtn.textContent = 'Choisir cet abonnement';
-      }
+      // si on choisit un abo, on “dé-sélectionne” la colonne 1 (optionnel mais logique)
+      prepaidChoices.forEach(el => el.classList.remove('is-selected'));
+      selectedPrepaid = null;
+
+      if (chooseBtn) chooseBtn.textContent = 'Choisir cet abonnement';
     });
 
-    // Hover : change le texte temporairement
     plan.addEventListener('mouseenter', () => {
       if (chooseBtn) chooseBtn.textContent = 'Choisir cet abonnement';
     });
 
     plan.addEventListener('mouseleave', () => {
-      if (chooseBtn && !selectedPlan) {
-        chooseBtn.textContent = 'Choisir un abonnement';
-      }
+      if (chooseBtn && !selectedPlan) chooseBtn.textContent = 'Choisir un abonnement';
     });
   });
 
-  // Initialisation
+  /* ======================
+     COLONNE 1 : SÉLECTION PREPAID
+     (focus persistant comme colonne 2)
+  ====================== */
+  prepaidChoices.forEach(el => {
+    el.addEventListener('click', () => {
+      // sélection unique côté prepaid
+      prepaidChoices.forEach(x => x.classList.remove('is-selected'));
+      el.classList.add('is-selected');
+      selectedPrepaid = el;
+
+      // si on clique prepaid, on “dé-sélectionne” les plans abonnement (optionnel mais logique)
+      plans.forEach(p => p.classList.remove('is-selected'));
+      selectedPlan = null;
+
+      // bouton abonnement revient à son état normal
+      if (chooseBtn) chooseBtn.textContent = 'Choisir un abonnement';
+    });
+  });
+
   applyBilling();
 });
 
