@@ -38,7 +38,7 @@
         <!-- Logo -->
         <div class="logo flex items-center">
           <a href="index.html" class="font-bold ml-5">
-            <img src="../images/logo_purple.png" alt="swisstranscript Logo" class="mr-2" width="150" />          </a>
+            <img src="../images/logo_purple.png" alt="swisstranscript Logo" class="mr-2" width="150" /> </a>
         </div>
 
         <!-- Navigation desktop -->
@@ -57,7 +57,8 @@
                 class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Démo</a>
             </li>
             <li><a href="a_propos.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À propos</a>
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">À
+                propos</a>
             </li>
             <li><a href="contact.html"
                 class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Contact</a>
@@ -81,62 +82,56 @@
               <span>|</span>
               <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm ">EN</a>
             </div>
-          <!-- </div> -->
+            <!-- </div> -->
+          </div>
         </div>
-      </div>
 
-      <!-- Drawer menu (mobile) -->
-      <div
-        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-        <div class="p-4 md:p-3">
-          <div class="flex items-center pt-6 pb-4">
-            <a href="index.html" class="font-bold">
-              <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+        <!-- Drawer menu (mobile) -->
+        <div
+          class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+          <div class="p-4 md:p-3">
+            <div class="flex items-center pt-6 pb-4">
+              <a href="index.html" class="font-bold">
+                <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+              </a>
+            </div>
+
+            <ul class="space-y-3">
+              <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Accueil</a></li>
+              <li><a href="tarifs.html" class="drawer-btn px-2 py-1 hover:opacity-80">Tarifs</a></li>
+              <li><a href="securite.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sécurité</a></li>
+              <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Démo</a></li>
+              <li><a href="a_propos.html" class="drawer-btn px-2 py-1 hover:opacity-80">À propos</a></li>
+              <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
+            </ul>
+
+            <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
+              <a href="/fr/" class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300">FR</a>
+              <a href="/en/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">EN</a>
+              <a href="/de/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">DE</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <a href="/login?lang=fr" target="_blank"
+              class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
+              Connexion
+            </a>
+            <a href="tarifs.html" target="_blank"
+              class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
+              Essayer
             </a>
           </div>
-
-          <ul class="space-y-3">
-            <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Accueil</a></li>
-            <li><a href="tarifs.html" class="drawer-btn px-2 py-1 hover:opacity-80">Tarifs</a></li>
-            <li><a href="securite.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sécurité</a></li>
-            <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Démo</a></li>
-            <li><a href="a_propos.html" class="drawer-btn px-2 py-1 hover:opacity-80">À propos</a></li>
-            <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
-          </ul>
-
-          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
-            <a href="/fr/" class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300">FR</a>
-            <a href="/en/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">EN</a>
-            <a href="/de/" class="lang-link py-1 text-sm rounded-md hover:text-gray-300">DE</a>
-          </div>
         </div>
 
-        <div class="flex flex-col gap-1">
-          <a href="/login?lang=fr" target="_blank"
-            class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-            Connexion
-          </a>
-          <a href="tarifs.html" target="_blank"
-            class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
-            Essayer
-          </a>
-        </div>
-      </div>
-
-      <!-- Drawer overlay -->
-      <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+        <!-- Drawer overlay -->
+        <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
   </header>
-  <section class="page-header">
-    <!-- <div class="container">
-      <h1>Mentions légales, CGU, politique de confidentialité</h1>
-    </div> -->
-  </section>
-
   <!-- Section 1 -->
   <div id="confidentialite" class="flex text-justify md:text-left">
     <div class="w-full text-black p-4 md:p-8 lg:p-16">
       <a name="mentions_legales"></a>
-      <h3 class="text-left my-2 lg:my-4 font-bold text-3xl">
+      <h3 class="text-left my-2 lg:my-4 font-bold text-3xl pt-12">
         Mentions légales
       </h3>
       <p class="">

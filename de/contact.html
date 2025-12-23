@@ -68,12 +68,14 @@
   <header>
     <div class="container">
       <div class="header-container flex justify-between items-center px-2">
+
         <!-- Logo -->
         <div class="logo flex items-center">
           <a href="index.html" class="font-bold ml-5">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />          </a>
+            <img src="../images/logo_purple.png" alt="Swiss Transcript Logo" width="150">
+          </a>
         </div>
-        
+
         <!-- Navigation desktop -->
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
           <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
@@ -81,198 +83,123 @@
             <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
             <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
             <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
+            <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
             <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
           </ul>
         </nav>
 
-        <!-- Login / Signup + Lang switch -->
+        <!-- Login / Lang -->
         <div class="flex items-center">
-          <div class="hidden md:flex items-center space-x-4">
-              <a href="/login?lang=de" target="_blank"
-                class="px-4 py-2 rounded-md font-bold text-center text-sm xl:text-lg button-login">
-                Anmelden
-              </a>
-              <a href="/signup?lang=de" target="_blank"
-                class="px-4 rounded-md font-bold text-center text-sm xl:text-lg button-signup">
-                Versuchen
-              </a>
-            </div>
-            <div id="languageSwitcher" class="hidden lg:flex space-x-2 ml-5">
-              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
+          <div class="hidden md:flex items-center space-x-5">
+            <a href="/login?lang=de" target="_blank"
+              class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
+              Anmelden
+            </a>
+            <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+              Testen
+            </a>
+            <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm">FR</a>
               <span>|</span>
-              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
+              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm active">DE</a>
               <span>|</span>
-              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
+              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm">EN</a>
             </div>
+          </div>
 
-        <!-- Mobile menu button -->
-        <div class="block lg:hidden mx-4">
-          <button id="toggleDrawer" class="focus:outline-none">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-            </svg>
-          </button>
+          <!-- Mobile menu button -->
+          <div class="block lg:hidden mx-4">
+            <button id="toggleDrawer" class="focus:outline-none">
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z">
+                </path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <!-- </div> -->
       </div>
-        <!-- </div> -->
-      </div>
-    </div>
 
-    <!-- Drawer menu (mobile) -->
-    <div
-      class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-      <div class="p-4 md:p-3">
-        <div class="flex items-center pt-6 pb-4">
-          <a href="index.html" class="font-bold">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+      <!-- Drawer menu mobile -->
+      <div
+        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+        <div class="p-4 md:p-3">
+          <div class="flex items-center pt-6 pb-4">
+            <a href="index.html">
+              <img src="../images/logo_white.svg" alt="Swiss Transcript Logo" width="150">
+            </a>
+          </div>
+
+          <ul class="space-y-3">
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Startseite</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="preise.html">Preise</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="sicherheit.html">Sicherheit</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">Über uns</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Kontakt</a></li>
+          </ul>
+
+          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
+            <a href="/fr/" class="lang-link py-1 text-sm">FR</a>
+            <a href="/de/" class="lang-link py-1 text-sm font-bold">DE</a>
+            <a href="/en/" class="lang-link py-1 text-sm">EN</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <a href="/login?lang=de" target="_blank"
+            class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
+            Anmelden
+          </a>
+          <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+            Testen
           </a>
         </div>
-        <ul class="space-y-3">
-          <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Startseite</a></li>
-          <li><a href="preise.html" class="drawer-btn px-2 py-1 hover:opacity-80">Preise</a></li>
-          <li><a href="sicherheit.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sicherheit</a></li>
-          <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Demo</a></li>
-          <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Kontakt</a></li>
-        </ul>
-        <div id="languageSwitcherMobile" class="hidden lg:flex space-x-2 ml-5">
-          <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-          <span>|</span>
-          <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-          <span>|</span>
-          <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
-        </div>
       </div>
-      <a href="/login?lang=de" target="_blank"
-        class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-        Anmelden
-      </a>
-    </div>
 
-    <!-- Drawer overlay -->
-    <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+      <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+    </div>
   </header>
-  <section class="page-header">
-    <div class="container mt-10">
-      <h1>L’équipe derrière Swiss Transcript</h1>
-    </div>
-  </section>
-  <div id="equipe" class="flex flex-col w-full bg-[#eef0f3] px-4 md:px-6 lg:px-10 py-16  text-[#011e61]">
-    <div class="flex flex-col md:flex-row items-center lg:space-x-10 w-full xl:w-4/5 mx-auto">
-      <div class="w-full lg:w-1/4 flex justify-center mb-6 xl:mb-0">
-        <div class="relative">
-          <img src="../images/equipe/photo_Cedric.png"
-            alt="Cédric Paternotte, expert en ingénierie software chez SwissTranscript" class="rounded-full w-[350px]">
-        </div>
-      </div>
-      <div class="w-full lg:w-3/4  text-center">
-        <h2 class="archi-font text-2xl font-bold mb-4 lg:text-left">
-          Cédric Paternotte
-        </h2>
-        <p class="text-justify">
-          Avec son expertise en ingénierie software et en développement, Cédric est le pilier technique de Swiss
-          Transcript. Il a mis son savoir-faire au service de la création d'une plateforme de retranscription
-          automatique à la pointe de la technologie, en s'appuyant sur les dernières avancées en matière d'Intelligence
-          Artificielle et de traitement du langage naturel.
-        </p>
-      </div>
-      <div class="w-1/4"></div>
-    </div>
-    <div class="flex flex-col-reverse md:flex-row items-center lg:space-x-10 w-full xl:w-4/5 mx-auto pt-6">
-      <div class="w-1/4"></div>
-      <div class="w-full lg:w-3/4 text-center lg:flex-row-reverse lg:text-right">
-        <h2 class="archi-font text-2xl font-bold mb-4">
-          Esther Sève
-        </h2>
-        <p class="text-justify text-align-last-right">
-          Son expérience dans les études qualitatives a permis à Esther d'identifier le besoin d'un service de
-          retranscription préservant la confidentialité des données, en s'affranchissant des LLM externes comme ChatGPT.
-          Avec Cédric, elle a développé cet outil pour gagner en efficacité, tout en préservant la confidentialité des
-          données.
-        </p>
-      </div>
-      <div class="w-full lg:w-1/4 flex justify-center mb-6 xl:mb-0">
-        <div class="relative">
-          <img src="../images/equipe/photo_Esther.png"
-            alt="Esther Sève, experte en études qualitatives et co-fondatrice de SwissTranscript"
-            class="rounded-full w-[350px]">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="flex flex-col bg-[#011e61] text-center lg:flex-row lg:justify-between lg:text-left p-4 mg:p-8 lg:p-16"
+  <div
+    class="flex flex-col bg-[#011e61] text-center lg:flex-row lg:justify-between lg:text-left p-4 mg:p-8 lg:p-16 w-100"
     id="contacts">
-    <div class="mx-auto pb-10 max-w-lg lg:w-1/2">
-      <div class="p-2 mb-4">
-        <h2 class="archi-font font-bold text-2xl text-white">À propos de Swiss Transcript</h2>
-      </div>
-      <div>
-        <p class="text-justify mb-4 lg:mb-8">
-          Fondée en 2024 à Lausanne, SwissTranscript.ch répond aux besoins des professionnels suisses pour qui la
-          confidentialité des données est primordiale.
-        </p>
-        <p class="text-justify mb-4 lg:mb-8">
-          Notre solution de transcription audio et vidéo, basée sur une Intelligence Artificielle souveraine et hébergée
-          à 100% en Suisse, garantit une sécurité maximale aux psychologues, chercheurs, collectivités et entreprises.
-        </p>
-      </div>
-    </div>
-    <div class="w-full flex justify-center lg:w-1/2">
+    <div class="w-full flex justify-center">
       <form class="p-2 md:p-4 md:p-8 lg:p-16" id="contactForm">
         <div class="grid grid-cols-2 gap-4">
           <div class="mb-4">
-            <label for="lastname" class="block text-sm font-medium">Nom</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Votre nom"
-              class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required="">
+            <label for="lastname" class="block text-sm font-medium">Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ihr Name"
+              class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required>
           </div>
           <div class="mb-4">
-            <label for="firstname" class="block text-sm font-medium">Prénom</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Votre prénom"
-              class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required="">
+            <label for="firstname" class="block text-sm font-medium">Vorname</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ihr Vorname"
+              class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required>
           </div>
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-sm font-medium">Email</label>
-          <input type="email" id="email" name="email" placeholder="Votre adresse email" autocomplete="email"
-            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required="">
-        </div>
-        <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium">Téléphone <small>(optionnel)</small></label>
-          <input type="text" id="phone" name="phone" placeholder="Votre numéro de téléphone" autocomplete="tel"
-            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none">
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block text-sm font-medium">Message</label>
-          <textarea id="message" name="message" placeholder="Écrivez votre message ici..." maxlength="800"
-            minlength="15" rows="3"
-            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none min-h-16 max-h-36"
-            required=""></textarea>
         </div>
 
-        <!-- Altcha -->
-        <div id="altcha_div" class="mt-4 mb-4 captcha-invisible">
-          <div class="d-inline-block">
-            <altcha-widget hidelogo="" hidefooter=""
-              strings="{&quot;label&quot; : &quot;Je ne suis pas un robot&quot;, &quot;verifying&quot; : &quot;Vérification en cours...&quot;, &quot;verified&quot; : &quot;Vérifié&quot;}"
-              style="--altcha-color-base: #ffffff; --altcha-color-border: #ced4da; --altcha-color-text: #011e61; --altcha-max-width: 300px"
-              challengeurl="/srv/api/captcha.php?action=challenge"><!----><!---->
-              <div class="altcha svelte-ddsc3z" data-state="unverified">
-                <div class="altcha-main svelte-ddsc3z"><!---->
-                  <div class="altcha-checkbox svelte-ddsc3z"><input type="checkbox" class="svelte-ddsc3z"
-                      id="altcha_checkbox" required=""></div>
-                  <div class="altcha-label svelte-ddsc3z"><label class="svelte-ddsc3z" for="altcha_checkbox">Je ne suis
-                      pas un robot<!----></label><!----></div> <!---->
-                </div> <!----> <!----> <!---->
-              </div>
-            </altcha-widget>
-          </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium">E-Mail</label>
+          <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" autocomplete="email"
+            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="phone" class="block text-sm font-medium">Telefon <small>(optional)</small></label>
+          <input type="text" id="phone" name="phone" placeholder="Ihre Telefonnummer" autocomplete="tel"
+            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none">
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium">Nachricht</label>
+          <textarea id="message" name="message" placeholder="Schreiben Sie hier Ihre Nachricht..." maxlength="800"
+            minlength="15" rows="3"
+            class="mt-1 p-2 w-full bg-transparent border-b-gray-300 border-b-2 focus:outline-none min-h-16 max-h-36"
+            required></textarea>
         </div>
 
         <div class="flex items-center justify-center lg:justify-start">
-          <button id="submit_button" type="submit"
-            class="bg-gradient-to-r from-[#011e61] to-[#2b4ca1] text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:from-[#2b4ca1] hover:to-[#011e61] hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-            Envoyer le message
+          <button id="submit_button" type="submit" class="btn primary">
+            Nachricht senden
           </button>
           <p class="p-5" id="form-message"></p>
         </div>
@@ -283,27 +210,36 @@
 
   <footer>
     <div class="container">
-      <div class="footer-container max-w-3xl mx-auto">
+      <div class="footer-container">
+
+        <div class="footer-brand">
+          <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
+          <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
+        </div>
+
         <div class="footer-col">
-          <h3>Rechtliches</h3>
           <ul>
-            <li><a href="./legal.html#politique-confidentialite">Nutzungsbedingungen</a></li>
-            <li><a href="./legal.html#cgu">Datenschutzrichtlinie</a></li>
-            <li><a href="./legal.html#mentions-legales">Impressum</a></li>
+            <li><a href="./legal.html#terms">Nutzungsbedingungen</a></li>
+            <li><a href="./legal.html#privacy">Datenschutzerklärung</a></li>
+            <li><a href="./legal.html#imprint">Impressum</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h3>Kontakt</h3>
           <ul>
-            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>          
+            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
+
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>
+
   <script src="../script.js"></script>
   <script src="../form.js"></script>
 </body>

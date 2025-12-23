@@ -3,16 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const plans = document.querySelectorAll('.plan');
   const chooseBtn = document.getElementById('chooseBtn');
 
-  // Colonne 1 (Prepaid) éléments sélectionnables
   const prepaidChoices = document.querySelectorAll('.minute-pill, .pack-row, .trial-box');
+
+  const billedAnnuallyText =
+    document.body.dataset.billedAnnually || '';
 
   let billing = 'monthly';
   let selectedPlan = null;
   let selectedPrepaid = null;
 
-  /* ======================
-     SWITCH MENSUEL / ANNUEL
-  ====================== */
   function applyBilling() {
     plans.forEach(plan => {
       const priceVal = plan.querySelector('.price-val');
@@ -20,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!priceVal) return;
 
       const monthly = plan.dataset.monthly;
-      const annual = plan.dataset.annual; // prix / mois même en annuel
+      const annual = plan.dataset.annual;
 
       if (billing === 'annual') {
         priceVal.textContent = annual;
-        if (hint) hint.textContent = 'Facturé annuellement';
+        if (hint) hint.textContent = billedAnnuallyText;
       } else {
         priceVal.textContent = monthly;
         if (hint) hint.textContent = '';
@@ -41,49 +40,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ======================
-     COLONNE 2 : SÉLECTION ABO
-  ====================== */
   plans.forEach(plan => {
     plan.addEventListener('click', () => {
-      // sélection plan unique
       plans.forEach(p => p.classList.remove('is-selected'));
       plan.classList.add('is-selected');
       selectedPlan = plan.dataset.plan;
 
-      // si on choisit un abo, on “dé-sélectionne” la colonne 1 (optionnel mais logique)
       prepaidChoices.forEach(el => el.classList.remove('is-selected'));
       selectedPrepaid = null;
 
-      if (chooseBtn) chooseBtn.textContent = 'Choisir cet abonnement';
+      if (chooseBtn) {
+        chooseBtn.textContent = chooseBtn.dataset.textSelected;
+      }
     });
 
     plan.addEventListener('mouseenter', () => {
-      if (chooseBtn) chooseBtn.textContent = 'Choisir cet abonnement';
+      if (chooseBtn) {
+        chooseBtn.textContent = chooseBtn.dataset.textSelected;
+      }
     });
 
     plan.addEventListener('mouseleave', () => {
-      if (chooseBtn && !selectedPlan) chooseBtn.textContent = 'Choisir un abonnement';
+      if (chooseBtn && !selectedPlan) {
+        chooseBtn.textContent = chooseBtn.dataset.textDefault;
+      }
     });
   });
 
-  /* ======================
-     COLONNE 1 : SÉLECTION PREPAID
-     (focus persistant comme colonne 2)
-  ====================== */
   prepaidChoices.forEach(el => {
     el.addEventListener('click', () => {
-      // sélection unique côté prepaid
       prepaidChoices.forEach(x => x.classList.remove('is-selected'));
       el.classList.add('is-selected');
       selectedPrepaid = el;
 
-      // si on clique prepaid, on “dé-sélectionne” les plans abonnement (optionnel mais logique)
       plans.forEach(p => p.classList.remove('is-selected'));
       selectedPlan = null;
 
-      // bouton abonnement revient à son état normal
-      if (chooseBtn) chooseBtn.textContent = 'Choisir un abonnement';
+      if (chooseBtn) {
+        chooseBtn.textContent = chooseBtn.dataset.textDefault;
+      }
     });
   });
 
@@ -154,33 +149,34 @@ const currentLang = window.location.pathname.split('/')[1] || 'fr';
 
 const pageMap = {
   fr: {
-    'index': '',
-    'tarifs': 'tarifs',
-    'preise': 'tarifs',
-    'pricing': 'tarifs',
-    'faq': 'faq',
-    'legal': 'legal',
-    'securite': 'securite',
-    'sicherheit': 'securite',
-    'security': 'securite'
+    index: 'index',
+    about: 'a_propos',
+    contact: 'contact',
+    demo: 'demo',
+    faq: 'faq',
+    pricing: 'tarifs',
+    legal: 'legal',
+    security: 'securite'
   },
   de: {
-    'index': '',
-    'tarifs': 'preise',
-    'pricing': 'preise',
-    'faq': 'faq',
-    'legal': 'legal',
-    'securite': 'sicherheit',
-    'security': 'sicherheit'
+    index: 'index',
+    about: 'about',
+    contact: 'contact',
+    demo: 'demo',
+    faq: 'faq',
+    pricing: 'preise',
+    legal: 'legal',
+    security: 'sicherheit'
   },
   en: {
-    'index': '',
-    'tarifs': 'pricing',
-    'preise': 'pricing',
-    'faq': 'faq',
-    'legal': 'legal',
-    'securite': 'security',
-    'sicherheit': 'security'
+    index: 'index',
+    about: 'about',
+    contact: 'contact',
+    demo: 'demo',
+    faq: 'faq',
+    pricing: 'pricing',
+    legal: 'legal',
+    security: 'security'
   }
 };
 
@@ -244,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const valEl = p.querySelector('.price-val');
       const hintEl = p.querySelector('.plan-hint');
       const monthly = p.getAttribute('data-monthly');
-      const annualMonthly = p.getAttribute('data-annual'); // prix / mois même en annuel
+      const annualMonthly = p.getAttribute('data-annual');
 
       if (billing === 'annual') {
         valEl.textContent = annualMonthly;
@@ -267,11 +263,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (chosenPlanInput) chosenPlanInput.value = planId;
 
-    // bouton -> “Choisir cet abonnement” si un plan est sélectionné
     chooseBtn.textContent = selectedPlan ? 'Choisir cet abonnement' : 'Choisir un abonnement';
   }
 
-  // Switch billing
   billingTabs.forEach(tab => {
     tab.addEventListener('click', () => {
       billingTabs.forEach(t => t.classList.remove('is-active'));
@@ -281,61 +275,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Select plan (checkbox-like but single selection = radio)
   plans.forEach(p => {
     p.addEventListener('click', () => setSelected(p.getAttribute('data-plan')));
 
-    // Hover changes button text too (requested)
     p.addEventListener('mouseenter', () => { chooseBtn.textContent = 'Choisir cet abonnement'; });
     p.addEventListener('mouseleave', () => {
       chooseBtn.textContent = selectedPlan ? 'Choisir cet abonnement' : 'Choisir un abonnement';
     });
   });
 
-  // Init
   applyBilling();
-  setSelected(''); // none selected by default
+  setSelected(''); 
 });
-// STICKY FEATURES
-// const steps = document.querySelectorAll(".feature-step");
-// const img = document.getElementById("featureImage");
-
-// let currentActiveStep = steps[0];
-// let currentImage = img.src;
-
-// steps.forEach(step => step.classList.remove("active"));
-// currentActiveStep.classList.add("active");
-
-// const observer = new IntersectionObserver(entries => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       const newStep = entry.target;
-//       const newSrc = newStep.dataset.image;
-
-//       if (newStep === currentActiveStep) return;
-
-//       currentActiveStep.classList.remove("active");
-//       newStep.classList.add("active");
-//       currentActiveStep = newStep;
-
-//       if (newSrc !== currentImage) {
-//         currentImage = newSrc;
-
-//         img.style.transition = "opacity .6s ease, transform .6s ease";
-//         img.style.opacity = 0;
-//         img.style.transform = "scale(0.98)";
-
-//         setTimeout(() => {
-//           img.src = newSrc;
-//           img.style.opacity = 1;
-//           img.style.transform = "scale(1)";
-//         }, 350);
-//       }
-//     }
-//   });
-// }, {
-//   threshold: 0.85,
-//   rootMargin: "-20% 0px -20% 0px"
-// });
-
-// steps.forEach(step => observer.observe(step));

@@ -72,7 +72,7 @@
 
 </head>
 
-<body id="home" class="montserrat-font text-white w-full lg:text-xl">
+<body id="home" class="montserrat-font text-white w-full lg:text-xl" data-billed-annually="Jährliche Abrechnung">
 
   <!-- AJOUT Bouton Scroll to Top -->
   <button id="scrollToTopBtn"
@@ -80,12 +80,50 @@
     <span class="text-2xl font-bold px-2">&#8679;</span>
   </button>
   <header id="main">
+    <div id="alternating-banner">
+      <div class="banner-wrapper">
+        <div class="messages-container">
+
+          <div class="banner-message">
+            <span class="banner-text">
+              Demnächst bei Swiss Transcript: API ab Anfang 2026 für die Integration verfügbar!
+            </span>
+            <a href="#features" class="learn-more">Mehr erfahren</a>
+          </div>
+
+          <div class="banner-message">
+            <span class="banner-text">
+              Große Transkriptionsvolumen? Wir bieten maßgeschneiderte Angebote und individuelle Betreuung.
+            </span>
+            <a href="contact.html" class="learn-more">Kontaktieren Sie uns</a>
+          </div>
+
+          <!-- Duplicate for continuous scroll -->
+          <div class="banner-message">
+            <span class="banner-text">
+              Demnächst bei Swiss Transcript: API ab Anfang 2026 für die Integration verfügbar!
+            </span>
+            <a href="#features" class="learn-more">Mehr erfahren →</a>
+          </div>
+
+          <div class="banner-message">
+            <span class="banner-text">
+              Große Transkriptionsvolumen? Wir bieten maßgeschneiderte Angebote und individuelle Betreuung.
+            </span>
+            <a href="contact.html" class="learn-more">Kontaktieren Sie uns →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="header-container flex justify-between items-center px-2">
+
         <!-- Logo -->
         <div class="logo flex items-center">
           <a href="index.html" class="font-bold ml-5">
-            <img src="../images/logo_purple.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+            <img src="../images/logo_purple.png" alt="Swiss Transcript Logo" width="150">
           </a>
         </div>
 
@@ -96,392 +134,616 @@
             <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
             <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
             <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
+            <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
             <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
           </ul>
         </nav>
 
-        <!-- Login / Signup + Lang switch -->
+        <!-- Login / Lang -->
         <div class="flex items-center">
-          <div class="hidden md:flex items-center space-x-4">
-              <a href="/login?lang=de" target="_blank"
-                class="px-4 py-2 rounded-md font-bold text-center text-sm xl:text-lg button-login">
-                Anmelden
-              </a>
-              <a href="/signup?lang=de" target="_blank"
-                class="px-4 rounded-md font-bold text-center text-sm xl:text-lg button-signup">
-                Versuchen
-              </a>
-            </div>
-            <div id="languageSwitcher" class="hidden lg:flex space-x-2 ml-5">
-              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
+          <div class="hidden md:flex items-center space-x-5">
+            <a href="/login?lang=de" target="_blank"
+              class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
+              Anmelden
+            </a>
+            <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+              Testen
+            </a>
+            <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm">FR</a>
               <span>|</span>
-              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
+              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm active">DE</a>
               <span>|</span>
-              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
+              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm">EN</a>
             </div>
+          </div>
 
-        <!-- Mobile menu button -->
-        <div class="block lg:hidden mx-4">
-          <button id="toggleDrawer" class="focus:outline-none">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-            </svg>
-          </button>
+          <!-- Mobile menu button -->
+          <div class="block lg:hidden mx-4">
+            <button id="toggleDrawer" class="focus:outline-none">
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z">
+                </path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <!-- </div> -->
       </div>
-    </div>
 
-    <!-- Drawer menu (mobile) -->
-    <div
-      class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-      <div class="p-4 md:p-3">
-        <div class="flex items-center pt-6 pb-4">
-          <a href="index.html" class="font-bold">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+      <!-- Drawer menu mobile -->
+      <div
+        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+        <div class="p-4 md:p-3">
+          <div class="flex items-center pt-6 pb-4">
+            <a href="index.html">
+              <img src="../images/logo_white.svg" alt="Swiss Transcript Logo" width="150">
+            </a>
+          </div>
+
+          <ul class="space-y-3">
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Startseite</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="preise.html">Preise</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="sicherheit.html">Sicherheit</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">Über uns</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Kontakt</a></li>
+          </ul>
+
+          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
+            <a href="/fr/" class="lang-link py-1 text-sm">FR</a>
+            <a href="/de/" class="lang-link py-1 text-sm font-bold">DE</a>
+            <a href="/en/" class="lang-link py-1 text-sm">EN</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <a href="/login?lang=de" target="_blank"
+            class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
+            Anmelden
+          </a>
+          <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+            Testen
           </a>
         </div>
-        <ul class="space-y-3">
-          <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Startseite</a></li>
-          <li><a href="preise.html" class="drawer-btn px-2 py-1 hover:opacity-80">Preise</a></li>
-          <li><a href="sicherheit.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sicherheit</a></li>
-          <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Demo</a></li>
-          <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Kontakt</a></li>
-        </ul>
-        <div id="languageSwitcherMobile" class="hidden lg:flex space-x-2 ml-5">
-          <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-          <span>|</span>
-          <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-          <span>|</span>
-          <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
+      </div>
+
+      <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+    </div>
+  </header>
+
+  <section class="hero-solution">
+    <div class="container-solution">
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">
+          Sparen Sie Zeit. Verbessern Sie die Qualität. Schützen Sie Ihre Daten.
+        </p>
+        <div class="hero-image flex justify-center mb-6 lg:hidden">
+          <div class="image-circle"></div>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line slide-left">Zeichnen Sie Ihre Meetings auf</span><br>
+          <span class="title-line slide-right">Erhalten Sie eine zuverlässige<br> Transkription</span><br>
+          <span class="title-line slide-left">Erstellen Sie ein strukturiertes<br> Protokoll</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          In der Schweiz gehostet für vollständige Vertraulichkeit
+        </p>
+
+        <div class="hero-buttons">
+          <a href="preise.html" class="btn primary">30 Minuten kostenlos testen</a>
+          <a href="/login?lang=de" class="btn button-login">Anmelden</a>
         </div>
       </div>
-      <a href="/login?lang=de" target="_blank"
-        class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-        Anmelden
-      </a>
-    </div>
 
-    <!-- Drawer overlay -->
-    <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Sichere automatische Transkription</h1>
-        <p>Konvertieren Sie Ihre Audiodateien präzise in Text und gewährleisten Sie gleichzeitig die Vertraulichkeit
-          Ihrer sensiblen Daten.</p>
-        <a href="preise.html" class="btn">30 Minuten Kostenlos testen</a>
+      <div class="hero-image hidden lg:flex justify-end">
+        <div class="image-circle"></div>
       </div>
+
     </div>
   </section>
+
+
+  <section class="features-cards">
+    <div class="container">
+
+      <h2 class="features-title">
+        Tools, die speziell auf die Bedürfnisse von Fachpersonen zugeschnitten sind
+      </h2>
+
+      <div class="features-cards-grid">
+
+        <div class="feature-card">
+          <div class="feature-image">
+            <img src="../images/fonctions/rec-de.png" alt="Aufzeichnung Bildschirm">
+          </div>
+          <h3>Aufzeichnung</h3>
+          <p>
+            Zeichnen Sie Ihre Meetings direkt über unsere sichere Oberfläche auf – ganz ohne zusätzliche Software.
+            Selbst im Offline-Modus werden Ihre Aufnahmen automatisch synchronisiert, sobald eine Internetverbindung
+            verfügbar ist. Sie können auch Audio- oder Videodateien importieren, einschließlich Aufnahmen von Ihrem
+            Diktiergerät.
+          </p>
+          <div class="tags">
+            <span class="tag">Diktiergerät</span>
+            <span class="tag">Offline-Funktion</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-image">
+            <img src="../images/fonctions/transcript-de.png" alt="Transkriptionsbeispiel">
+          </div>
+          <h3>Transkription</h3>
+          <p>
+            Erhalten Sie innerhalb weniger Sekunden eine zuverlässige Transkription, kompatibel mit Schweizerdeutsch,
+            Deutsch, Französisch und Englisch. Die Sprecher werden automatisch erkannt, und jeder Beitrag kann mit
+            Zeitstempeln versehen werden, um wichtige Informationen sofort wiederzufinden.
+          </p>
+          <div class="tags">
+            <span class="tag">Schweizerdeutsch</span>
+            <span class="tag">Zeitstempel</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-image">
+            <img src="../images/fonctions/review-de.png" alt="Protokoll Beispiel">
+          </div>
+          <h3>Protokoll</h3>
+          <p>
+            Erstellen Sie in wenigen Sekunden klare und strukturierte Protokolle, die sofort nutzbar sind. Da jeder
+            Bedarf
+            unterschiedlich ist, können bei Pilotprojekten maßgeschneiderte Zusammenfassungen entwickelt werden, die Ihr
+            Glossar und Ihren Geschäftskontext einbeziehen.
+          </p>
+          <div class="tags">
+            <span class="tag">Maßgeschneiderte Zusammenfassungen</span>
+            <span class="tag">Zeitersparnis</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-image">
+            <img src="../images/fonctions/API-de.png" alt="Swiss Transcript API">
+          </div>
+          <h3>API</h3>
+          <p>
+            Ab März 2026 ermöglicht die Swiss Transcript API die Nutzung unserer Funktionen direkt über Ihre internen
+            Tools
+            – ganz ohne Änderung Ihrer gewohnten Abläufe. Ein einfacher Button genügt, um Aufzeichnung, Transkription
+            und
+            Protokoll zu starten.
+          </p>
+          <div class="tags">
+            <span class="tag">März 2026</span>
+            <span class="tag">Unternehmen</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="https://lafurette.github.io/signup" class="btn btn-primary mr-4">
+          Kostenlos testen
+        </a>
+        <a href="contact.html" class="btn button-login">
+          Kontaktieren Sie uns
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
   <section class="usp">
     <div class="container">
       <div class="section-title">
         <h2>Warum Swiss Transcript wählen?</h2>
-        <p>
-          Unsere Transkriptionslösung verbindet Sicherheit, Genauigkeit
-          und Benutzerfreundlichkeit, um den Anforderungen
-          anspruchsvoller Fachleute gerecht zu werden.
-        </p>
       </div>
+
       <div class="usp-cards">
+
         <div class="usp-card">
           <div class="usp-card-image">
-            <img src="../images/home/securite-des-données.png" alt="Garantierte Vertraulichkeit">
+            <img src="../images/home/1_SecuriteConfidentialite.jpg" alt="Datenschutz garantiert">
           </div>
           <div class="usp-card-content">
-            <h3>Garantierte Vertraulichkeit</h3>
-            <ul class="ml-5 list-disc list-inside">
-              <li> Ihre sensiblen Daten bleiben vertraulich.</li>
-              <li>Keine Speicherung in ausländischen Clouds, 100% sichere
-                Verarbeitung auf unseren Servern in Europa.</li>
-              
-            </ul>
+            <h3>Sicherheit &amp; Datenschutz</h3>
+            <p>
+              Ihre Daten werden ausschließlich in der Schweiz verarbeitet und gehostet, ohne Nutzung von GAFAM oder
+              ausländischen Clouds.<br><br>
+              Ihre Sicherheit ist dank fortschrittlicher Verschlüsselung, automatischer Löschung von Dateien und der
+              Einhaltung von DSG und DSGVO garantiert.
+            </p>
           </div>
         </div>
+
         <div class="usp-card">
           <div class="usp-card-image">
-            <img src="../images/home/independance-technologique.jpg" alt="Technologische Unabhängigkeit">
+            <img src="../images/home/3_AccompagnementProximite.png" alt="Nähe und Zusammenarbeit">
           </div>
           <div class="usp-card-content">
-            <h3>Technologische Unabhängigkeit</h3>
-            <ul class="ml-5 list-disc list-inside">
-              <li>Die gesamte Verarbeitung erfolgt lokal auf unseren Servern in der Schweiz</li>
-              <li>Kein ChatGPT/OpenAI</li>
-              <li> Kein Amazon, Google, Microsoft oder andere Cloud-Anbieter</li>
-            </ul>
+            <h3>Nähe &amp; Zusammenarbeit</h3>
+            <p>
+              Wir begleiten Sie mit lokalem, reaktionsschnellem und individuellem Support, um eine Lösung zu schaffen,
+              die genau auf Ihre Bedürfnisse zugeschnitten ist.<br><br>
+              Unser mehrsprachiger Ansatz – Französisch, Deutsch, Schweizerdeutsch und Englisch – spiegelt die Realität
+              Schweizer Organisationen wider.
+            </p>
           </div>
         </div>
+
         <div class="usp-card">
           <div class="usp-card-image">
-            <img src="../images/home/simple-et-rapide.png" alt="Einfach und schnell">
+            <img src="../images/home/2_PratiqueRapide.png" alt="Effizient und flexibel">
           </div>
           <div class="usp-card-content">
-            <h3>Einfach und schnell</h3>
-            <ul class="ml-5 list-disc list-inside">
-              <li>Laden Sie Ihre Audiodatei hoch und erhalten Sie Ihre Transkription in wenigen Minuten</li>
-              <li>Differenzierung der Stakeholder.</li>
-              <li>Genauer Zeitstempel</li>
-              <li>Intuitive Benutzeroberfläche</li>
-              <li>Zusammenfassung Ihrer Transkriptionen</li>
-            </ul>
+            <h3>Effizienz &amp; Flexibilität</h3>
+            <p>
+              Sie reduzieren sofort 50 bis 70&nbsp;% der Zeit, die für Notizen, Protokolle und administrative Aufgaben
+              aufgewendet wird.<br><br>
+              Die Lösung funktioniert überall: vor Ort, per Video, unterwegs und sogar offline.
+            </p>
           </div>
         </div>
+
       </div>
+
+      <div class="usp-cta-actions text-center">
+        <a href="preise.html" class="btn primary">Kostenlos testen</a>
+      </div>
+
     </div>
   </section>
-  <section class="comparison pt-14">
-    <div class="section-title">
-      <h2 class="comparison-title">Swiss Transcript vs. Internationale Lösungen</h2>
-      <p>>Im Gegensatz zu konkurrierenden Lösungen, die Ihre
-        Daten an externe Server senden, verarbeiten wir alle Ihre
-        Informationen lokal in der Schweiz.</p>
-    </div>
-    <table class="comparison-table">
-      <thead>
-        <tr class="header-row">
-          <th>Caractéristiques</th>
-          <th>Swiss Transcript</th>
-          <th>Solutions internationales</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Traitement des données</td>
-          <td><span class="check">✓</span> Suisse</td>
-          <td><span class="cross">✗</span> États-Unis ou Asie</td>
-        </tr>
-        <tr>
-          <td>Conformité RGPD</td>
-          <td><span class="check">✓</span> Complète</td>
-          <td><span class="cross">✗</span> Partielle</td>
-        </tr>
-        <tr>
-          <td>Chiffrement de bout en bout</td>
-          <td><span class="check">✓</span> Standard</td>
-          <td><span class="cross">✗</span> Parfois</td>
-        </tr>
-        <tr>
-          <td>Suppression garantie des données</td>
-          <td><span class="check">✓</span> Immédiate</td>
-          <td><span class="cross">✗</span> Sur demande</td>
-        </tr>
-        <tr>
-          <td>Utilisation des données pour entraîner l'IA</td>
-          <td><span class="cross">✗</span> Jamais</td>
-          <td><span class="check">✓</span> Souvent</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="mt-4 text-center">
-      <a href="/signup" class="btn button-login mr-2">Essayer gratuitement</a>
-      <a href="sicherheit.html" class="btn mt-4 lg:mt-0">Voir la sécurité</a>
-    </div>
-  </section>
-  <section class="features">
-    <div class="container">
-      <div class="section-title">
-        <h2>Exklusive Funktionen</h2>
-        <p>Tools, die entwickelt wurden, um Ihnen Zeit zu sparen und die Qualität Ihrer Transkriptionen zu verbessern.
-        </p>
-      </div>
-      <div class="features-container">
-        <div class="feature-item">
-          <h3>Sprechererkennung</h3>
-          <p>Unsere Technologie identifiziert automatisch die verschiedenen Sprecher in Ihrer Aufnahme und erleichtert
-            so das Lesen und Verstehen Ihrer Transkriptionen.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Präzise Zeitstempel</h3>
-          <p>Jedes Textsegment ist mit einem präzisen Zeitstempel versehen, sodass Sie die entsprechende Passage in
-            Ihrer Audioaufnahme leicht finden können.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Automatische Zusammenfassung (Alpha-Version)</h3>
-          <p>Erhalten Sie eine prägnante Zusammenfassung Ihrer Transkription, um die Schlüsselpunkte Ihrer Aufnahme
-            schnell zu identifizieren.</p>
-          <div class="feature-note">
-            <p>Diese Funktion befindet sich in der Entwicklung (Alpha-Version). Wir berücksichtigen gerne Ihre
-              Bedürfnisse, um eine Zusammenfassungsfunktion zu entwickeln, die Ihren Erwartungen entspricht.
-              Kontaktieren Sie uns unter info@swisstranscript.ch, um Ihre Vorschläge zu teilen.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section class="pricing">
     <div class="container">
       <div class="section-title">
         <h2>Transparente Preise</h2>
-        <p>Pakete für alle Ihre Bedürfnisse, ohne Verpflichtung und ohne versteckte Kosten.</p>
       </div>
+
       <div class="pricing-cards">
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <h3>Standard</h3>
-            <p>Für gelegentliche Bedürfnisse</p>
-          </div>
-          <div class="pricing-card-price">
-            12CHF
-            <span class="period">pro Stunde</span>
-          </div>
-          <div class="pricing-card-features">
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Hochpräzise automatische Transkription</span>
+
+        <!-- PREPAID -->
+        <div class="pricing-card prepaid">
+          <h3 class="card-title">Pro Minute</h3>
+          <p class="card-subtitle">
+            Ideal für einen einmaligen Bedarf,<br><strong>ohne Verpflichtung</strong>
+          </p>
+
+          <div class="plans prepaid-plans" role="radiogroup" aria-label="Prepaid-Paket auswählen">
+
+            <div class="minute-pill">
+              <div class="minute-pill-main">
+                <span class="minute-value">0.20</span>
+                <span class="minute-unit">CHF/Min</span>
+              </div>
+              <div class="minute-pill-sub">= 12 CHF / Stunde</div>
             </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Sprechererkennung</span>
+
+            <div class="packs-wrap">
+              <p class="packs-intro">
+                Pakete<br>
+                <span class="packs-sub">
+                  Vorteilshafte Guthabenpakete wählen,<br>ohne Ablaufdatum
+                </span>
+              </p>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack1">
+                <div class="plan-top">
+                  <span class="plan-name">Paket 1</span>
+                  <span class="plan-hours">1 Stunde gutgeschrieben</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">10 CHF</span>
+                  <span class="plan-hint">= 10 CHF / Stunde</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack5">
+                <div class="plan-top">
+                  <span class="plan-name">Paket 5</span>
+                  <span class="plan-hours">5 Stunden gutgeschrieben</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">40 CHF</span>
+                  <span class="plan-hint">= 8 CHF / Stunde</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack10">
+                <div class="plan-top">
+                  <span class="plan-name">Paket 10</span>
+                  <span class="plan-hours">10 Stunden gutgeschrieben</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">70 CHF</span>
+                  <span class="plan-hint">= 7 CHF / Stunde</span>
+                </div>
+              </button>
             </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Präzise Zeitstempel</span>
-            </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Sichere Verarbeitung in Europa</span>
-            </div>
+
+            <button type="button" class="plan prepaid-choice" data-prepaid="trial">
+              <div class="plan-top">
+                <span class="plan-name">30 Minuten kostenlos testen</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-hint">
+                  Genießen Sie die kostenlose Testphase, ohne Ihre Kreditkarte anzugeben.
+                </span>
+                <span></span>
+              </div>
+            </button>
+
           </div>
-          <div class="pricing-card-cta">
-            <a href="#" class="btn">Jetzt starten</a>
-            <p class="pricing-card-cta-note">Wählen Sie Ihr Paket beim Hochladen der Datei</p>
-          </div>
+
+          <a href="/signup" class="cta-btn prepaid-btn" id="prepaidBtn">Starten</a>
+
+          <input type="hidden" id="chosenPrepaid" name="chosenPrepaid" value="">
         </div>
-        <div class="pricing-card">
-          <div class="best-value">Bester Preis</div>
-          <div class="pricing-card-header">
-            <h3>10-Stunden-Paket</h3>
-            <p>Für regelmäßige Nutzer</p>
+
+        <!-- SUBSCRIPTIONS -->
+        <div class="pricing-card subs" id="subsCard">
+          <h3 class="card-title">Abonnements</h3>
+          <p class="card-subtitle">Reduzieren Sie den Stundenpreis je nach Volumen</p>
+
+          <div class="billing-switch" role="tablist" aria-label="Abrechnung">
+            <button type="button" class="billing-tab is-active" data-billing="monthly">Monatlich</button>
+            <button type="button" class="billing-tab" data-billing="annual">
+              Jährlich <span class="discount">-20%</span>
+            </button>
           </div>
-          <div class="pricing-card-price">
-            90CHF
-            <span class="period">für 10 Stunden</span>
+
+          <div class="plans" role="radiogroup" aria-label="Abonnement auswählen">
+            <button type="button" class="plan" data-plan="starter" data-h="5" data-monthly="25" data-annual="20">
+              <div class="plan-top">
+                <span class="plan-name">Starter</span>
+                <span class="plan-hours">5 Std. / Monat</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">25</span> CHF <span class="per">/ Monat</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="essential" data-h="10" data-monthly="40" data-annual="32">
+              <div class="plan-top">
+                <span class="plan-name">Essential</span>
+                <span class="plan-hours">10 Std. / Monat</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">40</span> CHF <span class="per">/ Monat</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="pro" data-h="20" data-monthly="75" data-annual="60">
+              <div class="plan-top">
+                <span class="plan-name">Pro</span>
+                <span class="plan-hours">20 Std. / Monat</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">75</span> CHF <span class="per">/ Monat</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="business" data-h="50" data-monthly="150" data-annual="120">
+              <div class="plan-top">
+                <span class="plan-name">Business</span>
+                <span class="plan-hours">50 Std. / Monat</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">150</span> CHF <span class="per">/ Monat</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="expert" data-h="100" data-monthly="275" data-annual="220">
+              <div class="plan-top">
+                <span class="plan-name">Expert</span>
+                <span class="plan-hours">100 Std. / Monat</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">275</span> CHF <span class="per">/ Monat</span></span>
+              </div>
+            </button>
           </div>
-          <div class="pricing-card-features">
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Sparen Sie 25% gegenüber dem Standardtarif</span>
-            </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Alle Funktionen des Standard-Angebots</span>
-            </div>
-          </div>
-          <div class="pricing-card-cta">
-            <a href="#" class="btn">Jetzt starten</a>
-            <p class="pricing-card-cta-note">Wählen Sie Ihr Paket beim Hochladen der Datei</p>
-          </div>
+
+          <p class="subs-footer">
+            Für größere Volumen <a class="subs-link" href="contact.html">kontaktieren Sie uns</a>
+          </p>
+
+          <a href="/signup" class="cta-btn subs-btn" id="chooseBtn" data-text-default="Abonnement auswählen"
+            data-text-selected="Dieses Abonnement wählen">
+            Abonnement auswählen
+          </a>
+
+          <input type="hidden" id="chosenPlan" name="chosenPlan" value="">
+          <input type="hidden" id="chosenBilling" name="chosenBilling" value="monthly">
         </div>
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <h3>Unternehmen</h3>
-            <p>Für große Volumen</p>
-          </div>
-          <div class="pricing-card-price">
-            Auf Anfrage
-            <span class="period">an Ihre Bedürfnisse angepasst</span>
-          </div>
-          <div class="pricing-card-features">
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Gestaffelte Preise je nach Volumen</span>
-            </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Alle Funktionen des Standard-Angebots</span>
-            </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Prioritäts-Support</span>
-            </div>
-            <div class="pricing-card-feature">
-              <span class="pricing-card-feature-icon">✓</span>
-              <span class="pricing-card-feature-text">Multi-User-Zugang (in Entwicklung)</span>
-            </div>
-          </div>
-          <div class="pricing-card-cta">
-            <a href="mailto:info@swisstranscript.com" class="btn">Kontaktieren Sie uns</a>
-            <p class="pricing-card-cta-note">Maßgeschneiderte Lösung nach Ihren Bedürfnissen</p>
-          </div>
-        </div>
+
       </div>
+
+      <div class="pricing-footer text-center mt-4">
+        <p>
+          Für große Volumen oder API-Integrationsprojekte begleitet Sie unser Team Schritt für Schritt.
+        </p>
+        <a href="contact.html" class="btn primary mt-4">Kontaktieren Sie uns</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="comparison pt-14">
+    <div class="section-title">
+      <h2 class="comparison-title">
+        Swiss Transcript <span class="vs">vs.</span> Internationale Lösungen
+      </h2>
+    </div>
+
+    <table class="comparison-table">
+      <thead>
+        <tr class="header-row">
+          <th>Funktionen</th>
+          <th>Swiss Transcript</th>
+          <th>Internationale Lösungen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Datenverarbeitung</td>
+          <td><span class="check">✓</span> 100&nbsp;% Schweiz (eigene Server + Infomaniak Genf)</td>
+          <td><span class="cross">✗</span> USA, Asien oder globaler Cloud-Anbieter</td>
+        </tr>
+        <tr>
+          <td>DSG + DSGVO-Konformität</td>
+          <td><span class="check">✓</span> Vollständig</td>
+          <td><span class="cross">✗</span> Teilweise oder je nach Land unsicher</td>
+        </tr>
+        <tr>
+          <td>Technologische Unabhängigkeit</td>
+          <td><span class="check">✓</span> Basierend auf Open-Source-LLMs, keine GAFAM</td>
+          <td><span class="cross">✗</span> Starke Abhängigkeit (OpenAI, Google, AWS, Azure…)</td>
+        </tr>
+        <tr>
+          <td>Nutzung der Daten zum Training der KI</td>
+          <td><span class="check">✓</span> Nie</td>
+          <td><span class="cross">✗</span> Häufig</td>
+        </tr>
+        <tr>
+          <td>Automatische Löschung der Dateien</td>
+          <td><span class="check">✓</span> Sofort nach Verarbeitung</td>
+          <td><span class="cross">✗</span> Manchmal oder nur auf Anfrage</td>
+        </tr>
+        <tr>
+          <td>Zugriff auf Aufnahmen durch den Anbieter</td>
+          <td><span class="check">✓</span> Nie</td>
+          <td><span class="cross">✗</span> Manchmal</td>
+        </tr>
+        <tr>
+          <td>Verschlüsselung &amp; Sicherheit</td>
+          <td><span class="check">✓</span> Hohes Sicherheitsniveau + souveränes Hosting</td>
+          <td><span class="cross">✗</span> Je nach Anbieter unterschiedlich</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="mt-8 text-center">
+      <a href="/signup" class="btn button-login mr-2">Kostenlos testen</a>
+      <a href="sicherheit.html" class="btn mt-4 lg:mt-0">Sicherheit ansehen</a>
     </div>
   </section>
 
   <section class="use-cases">
     <div class="container">
       <div class="section-title">
-        <h2>Lösungen angepasst an Ihre
-          Bedürfnisse</h2>
-        <p>Swiss Transcript passt sich den spezifischen Bedürfnissen vieler Berufssektoren an.</p>
+        <h2>Eine Lösung, die auf Ihre geschäftlichen Bedürfnisse zugeschnitten ist</h2>
       </div>
+
       <div class="use-cases-container">
+
         <div class="use-case-card">
           <div class="use-case-image">
-            <img src="../images/home/collectivités-et-monde-politique.png" alt="Kommunen und politische Welt">
+            <img src="../images/secteurs/Icon_1_PME.svg" alt="KMU">
           </div>
           <div class="use-case-content">
-            <h3>Kommunen und politische Welt</h3>
-            <p>Transkribieren Sie Ihre
-              Sitzungen und
-              Debatten mit einer
-              Lösung, die den
-              Sicherheitsanforderun
-              gen des öffentlichen
-              Sektors entspricht.</p>
-    
+            <h3>KMU</h3>
+            <p>
+              Strukturieren Sie Ihre HR-Protokolle, um Ihre Praktiken zu vereinheitlichen,
+              Entscheidungen zu erleichtern und Zeit zu sparen.
+            </p>
           </div>
         </div>
+
         <div class="use-case-card">
           <div class="use-case-image">
-            <img src="../images/home/psychologue-et-therapeuthe.png" alt="Psychologen und Therapeuten">
+            <img src="../images/secteurs/Icon_6_ChercheuresMondeAcademique.svg" alt="Forscher und akademische Welt">
           </div>
           <div class="use-case-content">
-            <h3>Psychologen und Therapeuten</h3>
-            <p>Schützen Sie die
-              sensiblen Daten Ihrer
-              Patienten und optimieren
-              Sie gleichzeitig Ihre
-              Notizen und
-              Nachverfolgung.</p>
+            <h3>Forscher und akademische Welt</h3>
+            <p>
+              Befreien Sie sich von der Transkription und konzentrieren Sie sich auf Analyse und Forschung.
+            </p>
           </div>
         </div>
+
         <div class="use-case-card">
           <div class="use-case-image">
-            <img src="../images/home/chercheurs-et-universitaires.png" alt="Forscher und Akademiker">
+            <img src="../images/secteurs/Icon_4_InstitutionsPubliques.svg" alt="Öffentliche Institutionen">
           </div>
           <div class="use-case-content">
-            <h3>Forscher und Akademiker</h3>
-            <p>Transkribieren Sie Ihre
-              Forschungsinterviews mit
-              vollständiger
-              Vertraulichkeit und
-              analysieren Sie Ihre
-              qualitativen Daten effizient.</p>
+            <h3>Öffentliche Institutionen</h3>
+            <p>
+              Dokumentieren Sie Ihre Sitzungen sorgfältig, unter Einhaltung der Normen
+              und der Schweizer Souveränität.
+            </p>
           </div>
         </div>
+
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <img src="../images/secteurs/Icon_5_OrganismesButNonLucratif.svg" alt="Non-Profit-Organisationen">
+          </div>
+          <div class="use-case-content">
+            <h3>Non-Profit-Organisationen</h3>
+            <p>
+              Zentralisieren und sichern Sie Ihre Kommunikation, um Ihre Projekte
+              und Begünstigten besser nachzuverfolgen.
+            </p>
+          </div>
+        </div>
+
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <img src="../images/secteurs/Icon_2_MedicalSante.svg" alt="Pflegenetzwerke und psychische Gesundheit">
+          </div>
+          <div class="use-case-content">
+            <h3>Pflegenetzwerke und psychische Gesundheit</h3>
+            <p>
+              Erleichtern Sie das Notieren, um Zeit zu sparen und sich auf Ihre Patient:innen zu konzentrieren.
+            </p>
+          </div>
+        </div>
+
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <img src="../images/secteurs/Icon_3_AssuranceMaladieSociale.svg" alt="Kranken- und Sozialversicherung">
+          </div>
+          <div class="use-case-content">
+            <h3>Kranken- und Sozialversicherung</h3>
+            <p>
+              Vereinfachen Sie das Erstellen von Berichten und Nachverfolgungen,
+              während Sie sensible Daten schützen.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
 
   <section class="testimonials">
     <div class="container">
       <div class="section-title">
         <h2>Sie vertrauen uns</h2>
-        <p>Entdecken Sie die Erfahrungsberichte unserer zufriedenen Nutzer.</p>
       </div>
+
       <div class="testimonials-container">
+
         <div class="testimonial-card">
           <div class="testimonial-content">
             <p class="not-italic font-bold uppercase mb-2">Akademisches Umfeld</p>
-            <p>"Swiss Transcript spart uns wirklich Zeit. Wir können mit einem soliden Transkript beginnen und nur
-              Korrekturen vornehmen, anstatt alles von Hand zu machen. Und vor allem wird die Vertraulichkeit respektiert: keine Dritten, alles
-              bleibt lokal. Das ist sehr beruhigend für unsere sensiblen Projekte, besonders im Gesundheitsbereich. Ich bin froh, diesen Service
-              von Anfang an entdeckt zu haben, und ich bin gespannt auf seine Weiterentwicklung."</p>
+            <p>
+              „Swiss Transcript spart uns wirklich Zeit. Wir können auf einer soliden Transkription aufbauen und nur
+              korrigieren, anstatt alles von Hand zu erledigen. Vor allem ist die Wahrung der Vertraulichkeit
+              gewährleistet:
+              keine Drittanbieter, alles bleibt lokal. Das ist besonders beruhigend für unsere sensiblen Projekte,
+              insbesondere im Gesundheitsbereich. Ich freue mich, diesen Service von Anfang an entdeckt zu haben, und
+              bin
+              gespannt auf seine Weiterentwicklung.“
+            </p>
           </div>
           <div class="testimonial-author">
             <div class="testimonial-author-info">
@@ -489,26 +751,35 @@
             </div>
           </div>
         </div>
+
         <div class="testimonial-card">
           <div class="testimonial-content">
-            <p class="not-italic font-bold uppercase mb-2">Öffentliche Einrichtung</p>
-            <p>"Wir sparen enorm viel Zeit bei den Protokollen, da wir nach den Sitzungen nicht mehr alles Wort für
-              Wort neu tippen müssen. Wir warten noch auf die Entwicklungen für automatische Zusammenfassungen, aber so wie es ist, hilft
-              es uns bereits, auf das Wesentliche zu konzentrieren und gleichzeitig die Rückverfolgbarkeit zu bewahren. Es ist sicher, wir
-              können die Dateien sofort löschen. Ich finde, es ist wirklich eine wertvolle Hilfe bei unserer Arbeit."</p>
+            <p class="not-italic font-bold uppercase mb-2">Öffentliche Verwaltung</p>
+            <p>
+              „Wir sparen unglaublich viel Zeit bei den Protokollen, da wir nicht mehr alles nach den Sitzungen Wort für
+              Wort abtippen müssen. Wir sind gespannt auf die Weiterentwicklungen für automatische Zusammenfassungen,
+              aber
+              schon jetzt hilft es uns, das Wesentliche zu erfassen und gleichzeitig die Nachverfolgbarkeit zu
+              gewährleisten. Es ist sicher, und wir können die Dateien sofort löschen. Ich finde, dass es eine wirklich
+              wertvolle Unterstützung in unserer Arbeit ist.“
+            </p>
           </div>
           <div class="testimonial-author">
             <div class="testimonial-author-info">
-              <h4>Marianne F., Sekretärin</h4>
+              <h4>Marianne F., Gemeindesekretärin</h4>
             </div>
           </div>
         </div>
+
         <div class="testimonial-card">
           <div class="testimonial-content">
             <p class="not-italic font-bold uppercase mb-2">Psychische Gesundheit</p>
-            <p>"Als Psychologin ist der Datenschutz eine absolute Priorität. Mit SwissTranscript fühle ich mich in
-              diesem Punkt sicher. Außerdem ist die Qualität der Transkription ebenfalls sehr gut, mit wenigen Fehlern, die bei der Überprüfung
-              zu korrigieren sind. Der Service bietet daher ein ausgezeichnetes Preis-Leistungs-Verhältnis für meine Nutzung."</p>
+            <p>
+              „Als Psychologin hat der Datenschutz für mich oberste Priorität. Mit Swiss Transcript fühle ich mich in
+              dieser Hinsicht sicher. Darüber hinaus stimmt auch die Qualität der Transkription, am Ende sind nur wenige
+              Korrekturen beim Korrekturlesen nötig. Der Service bietet daher ein hervorragendes
+              Preis-Leistungs-Verhältnis für meinen Einsatz.“
+            </p>
           </div>
           <div class="testimonial-author">
             <div class="testimonial-author-info">
@@ -516,75 +787,56 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="devices">
-    <div class="container">
-      <div class="section-title">
-        <h2>Kompatibel mit all Ihren Geräten</h2>
-        <p>Verwenden Sie Ihre Aufnahmen von jeder Quelle</p>
-      </div>
-      <div class="devices-container">
-        <div class="device-card">
-          <div class="device-icon">
-            <img src="../images/home/dictaphone.jpg" alt="Smartphone">
-          </div>
-          <h3 class="device-title">Smartphone</h3>
-          <p class="device-description">Verwenden Sie die Aufnahmen Ihres Telefons für eine sofortige Transkription</p>
-        </div>
-        <div class="device-card">
-          <div class="device-icon">
-            <img src="../images/home/recording.png" alt="Diktiergerät">
-          </div>
-          <h3 class="device-title">Diktiergerät</h3>
-          <p class="device-description">Importieren Sie Dateien von Ihrem professionellen Diktiergerät ganz einfach</p>
-        </div>
-        <div class="device-card">
-          <div class="device-icon">
-            <img src="../images/home/micros.png" alt="Mikrofone">
-          </div>
-          <h3 class="device-title">Mikrofone</h3>
-          <p class="device-description">Kompatibel mit Aufnahmen aller Arten von Mikrofonen</p>
-        </div>
       </div>
     </div>
   </section>
 
   <section class="cta">
     <div class="container">
-      <h2>Bereit, Swiss Transcript zu testen?</h2>
-      <p>Nutzen Sie 30 kostenlose Minuten zum Ausprobieren!</p>
-      <a href="/signup" class="btn button-login mr-2">Kostenlos testen</a>
-      <a href="preise.html" class="btn">Siehe preise</a>
+      <h2>Nutzen Sie 30 kostenlose Minuten zum Ausprobieren!</h2>
+      <p>
+        Starten Sie noch heute und entdecken Sie, wie unser Service Ihnen Zeit spart und gleichzeitig die
+        Vertraulichkeit Ihrer Daten schützt.
+      </p>
+      <a href="/signup" class="btn button-login">Kostenlos testen</a>
+      <a href="preise.html" class="btn">Preise ansehen</a>
     </div>
   </section>
 
-  <!-- Section 11 -->
   <footer>
     <div class="container">
-      <div class="footer-container max-w-3xl mx-auto">
+      <div class="footer-container">
+
+        <div class="footer-brand">
+          <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
+          <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
+        </div>
+
         <div class="footer-col">
-          <h3>Rechtliches</h3>
           <ul>
-            <li><a href="./legal.html#politique-confidentialite">Nutzungsbedingungen</a></li>
-            <li><a href="./legal.html#cgu">Datenschutzrichtlinie</a></li>
-            <li><a href="./legal.html#mentions-legales">Impressum</a></li>
+            <li><a href="./legal.html#terms">Nutzungsbedingungen</a></li>
+            <li><a href="./legal.html#privacy">Datenschutzerklärung</a></li>
+            <li><a href="./legal.html#imprint">Impressum</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h3>Kontakt</h3>
           <ul>
-            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>          
+            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
+
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>
+
+
 
   <script src="../script.js"></script>
   <script src="../form.js"></script>

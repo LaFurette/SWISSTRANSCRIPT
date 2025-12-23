@@ -185,78 +185,88 @@
 
       <div class="pricing-cards">
 
-        <!-- COLONNE 1 : PREPAID -->
         <div class="pricing-card prepaid">
           <h3 class="card-title">À la minute</h3>
-          <p class="card-subtitle">Idéal pour un besoin ponctuel</p>
-
-          <div class="minute-pill">
-            <div class="minute-pill-main">
-              <span class="minute-value">0.20</span>
-              <span class="minute-unit">CHF/min</span>
-            </div>
-            <div class="minute-pill-sub">= 12 CHF / heure</div>
-          </div>
-
-          <div class="packs-wrap">
-            <p class="packs-intro">
-              Possibilité d’acheter des packs de crédits avantageux,<br>
-              sans limite de validité :
-            </p>
-
-            <div class="pack-row">
-              <div class="pack-left">
-                <strong>Pack 1</strong>
-                <span>1 h créditée</span>
-              </div>
-              <div class="pack-right">
-                <strong>10 CHF</strong>
-                <span>= 10.00 CHF / heure</span>
-              </div>
-            </div>
-
-            <div class="pack-row">
-              <div class="pack-left">
-                <strong>Pack 5</strong>
-                <span>5 h créditées</span>
-              </div>
-              <div class="pack-right">
-                <strong>40 CHF</strong>
-                <span>= 8.00 CHF / heure</span>
-              </div>
-            </div>
-
-            <div class="pack-row">
-              <div class="pack-left">
-                <strong>Pack 10</strong>
-                <span>10 h créditées</span>
-              </div>
-              <div class="pack-right">
-                <strong>70 CHF</strong>
-                <span>= 7.00 CHF / heure</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="trial-box">
-            Essayez 30 min gratuitement
-          </div>
-          <p class="trial-note">
-            Profitez de l’essai gratuit sans fournir votre carte de crédit.
+          <p class="card-subtitle">
+            Idéal pour un besoin ponctuel, <br><strong>sans engagement</strong>
           </p>
 
+          <div class="plans prepaid-plans" role="radiogroup" aria-label="Choisir une formule prepaid">
 
-          <a href="/signup" class="cta-btn prepaid-btn">Commencer</a>
+            <div class="minute-pill">
+              <div class="minute-pill-main">
+                <span class="minute-value">0.20</span>
+                <span class="minute-unit">CHF/min</span>
+              </div>
+              <div class="minute-pill-sub">= 12 CHF / heure</div>
+            </div>
+
+            <div class="packs-wrap">
+              <p class="packs-intro">
+                Packs<br>
+                <span class="packs-sub">Sélectionner un pack de crédits avantageux,<br>sans limite de validité</span>
+              </p>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack1">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 1</span>
+                  <span class="plan-hours">1 h créditée</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">10 CHF</span>
+                  <span class="plan-hint">= 10 CHF / heure</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack5">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 5</span>
+                  <span class="plan-hours">5 h créditées</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">40 CHF</span>
+                  <span class="plan-hint">= 8 CHF / heure</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack10">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 10</span>
+                  <span class="plan-hours">10 h créditées</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">70 CHF</span>
+                  <span class="plan-hint">= 7 CHF / heure</span>
+                </div>
+              </button>
+            </div>
+
+            <button type="button" class="plan prepaid-choice" data-prepaid="trial">
+              <div class="plan-top">
+                <span class="plan-name">Essayez 30 minutes gratuitement</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-hint">Profitez de l’essai gratuit sans fournir votre carte de crédit.</span>
+                <span></span>
+              </div>
+            </button>
+
+          </div>
+
+          <a href="/signup" class="cta-btn prepaid-btn" id="prepaidBtn">Commencer</a>
+
+          <input type="hidden" id="chosenPrepaid" name="chosenPrepaid" value="">
         </div>
 
-        <!-- COLONNE 2 : ABONNEMENTS -->
+
         <div class="pricing-card subs" id="subsCard">
           <h3 class="card-title">Abonnements</h3>
           <p class="card-subtitle">Réduisez le prix horaire selon votre volume</p>
 
           <div class="billing-switch" role="tablist" aria-label="Facturation">
             <button type="button" class="billing-tab is-active" data-billing="monthly">Mensuel</button>
-            <button type="button" class="billing-tab" data-billing="annual">Annuel <span class="discount">-20%</span></button>
+            <button type="button" class="billing-tab" data-billing="annual">Annuel <span
+                class="discount">-20%</span></button>
           </div>
 
           <div class="plans" role="radiogroup" aria-label="Choisir un abonnement">

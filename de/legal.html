@@ -36,101 +36,110 @@
   <header>
     <div class="container">
       <div class="header-container flex justify-between items-center px-2">
+
         <!-- Logo -->
         <div class="logo flex items-center">
           <a href="index.html" class="font-bold ml-5">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />          </a>
-        </div>
-
-                <!-- Navigation desktop -->
-                <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
-                  <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-                    <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Startseite</a></li>
-                    <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
-                    <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
-                    <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-                    <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
-                  </ul>
-                </nav>
-        
-                <!-- Login / Signup + Lang switch -->
-                <div class="flex items-center">
-                  <div class="hidden md:flex items-center space-x-4">
-                      <a href="/login?lang=de" target="_blank"
-                        class="px-4 py-2 rounded-md font-bold text-center text-sm xl:text-lg button-login">
-                        Anmelden
-                      </a>
-                      <a href="/signup?lang=de" target="_blank"
-                        class="px-4 rounded-md font-bold text-center text-sm xl:text-lg button-signup">
-                        Versuchen
-                      </a>
-                    </div>
-                    <div id="languageSwitcher" class="hidden lg:flex space-x-2 ml-5">
-                      <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-                      <span>|</span>
-                      <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-                      <span>|</span>
-                      <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
-                    </div>
-        
-                <!-- Mobile menu button -->
-                <div class="block lg:hidden mx-4">
-                  <button id="toggleDrawer" class="focus:outline-none">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                      <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-                    </svg>
-                  </button>
-                </div>
-                <!-- </div> -->
-              </div>
-      </div>
-    </div>
-
-    <!-- Drawer menu (mobile) -->
-    <div
-      class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-      <div class="p-4 md:p-3">
-        <div class="flex items-center pt-6 pb-4">
-          <a href="index.html" class="font-bold">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+            <img src="../images/logo_purple.png" alt="Swiss Transcript Logo" width="150">
           </a>
         </div>
-        <ul class="space-y-3">
-          <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Startseite</a></li>
-          <li><a href="preise.html" class="drawer-btn px-2 py-1 hover:opacity-80">Preise</a></li>
-          <li><a href="sicherheit.html" class="drawer-btn px-2 py-1 hover:opacity-80">Sicherheit</a></li>
-          <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Demo</a></li>
-          <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Kontakt</a></li>
-        </ul>
-        <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
-          <a href="/de/" class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300">DE</a>
+
+        <!-- Navigation desktop -->
+        <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
+          <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
+            <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Startseite</a></li>
+            <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
+            <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
+            <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
+            <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
+            <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <!-- Login / Lang -->
+        <div class="flex items-center">
+          <div class="hidden md:flex items-center space-x-5">
+            <a href="/login?lang=de" target="_blank"
+              class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
+              Anmelden
+            </a>
+            <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+              Testen
+            </a>
+            <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm">FR</a>
+              <span>|</span>
+              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm active">DE</a>
+              <span>|</span>
+              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm">EN</a>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="block lg:hidden mx-4">
+            <button id="toggleDrawer" class="focus:outline-none">
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z">
+                </path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-      <a href="/login?lang=de" target="_blank"
-        class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-        Anmelden
-      </a>
-    </div>
 
-    <!-- Drawer overlay -->
-    <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
-  </header>
-  <section class="page-header">
-    <div class="container">
-      <h1>Impressum, AGB, Datenschutzrichtlinie</h1>
+      <!-- Drawer menu mobile -->
+      <div
+        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+        <div class="p-4 md:p-3">
+          <div class="flex items-center pt-6 pb-4">
+            <a href="index.html">
+              <img src="../images/logo_white.svg" alt="Swiss Transcript Logo" width="150">
+            </a>
+          </div>
+
+          <ul class="space-y-3">
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Startseite</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="preise.html">Preise</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="sicherheit.html">Sicherheit</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">Über uns</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Kontakt</a></li>
+          </ul>
+
+          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
+            <a href="/fr/" class="lang-link py-1 text-sm">FR</a>
+            <a href="/de/" class="lang-link py-1 text-sm font-bold">DE</a>
+            <a href="/en/" class="lang-link py-1 text-sm">EN</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <a href="/login?lang=de" target="_blank"
+            class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
+            Anmelden
+          </a>
+          <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+            Testen
+          </a>
+        </div>
+      </div>
+
+      <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
     </div>
-  </section>
+  </header>
 
   <!-- Section 1 -->
   <div id="confidentialite" class="flex text-justify md:text-left">
     <div class="w-full text-black p-4 md:p-8 lg:p-16">
       <a name="mentions_legales"></a>
-      <h3 class="text-left my-2 lg:my-4 font-bold text-3xl">
+      <h3 class="text-left my-2 lg:my-4 font-bold text-3xl pt-12">
         Impressum
       </h3>
       <p class="">
-        Swiss Transcript ist ein Audio- und Video-Transkriptionsservice, der von der Swiss Machina Sarl betrieben wird, einer Gesellschaft mit beschränkter Haftung nach Schweizer Recht mit einem Kapital von 20.000 Schweizer Franken, eingetragen im Handelsregister unter der Nummer CHE-183.702.525, mit Sitz in Route des Mosses 34, 1613 Maracon, Schweiz.
+        Swiss Transcript ist ein Audio- und Video-Transkriptionsservice, der von der Swiss Machina Sarl betrieben wird,
+        einer Gesellschaft mit beschränkter Haftung nach Schweizer Recht mit einem Kapital von 20.000 Schweizer Franken,
+        eingetragen im Handelsregister unter der Nummer CHE-183.702.525, mit Sitz in Route des Mosses 34, 1613 Maracon,
+        Schweiz.
       </p>
       <p class="">
         Verantwortlich für die Veröffentlichung: Herr Cédric Paternotte, Gründer.
@@ -143,7 +152,9 @@
         26 avenue de la Praille, 1227 CAROUGE, Schweiz. MwSt.-Nr.: CHE-103.167.648.
       </p>
       <p class="">
-        Alle Datenverarbeitungen im Rahmen der von Swiss Transcript angebotenen Dienste erfolgen ausschließlich auf Servern in der Schweiz, wodurch die Anwendung der strengen Schweizer Normen zum Schutz personenbezogener Daten gewährleistet wird.
+        Alle Datenverarbeitungen im Rahmen der von Swiss Transcript angebotenen Dienste erfolgen ausschließlich auf
+        Servern in der Schweiz, wodurch die Anwendung der strengen Schweizer Normen zum Schutz personenbezogener Daten
+        gewährleistet wird.
       </p>
       <a name="cgu"></a>
       <h3 class="text-left my-2 lg:my-4 font-bold text-3xl">
@@ -151,38 +162,50 @@
       </h3>
       <h3 class="text-left font-bold text-2xl">Präambel</h3>
       <p class="">
-        Die vorliegenden Allgemeinen Nutzungsbedingungen (im Folgenden "AGB") haben zum Ziel, die Modalitäten und Bedingungen für die Nutzung der von der Plattform Swiss Transcript (im Folgenden "die Plattform") angebotenen Dienste zu definieren, die von der Gesellschaft Swiss Machina Sarl (im Folgenden "Swiss Machina") für ihre privaten und gewerblichen Kunden (im Folgenden die "Nutzer") herausgegeben wird.
+        Die vorliegenden Allgemeinen Nutzungsbedingungen (im Folgenden "AGB") haben zum Ziel, die Modalitäten und
+        Bedingungen für die Nutzung der von der Plattform Swiss Transcript (im Folgenden "die Plattform") angebotenen
+        Dienste zu definieren, die von der Gesellschaft Swiss Machina Sarl (im Folgenden "Swiss Machina") für ihre
+        privaten und gewerblichen Kunden (im Folgenden die "Nutzer") herausgegeben wird.
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">1. Beschreibung der Dienste</h3>
       <p class="">
-        Swiss Transcript bietet einen Online-Service für die automatisierte Transkription von Audio- und Videodateien in Text. Über unsere sichere Weboberfläche können unsere Kunden:
+        Swiss Transcript bietet einen Online-Service für die automatisierte Transkription von Audio- und Videodateien in
+        Text. Über unsere sichere Weboberfläche können unsere Kunden:
         <br />
         - Ihre Audio- oder Videodateien importieren (Interviews, Meetings, Konferenzen, Kurse, Videos usw.)
         <br />
-        - Die automatische Transkription dieser Dateien mit Hilfe unserer für Deutsch angepassten Spracherkennungsalgorithmen starten. In wenigen Minuten wird der gesprochene Inhalt ohne menschliches Eingreifen in Text umgewandelt.
+        - Die automatische Transkription dieser Dateien mit Hilfe unserer für Deutsch angepassten
+        Spracherkennungsalgorithmen starten. In wenigen Minuten wird der gesprochene Inhalt ohne menschliches Eingreifen
+        in Text umgewandelt.
         <br />
         - Das Ergebnis als RTF-Textdatei erhalten, die sie herunterladen können.
         <br /><br />
-        Unser Service richtet sich sowohl an Privatpersonen (Studenten, Forscher, Content-Ersteller) als auch an Fachleute mit Vertraulichkeitsanforderungen (Verwaltungen, Medien, Psychologen, HR-Coaches usw.).
+        Unser Service richtet sich sowohl an Privatpersonen (Studenten, Forscher, Content-Ersteller) als auch an
+        Fachleute mit Vertraulichkeitsanforderungen (Verwaltungen, Medien, Psychologen, HR-Coaches usw.).
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         2. Annahme der AGB
       </h3>
       <p class="">
-        Die Nutzung des Dienstes unterliegt der Annahme und Einhaltung dieser Allgemeinen Nutzungsbedingungen. Jeder Zugriff und/oder jede Nutzung der Website setzt die vollständige und vorbehaltlose Annahme durch den Nutzer voraus.
+        Die Nutzung des Dienstes unterliegt der Annahme und Einhaltung dieser Allgemeinen Nutzungsbedingungen. Jeder
+        Zugriff und/oder jede Nutzung der Website setzt die vollständige und vorbehaltlose Annahme durch den Nutzer
+        voraus.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         3. Preisgestaltung und Zahlung
       </h3>
       <p class="">
-        Swiss Transcript berechnet seine automatischen Transkriptionsdienste pro Minute verarbeiteter Audio-/Videodatei zum Einheitstarif von 0,20 EUR pro Minute.
+        Swiss Transcript berechnet seine automatischen Transkriptionsdienste pro Minute verarbeiteter Audio-/Videodatei
+        zum Einheitstarif von 0,20 EUR pro Minute.
         <br />
-        Die Zahlung erfolgt nach Bestätigung des automatisch berechneten Kostenvoranschlags durch den Kunden, basierend auf der Gesamtdauer der importierten Dateien.
+        Die Zahlung erfolgt nach Bestätigung des automatisch berechneten Kostenvoranschlags durch den Kunden, basierend
+        auf der Gesamtdauer der importierten Dateien.
         Es fallen keine Abonnements oder wiederkehrenden Gebühren an.
         <br />
-        Die Zahlungen werden über die sichere Lösung unseres Partners SaferPay/SixPayment abgewickelt, die eine zuverlässige Transaktion für unsere Kunden und uns selbst garantiert.
+        Die Zahlungen werden über die sichere Lösung unseres Partners SaferPay/SixPayment abgewickelt, die eine
+        zuverlässige Transaktion für unsere Kunden und uns selbst garantiert.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
@@ -193,25 +216,34 @@
       </h3>
       <p class="">
         Die Nutzung von Swiss Transcript erfordert die Erstellung eines persönlichen Kontos.
-        Bei seiner Registrierung verpflichtet sich der Nutzer, genaue, vollständige und aktuelle Informationen anzugeben, insbesondere seinen Namen, Vornamen, seine E-Mail-Adresse und, für Fachleute, die eine Rechnungsstellung wünschen, den Firmennamen und die Rechnungsadresse seines Unternehmens.
+        Bei seiner Registrierung verpflichtet sich der Nutzer, genaue, vollständige und aktuelle Informationen
+        anzugeben, insbesondere seinen Namen, Vornamen, seine E-Mail-Adresse und, für Fachleute, die eine
+        Rechnungsstellung wünschen, den Firmennamen und die Rechnungsadresse seines Unternehmens.
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-xl">
         4.2 Anmeldedaten
       </h3>
       <p class="">
-        Nach der Registrierung greift der Nutzer mit seiner E-Mail-Adresse und seinem Passwort auf sein Konto zu. Diese Zugangsdaten sind streng persönlich und vertraulich. Der Nutzer verpflichtet sich, sie nicht an Dritte weiterzugeben und sein Passwort ausreichend robust zu halten, damit es nicht erraten werden kann.
+        Nach der Registrierung greift der Nutzer mit seiner E-Mail-Adresse und seinem Passwort auf sein Konto zu. Diese
+        Zugangsdaten sind streng persönlich und vertraulich. Der Nutzer verpflichtet sich, sie nicht an Dritte
+        weiterzugeben und sein Passwort ausreichend robust zu halten, damit es nicht erraten werden kann.
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-xl">
         4.3 Sperrung oder Löschung des Kontos
       </h3>
       <p class="">
-        Swiss Machina behält sich das Recht vor, das Konto eines Nutzers vorübergehend zu sperren oder endgültig zu löschen, ohne Vorankündigung oder Entschädigung, im Falle eines Verstoßes gegen diese AGB, bei missbräuchlicher oder betrügerischer Nutzung des Dienstes, bei Angabe unrichtiger Informationen oder auf Anordnung der zuständigen Behörden.
+        Swiss Machina behält sich das Recht vor, das Konto eines Nutzers vorübergehend zu sperren oder endgültig zu
+        löschen, ohne Vorankündigung oder Entschädigung, im Falle eines Verstoßes gegen diese AGB, bei missbräuchlicher
+        oder betrügerischer Nutzung des Dienstes, bei Angabe unrichtiger Informationen oder auf Anordnung der
+        zuständigen Behörden.
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-xl">
         4.4 Testphase
       </h3>
       <p class="">
-        Jeder neue Nutzer erhält ein kostenloses Guthaben von 30 Minuten Transkription, das im ersten Monat nach der Registrierung genutzt werden kann. Darüber hinaus oder nach Ablauf dieses Zeitraums wird die Nutzung des Dienstes kostenpflichtig, gemäß den zum Zeitpunkt der Anmeldung des Nutzers gültigen Tarifen.
+        Jeder neue Nutzer erhält ein kostenloses Guthaben von 30 Minuten Transkription, das im ersten Monat nach der
+        Registrierung genutzt werden kann. Darüber hinaus oder nach Ablauf dieses Zeitraums wird die Nutzung des
+        Dienstes kostenpflichtig, gemäß den zum Zeitpunkt der Anmeldung des Nutzers gültigen Tarifen.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
@@ -221,31 +253,45 @@
         5.1 Zweck des Dienstes
       </h3>
       <p class="">
-        Der Nutzer verpflichtet sich, den Dienst entsprechend seinem Zweck zu nutzen, für Inhalte, für die er die erforderlichen Rechte besitzt und die nicht gegen die öffentliche Ordnung, die guten Sitten oder die Rechte Dritter verstoßen.
-        Der Dienst wird "wie er ist" bereitgestellt, ohne Garantie für kontinuierliche Verfügbarkeit oder Fehlerfreiheit. Die generierten Transkriptionen erfordern eine Überprüfung durch den Nutzer.
+        Der Nutzer verpflichtet sich, den Dienst entsprechend seinem Zweck zu nutzen, für Inhalte, für die er die
+        erforderlichen Rechte besitzt und die nicht gegen die öffentliche Ordnung, die guten Sitten oder die Rechte
+        Dritter verstoßen.
+        Der Dienst wird "wie er ist" bereitgestellt, ohne Garantie für kontinuierliche Verfügbarkeit oder
+        Fehlerfreiheit. Die generierten Transkriptionen erfordern eine Überprüfung durch den Nutzer.
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-xl">
         5.2 Qualität des Dienstes
       </h3>
       <p class="">
-        Swiss Machina setzt die geeigneten technischen Mittel ein, um einen qualitativ hochwertigen automatischen Transkriptionsdienst anzubieten. Aufgrund der vollständig automatisierten Natur der Verarbeitung kann Swiss Machina jedoch keine perfekte, fehler- oder ungenauigkeitsfreie Transkription garantieren.
+        Swiss Machina setzt die geeigneten technischen Mittel ein, um einen qualitativ hochwertigen automatischen
+        Transkriptionsdienst anzubieten. Aufgrund der vollständig automatisierten Natur der Verarbeitung kann Swiss
+        Machina jedoch keine perfekte, fehler- oder ungenauigkeitsfreie Transkription garantieren.
         <br />
-        Die Qualität der Transkriptionen hängt von vielen Faktoren ab, wie der Audioqualität der Quelldatei, Akzenten, Hintergrundgeräuschen, technischen oder spezialisierten Begriffen, auf die Swiss Machina keinen Einfluss hat. Daher sollten die bereitgestellten Transkriptionen immer als Arbeitshilfe betrachtet werden, die vor jeder Verwendung vom Nutzer überprüft und korrigiert werden muss.
+        Die Qualität der Transkriptionen hängt von vielen Faktoren ab, wie der Audioqualität der Quelldatei, Akzenten,
+        Hintergrundgeräuschen, technischen oder spezialisierten Begriffen, auf die Swiss Machina keinen Einfluss hat.
+        Daher sollten die bereitgestellten Transkriptionen immer als Arbeitshilfe betrachtet werden, die vor jeder
+        Verwendung vom Nutzer überprüft und korrigiert werden muss.
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-xl">
         5.3 Verfügbarkeit des Dienstes
       </h3>
       <p class="">
-        Swiss Machina bemüht sich, die Zugänglichkeit und das reibungslose Funktionieren der Swiss Transcript-Plattform 24 Stunden am Tag und 7 Tage die Woche zu gewährleisten. Aufgrund der technischen Komplexität des Dienstes und seiner Abhängigkeit von elektronischen Kommunikationsnetzen kann Swiss Machina jedoch keine permanente und ununterbrochene Verfügbarkeit garantieren.
+        Swiss Machina bemüht sich, die Zugänglichkeit und das reibungslose Funktionieren der Swiss Transcript-Plattform
+        24 Stunden am Tag und 7 Tage die Woche zu gewährleisten. Aufgrund der technischen Komplexität des Dienstes und
+        seiner Abhängigkeit von elektronischen Kommunikationsnetzen kann Swiss Machina jedoch keine permanente und
+        ununterbrochene Verfügbarkeit garantieren.
         <br />
-        Der Zugang zur Plattform kann vorübergehend ohne Vorankündigung oder Entschädigung ausgesetzt werden, insbesondere aus Gründen der Wartung, Updates, im Falle von Cyberangriffen oder auf Anfrage der Behörden. Swiss Machina verpflichtet sich, die Häufigkeit und Dauer dieser Nichtverfügbarkeiten auf ein Minimum zu beschränken.
+        Der Zugang zur Plattform kann vorübergehend ohne Vorankündigung oder Entschädigung ausgesetzt werden,
+        insbesondere aus Gründen der Wartung, Updates, im Falle von Cyberangriffen oder auf Anfrage der Behörden. Swiss
+        Machina verpflichtet sich, die Häufigkeit und Dauer dieser Nichtverfügbarkeiten auf ein Minimum zu beschränken.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         6. Lieferfristen
       </h3>
       <p class="">
-        Die Transkription wird in der Regel dank unserer fortschrittlichen Algorithmen innerhalb weniger Minuten nach Bestätigung der Zahlung durch den Kunden geliefert.
+        Die Transkription wird in der Regel dank unserer fortschrittlichen Algorithmen innerhalb weniger Minuten nach
+        Bestätigung der Zahlung durch den Kunden geliefert.
         <br />
         Die Bearbeitungszeit kann je nach Dauer und Audioqualität der Quelldateien leicht variieren.
       </p>
@@ -254,20 +300,29 @@
         7. Garantien und Haftung
       </h3>
       <p class="">
-        Swiss Transcript setzt alles daran, eine Transkription von bestmöglicher Qualität zu liefern. Dennoch kann die Leistung des Dienstes durch die Audioqualität der vom Kunden bereitgestellten Quelldateien beeinträchtigt werden.
+        Swiss Transcript setzt alles daran, eine Transkription von bestmöglicher Qualität zu liefern. Dennoch kann die
+        Leistung des Dienstes durch die Audioqualität der vom Kunden bereitgestellten Quelldateien beeinträchtigt
+        werden.
         <br />
-        Im Falle eines vollständigen Fehlschlags der Transkription, der auf eine Fehlfunktion unserer Plattform zurückzuführen ist, wird dem Kunden der entsprechende Betrag vollständig als Guthaben auf seinem Konto erstattet, das für zukünftige Leistungen verwendet werden kann.
+        Im Falle eines vollständigen Fehlschlags der Transkription, der auf eine Fehlfunktion unserer Plattform
+        zurückzuführen ist, wird dem Kunden der entsprechende Betrag vollständig als Guthaben auf seinem Konto
+        erstattet, das für zukünftige Leistungen verwendet werden kann.
         <br />
-        Diese Bestimmungen gelten nicht im Falle schlechter Audioqualität der vom Kunden bereitgestellten Quelldateien, der dafür verantwortlich bleibt, die Eignung seiner Dateien für unseren Dienst sicherzustellen.
+        Diese Bestimmungen gelten nicht im Falle schlechter Audioqualität der vom Kunden bereitgestellten Quelldateien,
+        der dafür verantwortlich bleibt, die Eignung seiner Dateien für unseren Dienst sicherzustellen.
         <br />
-        Der Nutzer übernimmt die volle Verantwortung für die Inhalte, die er zur Transkription einreicht. Er verpflichtet sich, nur Dateien zu bearbeiten, für die er die Nutzungsrechte besitzt.
+        Der Nutzer übernimmt die volle Verantwortung für die Inhalte, die er zur Transkription einreicht. Er
+        verpflichtet sich, nur Dateien zu bearbeiten, für die er die Nutzungsrechte besitzt.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         8. Personenbezogene Daten
       </h3>
       <p class="">
-        Die Bereitstellung des Dienstes erfordert die Verarbeitung bestimmter personenbezogener Daten des Nutzers, wie in unserer Datenschutzrichtlinie beschrieben. Swiss Machina verpflichtet sich, diese Daten in Übereinstimmung mit den geltenden Datenschutzgesetzen, insbesondere dem Schweizer Bundesgesetz über den Datenschutz (DSG) und der Europäischen Datenschutz-Grundverordnung (DSGVO), zu verarbeiten.
+        Die Bereitstellung des Dienstes erfordert die Verarbeitung bestimmter personenbezogener Daten des Nutzers, wie
+        in unserer Datenschutzrichtlinie beschrieben. Swiss Machina verpflichtet sich, diese Daten in Übereinstimmung
+        mit den geltenden Datenschutzgesetzen, insbesondere dem Schweizer Bundesgesetz über den Datenschutz (DSG) und
+        der Europäischen Datenschutz-Grundverordnung (DSGVO), zu verarbeiten.
       </p>
 
       <a name="politique-confidentialite"></a>
@@ -275,7 +330,9 @@
         Datenschutzrichtlinie
       </h3>
       <p class="">
-        Swiss Machina Sarl, Betreiber der Plattform Swiss Transcript, legt großen Wert auf den Schutz Ihrer personenbezogenen Daten. Diese Datenschutzrichtlinie informiert Sie über die Art der von uns erhobenen Daten, die Zwecke ihrer Verarbeitung und Ihre diesbezüglichen Rechte.
+        Swiss Machina Sarl, Betreiber der Plattform Swiss Transcript, legt großen Wert auf den Schutz Ihrer
+        personenbezogenen Daten. Diese Datenschutzrichtlinie informiert Sie über die Art der von uns erhobenen Daten,
+        die Zwecke ihrer Verarbeitung und Ihre diesbezüglichen Rechte.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
@@ -369,7 +426,8 @@
         <br />
         - Unsere autorisierten Mitarbeiter im Rahmen ihrer Aufgaben
         <br />
-        - Unsere technischen Dienstleister (Hosting-Anbieter, Zahlungsdienstleister), die als Auftragsverarbeiter handeln
+        - Unsere technischen Dienstleister (Hosting-Anbieter, Zahlungsdienstleister), die als Auftragsverarbeiter
+        handeln
         <br />
         - Behörden, wenn dies gesetzlich vorgeschrieben ist
         <br /><br />
@@ -380,7 +438,8 @@
         7. Sicherheitsmaßnahmen
       </h3>
       <p class="">
-        Wir setzen angemessene technische und organisatorische Maßnahmen ein, um die Sicherheit Ihrer personenbezogenen Daten zu gewährleisten, insbesondere:
+        Wir setzen angemessene technische und organisatorische Maßnahmen ein, um die Sicherheit Ihrer personenbezogenen
+        Daten zu gewährleisten, insbesondere:
         <br />
         - Verschlüsselung der Datenübertragung (SSL/TLS)
         <br />
@@ -422,21 +481,24 @@
         9. Cookies
       </h3>
       <p class="">
-        Unsere Website verwendet Cookies, um Ihr Nutzungserlebnis zu verbessern. Weitere Informationen finden Sie in unserer Cookie-Richtlinie, die auf unserer Website verfügbar ist.
+        Unsere Website verwendet Cookies, um Ihr Nutzungserlebnis zu verbessern. Weitere Informationen finden Sie in
+        unserer Cookie-Richtlinie, die auf unserer Website verfügbar ist.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         10. Änderungen dieser Datenschutzrichtlinie
       </h3>
       <p class="">
-        Wir behalten uns das Recht vor, diese Datenschutzrichtlinie jederzeit zu ändern. Die aktualisierte Version wird auf unserer Website veröffentlicht, und wir werden Sie über wesentliche Änderungen informieren.
+        Wir behalten uns das Recht vor, diese Datenschutzrichtlinie jederzeit zu ändern. Die aktualisierte Version wird
+        auf unserer Website veröffentlicht, und wir werden Sie über wesentliche Änderungen informieren.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         11. Kontakt
       </h3>
       <p class="">
-        Für Fragen oder Anliegen bezüglich dieser Datenschutzrichtlinie oder der Verarbeitung Ihrer personenbezogenen Daten kontaktieren Sie uns bitte unter:
+        Für Fragen oder Anliegen bezüglich dieser Datenschutzrichtlinie oder der Verarbeitung Ihrer personenbezogenen
+        Daten kontaktieren Sie uns bitte unter:
         <br />
         privacy@swisstranscript.com
       </p>
@@ -449,27 +511,36 @@
 
   <footer>
     <div class="container">
-      <div class="footer-container max-w-3xl mx-auto">
+      <div class="footer-container">
+
+        <div class="footer-brand">
+          <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
+          <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
+        </div>
+
         <div class="footer-col">
-          <h3>Rechtliches</h3>
           <ul>
-            <li><a href="./legal.html#politique-confidentialite">Nutzungsbedingungen</a></li>
-            <li><a href="./legal.html#cgu">Datenschutzrichtlinie</a></li>
-            <li><a href="./legal.html#mentions-legales">Impressum</a></li>
+            <li><a href="./legal.html#terms">Nutzungsbedingungen</a></li>
+            <li><a href="./legal.html#privacy">Datenschutzerklärung</a></li>
+            <li><a href="./legal.html#imprint">Impressum</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h3>Kontakt</h3>
           <ul>
-            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>          
+            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
+
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>
+
 
   <script src="../script.js"></script>
 </body>

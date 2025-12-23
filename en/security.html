@@ -73,276 +73,361 @@
             <div class="header-container flex justify-between items-center px-2">
                 <!-- Logo -->
                 <div class="logo flex items-center">
-                    <a href="index.html" class="font-bold ml-5">
-                        <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+                    <a class="font-bold ml-5" href="index.html">
+                        <img alt="swisstranscript Logo" class="mr-2" src="../images/logo_purple.png" width="150" />
                     </a>
                 </div>
-
                 <!-- Navigation desktop -->
-        <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
-            <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-              <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Home</a></li>
-              <li><a href="pricing.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Pricing</a></li>
-              <li><a href="security.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Security</a></li>
-              <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-              <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Contact</a></li>
-            </ul>
-          </nav>
-  
-          <!-- Login / Signup + Lang switch -->
-          <div class="flex items-center">
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="/login?lang=en" target="_blank"
-                  class="px-4 py-2 rounded-md font-bold text-center text-sm xl:text-lg button-login">
-                  Log in
-                </a>
-                <a href="/signup?lang=en"" target="_blank"
-                  class="px-4 rounded-md font-bold text-center text-sm xl:text-lg button-signup">
-                  Try
-                </a>
-              </div>
-              <div id="languageSwitcher" class="hidden lg:flex space-x-2 ml-5">
-                <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-                <span>|</span>
-                <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-                <span>|</span>
-                <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
-              </div> 
-  
-          <!-- Mobile menu button -->
-          <div class="block lg:hidden mx-4">
-            <button id="toggleDrawer" class="focus:outline-none">
-              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-              </svg>
-            </button>
-          </div>
-          <!-- </div> -->
-            </div>
-        </div>
-
-        <!-- Drawer menu (mobile) -->
-        <div
-            class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-            <div class="p-4 md:p-3">
-                <div class="flex items-center pt-6 pb-4">
-                    <a href="index.html" class="font-bold">
-                        <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
-                    </a>
-                </div>
-                <ul class="space-y-3">
-                    <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Home</a></li>
-                    <li><a href="pricing.html" class="drawer-btn px-2 py-1 hover:opacity-80">Pricing</a></li>
-                    <li><a href="security.html" class="drawer-btn px-2 py-1 hover:opacity-80">Security</a></li>
-                    <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Demo</a></li>
-                    <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
-                </ul>
-                <div id="languageSwitcherMobile" class="hidden lg:flex space-x-2 ml-5">
-                    <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-                    <span>|</span>
-                    <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-                    <span>|</span>
-                    <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
+                <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
+                    <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
+                        <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                                href="index.html">Home</a>
+                        </li>
+                        <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                                href="pricing.html">Pricing</a>
+                        </li>
+                        <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                                href="security.html">Security</a>
+                        </li>
+                        <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                                href="demo.html">Demo</a>
+                        </li>
+                        <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                                href="about.html">About</a>
+                        </li>
+                        <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                                href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Login / Signup + Lang switch -->
+                <div class="flex items-center">
+                    <div class="hidden md:flex items-center space-x-5">
+                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=fr"
+                            target="_blank">Log in</a>
+                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="pricing.html"
+                            target="_blank">Try</a>
+                        <div class="hidden lg:flex space-x-2" id="languageSwitcher">
+                            <a class="lang-link font-bold py-1 rounded-md text-sm active" href="/fr/">FR</a>
+                            <span>|</span>
+                            <a class="lang-link font-bold py-1 rounded-md text-sm" href="/de/">DE</a>
+                            <span>|</span>
+                            <a class="lang-link font-bold py-1 rounded-md text-sm" href="/en/">EN</a>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="block lg:hidden mx-4">
+                        <button class="focus:outline-none" id="toggleDrawer">
+                            <svg class="h-6 w-6 fill-current" viewbox="0 0 24 24">
+                                <path clip-rule="evenodd" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"
+                                    fill-rule="evenodd" id="menuIcon"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
-            <a href="/login?lang=en" target="_blank"
-                class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-                Log in
-            </a>
+            <!-- Drawer menu (mobile) -->
+            <div
+                class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+                <div class="p-4 md:p-3">
+                    <div class="flex items-center pt-6 pb-4">
+                        <a class="font-bold" href="index.html">
+                            <img alt="swisstranscript Logo" class="mr-2" src="../images/logo_white.svg" width="150" />
+                        </a>
+                    </div>
+                    <ul class="space-y-3">
+                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Home</a></li>
+                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="pricing.html">Pricing</a></li>
+                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="security.html">Security</a></li>
+                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
+                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">About</a></li>
+                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="flex space-x-2 px-2 py-3" id="languageSwitcherMobile">
+                        <a class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300" href="/fr/">FR</a>
+                        <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/en/">EN</a>
+                        <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/de/">DE</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <a class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login"
+                        href="/login?lang=fr" target="_blank">Log in</a>
+                    <a class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try"
+                        href="pricing.html" target="_blank">Try</a>
+                </div>
+            </div>
+            <!-- Drawer overlay -->
+            <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
         </div>
-
-        <!-- Drawer overlay -->
-        <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
     </header>
-    <section class="page-header">
-        <div class="container">
-            <h1>Secure on our servers in Switzerland</h1>
-            <p>Your confidentiality is our absolute priority</p>
-        </div>
-    </section>
+
 
     <section class="security-container">
         <div class="container">
             <div class="security-intro">
-                <h2>Security without compromise</h2>
-                <p>At Swiss Transcript, we understand the importance of your data confidentiality. That's why we have
-                    implemented rigorous security measures to protect your sensitive information.</p>
+                <h2>Uncompromising Security</h2>
             </div>
 
             <div class="security-content">
                 <div class="security-image">
-                    <img src="../images/securites/securite.jpg" alt="Data security">
+                    <img src="../images/securites/SwissShield.png" alt="Data security">
                 </div>
                 <div class="security-text">
                     <h3>Why is security so important?</h3>
-                    <p>Transcriptions often contain sensitive or confidential information: personal data, medical
-                        information, business strategies, or private testimonies.</p>
-                    <p>Unlike many transcription services that use American or Chinese cloud infrastructures,
-                        Swiss Transcript processes all your data exclusively on secure servers in Switzerland, thus
-                        guaranteeing their confidentiality and protection according to the strictest standards.</p>
-                    <p>Our approach to security is not just an additional feature, it's the very foundation of our
-                        service.</p>
+                    <p>
+                        Transcriptions often contain sensitive or confidential information:
+                        personal data, medical information, business strategies, or private testimonies.
+                    </p>
+                    <p>
+                        Swiss Transcript processes all your data exclusively on secure servers in Switzerland,
+                        ensuring confidentiality and protection according to the highest standards.
+                    </p>
+                    <p>
+                        Our approach to security is not just an additional feature—it is the foundation of our service.
+                    </p>
                 </div>
             </div>
 
             <div class="security-features">
-                <h2>Our security guarantees</h2>
+                <h2>Our Security Guarantees</h2>
                 <div class="features-grid">
+
                     <div class="feature-card">
                         <div class="feature-number mx-auto">1</div>
-                        <h3>Data processing in Switzerland</h3>
-                        <p>We use the open-source Mistral language model without using external APIs. All data,
-                            particularly sensitive or containing personal and medical information, is securely processed
-                            on our servers in Switzerland.</p>
+                        <h3>Data Processing in Switzerland</h3>
+                        <p>
+                            We use the open-source language model Mistral without relying on external APIs.
+                            All data, especially sensitive, personal, or medical information, is securely
+                            processed on our servers in Switzerland.
+                        </p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-number mx-auto">2</div>
-                        <h3>End-to-end encryption</h3>
-                        <p>We apply end-to-end encryption for all data transfers, enhancing the security of your
-                            information. Our processes are transparent and clearly explained, avoiding any "black boxes"
-                            in the processing of your data.</p>
+                        <h3>End-to-End Encryption</h3>
+                        <p>
+                            We apply end-to-end encryption for all data transfers to enhance the security
+                            of your information. Our processes are transparent and clearly explained,
+                            ensuring there is no “black box” in how your data is handled.
+                        </p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-number mx-auto">3</div>
-                        <h3>GDPR compliance</h3>
-                        <p>Our practices are in full compliance with the European Union's General Data Protection Regulation (GDPR), ensuring legal and secure
-                            management of all personal and medical information.</p>
+                        <h3>GDPR and Swiss DSG Compliance</h3>
+                        <p>
+                            Our practices fully comply with the Swiss Data Protection Act (DSG) and the
+                            EU General Data Protection Regulation (GDPR), ensuring lawful and secure
+                            processing of all personal and medical data.
+                        </p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-number mx-auto">4</div>
-                        <h3>Two-factor authentication option</h3>
-                        <p>For increased security, we offer the possibility to configure two-factor authentication,
-                            strengthening the protection of access to your data.</p>
+                        <h3>Two-Factor Authentication Option</h3>
+                        <p>
+                            For enhanced security, we offer the ability to enable two-factor authentication
+                            to better protect access to your data.
+                        </p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-number mx-auto">5</div>
-                        <h3>Immediate file deletion</h3>
-                        <p>After transcription, source files are immediately deleted from our systems, ensuring that no
-                            personal data is kept longer than necessary.</p>
+                        <h3>Immediate File Deletion</h3>
+                        <p>
+                            After transcription, source files are immediately deleted from our systems,
+                            ensuring that no personal data is stored longer than necessary.
+                        </p>
                     </div>
+
+                    <div class="feature-card">
+                        <div class="feature-number mx-auto">6</div>
+                        <h3>No Access to Content by Our Staff</h3>
+                        <p>
+                            Confidentiality is non-negotiable for us. Your recordings, transcriptions,
+                            and summaries remain linked exclusively to your own account.
+                            Our staff has no access to your content or data.
+                            Your data is never shared or sold to third parties.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
     <section class="compliance-section mb-0">
         <div class="container compliance-container">
             <div class="compliance-title">
-                <h2>Pour renforcer davantage la sécurité de votre compte,
-                    TrannscriptLand supporte l'authentification à double facteur (2FA).</h2>
+                <h2>Two-Factor Authentication (2FA)</h2>
             </div>
 
             <div class="compliance-cards">
                 <div class="compliance-card">
-                    <h3>App mobile d'authentification</h3>
-                    <p>Vous utilisez l’application d'authentification de votre choix pour générer des codes d’accès OTP (one-time password).</p>
+                    <h3>Mobile Authentication App</h3>
+                    <p>
+                        You use the authentication app of your choice to generate OTP
+                        (one-time password) codes.
+                    </p>
                 </div>
 
                 <div class="compliance-card">
-                    <h3>Clé de sécurité FIDO U2F</h3>
-                    <p>Nous supportons les clés de sécurité physiques de type FIDO U2F. La compatibilité avec les clés YubiKey, Nitrokey, et Token2 est notamment assurée.</p>
+                    <h3>FIDO U2F Security Key</h3>
+                    <p>
+                        We support physical security keys of the FIDO U2F type.
+                        Compatibility with YubiKey, Nitrokey, and Token2 is ensured.
+                    </p>
                 </div>
 
                 <div class="compliance-card">
-                    <h3>Reconnaissance biométrique </h3>
-                    <p>L'authentification biométrique, telle que les empreintes digitales ou la reconnaissance faciale, est également utilisable pour accéder à votre compte si votre matériel le supporte.
+                    <h3>Biometric Recognition</h3>
+                    <p>
+                        Biometric authentication, such as fingerprint or facial recognition,
+                        can also be used to access your account if your hardware supports it.
                     </p>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="compliance-section">
         <div class="container compliance-container">
             <div class="compliance-title">
-                <h2>Regulatory compliance</h2>
-                <p>Swiss Transcript complies with the strictest data protection regulations</p>
+                <h2>Regulatory Compliance</h2>
+                <p>Swiss Transcript adheres to the strictest data protection regulations.</p>
             </div>
 
             <div class="compliance-cards">
+
                 <div class="compliance-card">
+                    <img src="../images/securites/UE_secu.png" alt="GDPR compliance" class="compliance-icon">
                     <h3>GDPR</h3>
-                    <p>Our service is fully compliant with the European Union's General Data Protection Regulation
-                        (GDPR), which establishes strict rules regarding the collection, storage, and processing of
-                        personal data.</p>
+                    <p>
+                        Our service fully complies with the European Union’s General Data Protection
+                        Regulation (GDPR), which sets strict rules for the collection, storage,
+                        and processing of personal data.
+                    </p>
                 </div>
+
                 <div class="compliance-card">
-                    <h3>Technological independence</h3>
-                    <p>Our infrastructure is completely independent of major American or Chinese cloud providers,
-                        allowing us to guarantee that your data is never exposed to less protective foreign
-                        jurisdictions.</p>
+                    <img src="../images/securites/Suisse_secu.png" alt="Swiss DSG" class="compliance-icon">
+                    <h3>Swiss DSG</h3>
+                    <p>
+                        We comply with the Swiss Federal Data Protection Act (DSG),
+                        which defines the rules for processing personal data by private
+                        individuals and federal bodies.
+                    </p>
                 </div>
+
+                <div class="compliance-card">
+                    <img src="../images/securites/serveurs_secu.png" alt="Technological independence"
+                        class="compliance-icon">
+                    <h3>Technological Independence</h3>
+                    <p>
+                        Our solution relies on our own servers in Switzerland, without using
+                        external clouds (Amazon, Google, Azure, etc.) or ChatGPT/OpenAI.
+                        No data is stored or used to train AI models.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
         <div class="container">
-            <h2>Frequently asked questions about security</h2>
+            <h2>Frequently Asked Questions About Security</h2>
 
             <div class="faq-item">
-                <div class="faq-question">Where is my data stored?</div>
-                <div class="faq-answer">All your data is processed and stored exclusively on our secure servers in
-                    Switzerland. We do not use any third-party American or Chinese cloud services for processing or
-                    storing your information.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">How long do you keep my audio files?</div>
-                <div class="faq-answer">We do not keep your audio files after transcription. Once the transcription
-                    process is completed, the source files are immediately and permanently deleted from our systems.
+                <div class="faq-question">Where are my data stored?</div>
+                <div class="faq-answer">
+                    <p>
+                        All your data is processed and stored in Switzerland on our secure servers.
+                        No third-party cloud services from the USA or China are used for processing
+                        or storage.
+                    </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How do you protect my transcriptions?</div>
-                <div class="faq-answer">Your transcriptions are securely stored and are only accessible to you via your
-                    password-protected account. We recommend activating two-factor authentication for enhanced security.
-                    You can delete your transcriptions at any time.</div>
+                <div class="faq-question">Are my data safe with Swiss Transcript?</div>
+                <div class="faq-answer">
+                    <p>
+                        Yes. We apply strict protection standards: encryption in transit and at rest,
+                        automatic deletion of source files after transcription,
+                        and restricted access.
+                    </p>
+                </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you use my data to train your AI models?</div>
-                <div class="faq-answer">No, we never use your data to train our AI models. Your information is used
-                    exclusively for providing the transcription service and is never reused for other purposes.</div>
+                <div class="faq-question">Are my data used to train your AI models?</div>
+                <div class="faq-answer">
+                    <p>
+                        No. Your files, transcriptions, and summaries are used solely to provide
+                        you with the service. They are never used to train AI models.
+                    </p>
+                </div>
             </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is Swiss Transcript GDPR and DSG compliant?</div>
+                <div class="faq-answer">
+                    <p>
+                        Yes. We comply with both the GDPR and the Swiss DSG,
+                        ensuring a high level of protection for personal data.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to try Swiss Transcript?</h2>
-            <p>Create your account for free and get 30 minutes of free transcription.</p>
-            <a href="#" class="btn">Create account</a>
+            <h2>Ready to try the most secure transcription service?</h2>
+            <p>
+                Start today and discover how Swiss Transcript can save you time
+                while keeping your data confidential.
+            </p>
+            <a href="tarifs.html" class="btn">Create an account</a>
         </div>
     </section>
 
+
     <footer>
         <div class="container">
-          <div class="footer-container max-w-3xl mx-auto">
-            <div class="footer-col">
-              <h3>Legal</h3>
-              <ul>
-                <li><a href="./legal.html#politique-confidentialite">Terms of Use</a></li>
-                <li><a href="./legal.html#cgu">Privacy Policy</a></li>
-                <li><a href="./legal.html#mentions-legales">Legal Notice</a></li>
-              </ul>
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
+                    <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
+                </div>
+
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="./legal.html#terms">Terms of Use</a></li>
+                        <li><a href="./legal.html#privacy">Privacy Policy</a></li>
+                        <li><a href="./legal.html#legal-notice">Legal Notice</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="footer-col">
-              <h3>Contact</h3>
-              <ul>
-                <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>          
-              </ul>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
             </div>
-          </div>
-          <div class="footer-bottom">
-            <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
-          </div>
         </div>
-      </footer>
+    </footer>
+
 
     <script src="../script.js"></script>
 </body>

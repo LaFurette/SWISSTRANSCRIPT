@@ -73,230 +73,306 @@
       <div class="header-container flex justify-between items-center px-2">
         <!-- Logo -->
         <div class="logo flex items-center">
-          <a href="index.html" class="font-bold ml-5">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />          </a>
-        </div>
-
-        <!-- Navigation desktop -->
-        <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
-          <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Home</a></li>
-            <li><a href="pricing.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Pricing</a></li>
-            <li><a href="security.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Security</a></li>
-            <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-            <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- Login / Signup + Lang switch -->
-        <div class="flex items-center">
-          <div class="hidden md:flex items-center space-x-4">
-              <a href="/login?lang=en" target="_blank"
-                class="px-4 py-2 rounded-md font-bold text-center text-sm xl:text-lg button-login">
-                Log in
-              </a>
-              <a href="#" target="_blank"
-                class="px-4 rounded-md font-bold text-center text-sm xl:text-lg button-signup">
-                Try
-              </a>
-            </div>
-            <div id="languageSwitcher" class="hidden lg:flex space-x-2 ml-5">
-              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-              <span>|</span>
-              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-              <span>|</span>
-              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
-            </div> 
-
-        <!-- Mobile menu button -->
-        <div class="block lg:hidden mx-4">
-          <button id="toggleDrawer" class="focus:outline-none">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path id="menuIcon" fill-rule="evenodd" clip-rule="evenodd"
-                d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z"></path>
-            </svg>
-          </button>
-        </div>
-        <!-- </div> -->
-      </div>
-    </div>
-
-    <!-- Drawer menu (mobile) -->
-    <div
-      class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-      <div class="p-4 md:p-3">
-        <div class="flex items-center pt-6 pb-4">
-          <a href="index.html" class="font-bold">
-            <img src="../images/logo_white.svg" alt="swisstranscript Logo" class="mr-2" width="150" />
+          <a class="font-bold ml-5" href="index.html">
+            <img alt="swisstranscript Logo" class="mr-2" src="../images/logo_purple.png" width="150" />
           </a>
         </div>
-        <ul class="space-y-3">
-          <li><a href="index.html" class="drawer-btn px-2 py-1 hover:opacity-80">Home</a></li>
-          <li><a href="pricing.html" class="drawer-btn px-2 py-1 hover:opacity-80">Pricing</a></li>
-          <li><a href="security.html" class="drawer-btn px-2 py-1 hover:opacity-80">Security</a></li>
-          <li><a href="demo.html" class="drawer-btn px-2 py-1 hover:opacity-80">Demo</a></li>
-          <li><a href="contact.html" class="drawer-btn px-2 py-1 hover:opacity-80">Contact</a></li>
-        </ul>
-        <div id="languageSwitcherMobile" class="hidden lg:flex space-x-2 ml-5">
-          <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">FR</a>
-          <span>|</span>
-          <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">DE</a>
-          <span>|</span>
-          <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm xl:text-lg">EN</a>
+        <!-- Navigation desktop -->
+        <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
+          <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                href="index.html">Home</a>
+            </li>
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                href="pricing.html">Pricing</a>
+            </li>
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                href="security.html">Security</a>
+            </li>
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                href="demo.html">Demo</a>
+            </li>
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                href="about.html">About</a>
+            </li>
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+                href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Login / Signup + Lang switch -->
+        <div class="flex items-center">
+          <div class="hidden md:flex items-center space-x-5">
+            <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=fr"
+              target="_blank">Log in</a>
+            <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="pricing.html"
+              target="_blank">Try</a>
+            <div class="hidden lg:flex space-x-2" id="languageSwitcher">
+              <a class="lang-link font-bold py-1 rounded-md text-sm active" href="/fr/">FR</a>
+              <span>|</span>
+              <a class="lang-link font-bold py-1 rounded-md text-sm" href="/de/">DE</a>
+              <span>|</span>
+              <a class="lang-link font-bold py-1 rounded-md text-sm" href="/en/">EN</a>
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="block lg:hidden mx-4">
+            <button class="focus:outline-none" id="toggleDrawer">
+              <svg class="h-6 w-6 fill-current" viewbox="0 0 24 24">
+                <path clip-rule="evenodd" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z" fill-rule="evenodd"
+                  id="menuIcon"></path>
+              </svg>
+            </button>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
-      <a href="/login?lang=en" target="_blank"
-        class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
-        Log in
-      </a>
+      <!-- Drawer menu (mobile) -->
+      <div
+        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+        <div class="p-4 md:p-3">
+          <div class="flex items-center pt-6 pb-4">
+            <a class="font-bold" href="index.html">
+              <img alt="swisstranscript Logo" class="mr-2" src="../images/logo_white.svg" width="150" />
+            </a>
+          </div>
+          <ul class="space-y-3">
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Home</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="pricing.html">Pricing</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="security.html">Security</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">About</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="flex space-x-2 px-2 py-3" id="languageSwitcherMobile">
+            <a class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300" href="/fr/">FR</a>
+            <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/en/">EN</a>
+            <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/de/">DE</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <a class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login"
+            href="/login?lang=fr" target="_blank">Log in</a>
+          <a class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try"
+            href="pricing.html" target="_blank">Try</a>
+        </div>
+      </div>
+      <!-- Drawer overlay -->
+      <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
     </div>
-
-    <!-- Drawer overlay -->
-    <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
   </header>
-
-  <section class="page-header">
-    <div class="container">
-      <h1>Our Plans</h1>
-      <p>Solutions adapted to all transcription volumes, from occasional users to intensive
-        professionals.</p>
-    </div>
-  </section>
 
   <section class="pricing-container">
     <div class="container">
       <div class="pricing-intro">
-        <h2>Choose the offer that suits you</h2>
-        <p>Whether you need occasional or regular transcription, we have the right solution for your needs.</p>
+        <h2>Choose the plan that suits you</h2>
+        <p>
+          Whether you need occasional or regular transcription, we have the solution tailored to your needs.
+        </p>
       </div>
 
+
       <div class="pricing-cards">
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3 class="card-title">Standard</h3>
-            <p class="card-subtitle">For occasional needs</p>
+
+        <!-- PREPAID -->
+        <div class="pricing-card prepaid">
+          <h3 class="card-title">Per Minute</h3>
+          <p class="card-subtitle">
+            Ideal for occasional use,<br><strong>no commitment</strong>
+          </p>
+
+          <div class="plans prepaid-plans" role="radiogroup" aria-label="Choose a prepaid plan">
+
+            <div class="minute-pill">
+              <div class="minute-pill-main">
+                <span class="minute-value">0.20</span>
+                <span class="minute-unit">CHF/min</span>
+              </div>
+              <div class="minute-pill-sub">= 12 CHF / hour</div>
+            </div>
+
+            <div class="packs-wrap">
+              <p class="packs-intro">
+                Packs<br>
+                <span class="packs-sub">
+                  Purchase advantageous credit packs<br>with no expiration date
+                </span>
+              </p>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack1">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 1</span>
+                  <span class="plan-hours">1 hour credited</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">10 CHF</span>
+                  <span class="plan-hint">= 10 CHF / hour</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack5">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 5</span>
+                  <span class="plan-hours">5 hours credited</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">40 CHF</span>
+                  <span class="plan-hint">= 8 CHF / hour</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack10">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 10</span>
+                  <span class="plan-hours">10 hours credited</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">70 CHF</span>
+                  <span class="plan-hint">= 7 CHF / hour</span>
+                </div>
+              </button>
+            </div>
+
+            <button type="button" class="plan prepaid-choice" data-prepaid="trial">
+              <div class="plan-top">
+                <span class="plan-name">Try 30 minutes for free</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-hint">
+                  Enjoy the free trial without providing your credit card.
+                </span>
+                <span></span>
+              </div>
+            </button>
+
           </div>
-          <div class="card-price">
-            12CHF
-            <span class="period">per hour</span>
-          </div>
-          <div class="card-features">
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">High-precision automated transcription</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Speaker differentiation</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Precise timestamps</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Secure processing in Europe</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Intelligent Summary</span>
-            </div>
-          </div>
-          <div class="card-cta">
-            <a href="#" class="btn">Get started</a>
-            <p class="cta-note">Choose your package when uploading a file</p>
-          </div>
+
+          <a href="/signup" class="cta-btn prepaid-btn" id="prepaidBtn">Start</a>
+
+          <input type="hidden" id="chosenPrepaid" name="chosenPrepaid" value="">
         </div>
 
-        <div class="pricing-card">
-          <div class="best-value">Best value</div>
-          <div class="card-header">
-            <h3 class="card-title">10-hour package</h3>
-            <p class="card-subtitle">For regular users</p>
+        <!-- SUBSCRIPTIONS -->
+        <div class="pricing-card subs" id="subsCard">
+          <h3 class="card-title">Subscriptions</h3>
+          <p class="card-subtitle">Reduce the hourly rate based on your volume</p>
+
+          <div class="billing-switch" role="tablist" aria-label="Billing">
+            <button type="button" class="billing-tab is-active" data-billing="monthly">Monthly</button>
+            <button type="button" class="billing-tab" data-billing="annual">
+              Annual <span class="discount">-20%</span>
+            </button>
           </div>
-          <div class="card-price">
-            90CHF
-            <span class="period">for 10 hours</span>
+
+          <div class="plans" role="radiogroup" aria-label="Choose a subscription">
+            <button type="button" class="plan" data-plan="starter" data-h="5" data-monthly="25" data-annual="20">
+              <div class="plan-top">
+                <span class="plan-name">Starter</span>
+                <span class="plan-hours">5 hours / month</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">25</span> CHF <span class="per">/ month</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="essential" data-h="10" data-monthly="40" data-annual="32">
+              <div class="plan-top">
+                <span class="plan-name">Essential</span>
+                <span class="plan-hours">10 hours / month</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">40</span> CHF <span class="per">/ month</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="pro" data-h="20" data-monthly="75" data-annual="60">
+              <div class="plan-top">
+                <span class="plan-name">Pro</span>
+                <span class="plan-hours">20 hours / month</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">75</span> CHF <span class="per">/ month</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="business" data-h="50" data-monthly="150" data-annual="120">
+              <div class="plan-top">
+                <span class="plan-name">Business</span>
+                <span class="plan-hours">50 hours / month</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">150</span> CHF <span class="per">/ month</span></span>
+              </div>
+            </button>
+
+            <button type="button" class="plan" data-plan="expert" data-h="100" data-monthly="275" data-annual="220">
+              <div class="plan-top">
+                <span class="plan-name">Expert</span>
+                <span class="plan-hours">100 hours / month</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-price"><span class="price-val">275</span> CHF <span class="per">/ month</span></span>
+              </div>
+            </button>
           </div>
-          <div class="card-features">
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Save 25% on the standard rate</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">All features of the Standard offer</span>
-            </div>
-          </div>
-          <div class="card-cta">
-            <a href="#" class="btn">Get started</a>
-            <p class="cta-note">Choose your package when uploading a file</p>
-          </div>
+
+          <p class="subs-footer">
+            For larger volumes, <a class="subs-link" href="contact.html">contact us</a>
+          </p>
+
+          <a href="/signup" class="cta-btn subs-btn" id="chooseBtn" data-text-default="Choose a subscription"
+            data-text-selected="Choose this subscription">
+            Choose a subscription
+          </a>
+
+          <input type="hidden" id="chosenPlan" name="chosenPlan" value="">
+          <input type="hidden" id="chosenBilling" name="chosenBilling" value="monthly">
         </div>
 
-        <div class="pricing-card">
-          <div class="card-header">
-            <h3 class="card-title">Enterprise</h3>
-            <p class="card-subtitle">For large volumes</p>
-          </div>
-          <div class="card-price">
-            On request
-            <span class="period">tailored to your needs</span>
-          </div>
-          <div class="card-features">
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Volume-based pricing</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">All features of the Standard offer</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Priority support</span>
-            </div>
-            <div class="feature-item">
-              <span class="feature-icon">✓</span>
-              <span class="feature-text">Multi-user access (in development)</span>
-            </div>
-          </div>
-          <div class="card-cta">
-            <a href="mailto:info@swisstranscript.com" class="btn">Contact us</a>
-            <p class="cta-note">Customized solution based on your needs</p>
-          </div>
-        </div>
+      </div>
+      <div class="pricing-footer text-center mt-4">
+        <p>
+          For large volumes or API integration projects, our team will guide you step by step.
+        </p>
+        <a href="contact.html" class="btn primary mt-4">Contact us</a>
       </div>
 
       <div class="info-boxes">
         <div class="info-box">
-          <h3>Transparent pricing</h3>
-          <p>At Swiss Transcript, we believe in simple and transparent pricing. You only pay for what you use, with no
-            hidden fees or subscriptions.</p>
+          <h3>Transparent Pricing</h3>
+          <p>
+            At Swiss Transcript, we believe in simple and transparent pricing.
+            You only pay for what you actually use, with no hidden fees.
+          </p>
           <ul>
-            <li>Billing by the minute, rounded up to the next minute</li>
-            <li>Secure payment by credit card</li>
-            <li>Detailed invoice available in your customer area</li>
+            <li>Billed per minute, rounded up to the next minute</li>
+            <li>Detailed invoice available in your customer account</li>
           </ul>
-          <p>For businesses with significant needs, <a href="mailto:info@swisstranscript.com" class="highlight">contact
-              us</a> for a personalized offer.</p>
+          <p>
+            For businesses with high volume needs,
+            <a href="mailto:info@swisstranscript.com" class="highlight">contact us</a>
+            for a customized offer.
+          </p>
         </div>
 
         <div class="info-box">
-          <h3>Quality guaranteed</h3>
-          <p>Our automatic transcription technology offers exceptional accuracy for most clear recordings. Here are some
-            tips to get the best results:</p>
+          <h3>Guaranteed Quality</h3>
+          <p>
+            Our automatic transcription technology offers exceptional accuracy for most clear recordings.
+            Here are some tips to achieve the best results:
+          </p>
           <ul>
-            <li>Use a quality microphone for your recordings</li>
+            <li>Use a high-quality microphone for your recordings</li>
             <li>Avoid noisy environments</li>
-            <li>Ask speakers to speak clearly and at a normal pace</li>
-            <li>Limit speech overlaps</li>
+            <li>Ask speakers to speak clearly</li>
+            <li>Limit overlapping speech</li>
           </ul>
+
           <div class="security-box">
-            <p class="security-title">Security and privacy</p>
+            <p class="security-title">Security and Privacy</p>
             <ul class="security-list">
-              <li>Data processing in Europe</li>
-              <li>GDPR compliance</li>
+              <li>Data processing in Switzerland</li>
+              <li>GDPR and Swiss Data Protection Act (DSG) compliant</li>
               <li>No storage on foreign clouds</li>
               <li>End-to-end encryption</li>
             </ul>
@@ -304,66 +380,115 @@
         </div>
       </div>
 
-      <div class="faq-section">
-        <h3 class="faq-title">Frequently asked questions about pricing</h3>
+      <div class="faq-section" id="faq">
+        <h3 class="faq-section-title">Frequently Asked Questions About Pricing</h3>
 
         <div class="faq-item">
-          <p class="faq-question">How is the billed duration calculated?</p>
-          <p class="faq-answer">The billed duration corresponds to the actual duration of your audio file, rounded up to
-            the next minute. For example, a file of 10 minutes and 15 seconds will be billed for 11 minutes.</p>
+          <div class="faq-question">How does pricing work?</div>
+          <div class="faq-answer">
+            <p>
+              You receive <strong>30 free minutes</strong> and up to <strong>3 summaries</strong> to test.
+              After that, billing is per minute with two options:
+            </p>
+            <ul>
+              <li><strong>Pay-as-you-go</strong>: pay per minute, up to 3 downloadable summaries per file.</li>
+              <li><strong>Subscription</strong>: 12 CHF/hour or 90 CHF for 10 hours.</li>
+            </ul>
+            <p>
+              Billing is per minute, rounded up to the next minute
+              (e.g.&nbsp;10:15 → billed as 11 minutes).
+              For larger needs, see our <a href="tarifs.html">offers</a> or
+              <a href="contact.html">contact us</a>.
+            </p>
+          </div>
         </div>
 
         <div class="faq-item">
-          <p class="faq-question">Can I try the service before paying?</p>
-          <p class="faq-answer">Yes, you can create an account for free and get 5 minutes of free transcription to test
-            our service.</p>
+          <div class="faq-question">Do you offer packages or volume discounts?</div>
+          <div class="faq-answer">
+            <p>
+              Yes, via <strong>credit packs</strong> (e.g.&nbsp;10 hours: approx.&nbsp;25% discount).
+              Customized pricing is also available for businesses
+              (<a href="contact.html">contact us</a>).
+            </p>
+          </div>
         </div>
 
         <div class="faq-item">
-          <p class="faq-question">Do the credits in the 10-hour package expire?</p>
-          <p class="faq-answer">No, purchased credits do not expire. You can use them whenever you want.</p>
+          <div class="faq-question">How can I purchase a credit pack?</div>
+          <div class="faq-answer">
+            <p>
+              Log in to your account, go to the <em>Buy Credit</em> section.
+              Select the desired pack and pay online—the credit is added to your account immediately.
+            </p>
+          </div>
         </div>
 
         <div class="faq-item">
-          <p class="faq-question">How does billing work for businesses?</p>
-          <p class="faq-answer">For businesses, we offer customized solutions with monthly or quarterly billing
-            according to your preferences. Contact us to discuss your specific needs.</p>
+          <div class="faq-question">Does the credit expire?</div>
+          <div class="faq-answer">
+            <p><strong>No</strong>, there is no expiration date: you can use it whenever you want.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can I get an invoice?</div>
+          <div class="faq-answer">
+            <p>
+              Yes. After each transcription, an invoice is available in your account.
+              For recurring needs, we also offer <strong>periodic billing</strong>
+              (monthly/annual).
+            </p>
+          </div>
         </div>
       </div>
+
+      <a href="contact.html" class="btn" style="max-width: 400px;">Contact us</a>
+
     </div>
   </section>
 
   <section class="cta-section">
     <div class="container">
       <h2>Ready to try Swiss Transcript?</h2>
-      <p>Create your account for free and get 30 minutes of free transcription.</p>
-      <a href="#" class="btn">Create account</a>
+      <p>Create your free account and get 30 minutes of transcription for free.</p>
+      <a href="#" class="btn">Get started</a>
     </div>
   </section>
+
   <!-- Section 11 -->
   <footer>
     <div class="container">
-      <div class="footer-container max-w-3xl mx-auto">
+      <div class="footer-container">
+
+        <div class="footer-brand">
+          <img src="../images/logo_white.svg" alt="Swiss Transcript" class="footer-logo" />
+          <div class="footer-byline">by <strong>Swiss Machina Sàrl</strong></div>
+        </div>
+
         <div class="footer-col">
-          <h3>Legal</h3>
           <ul>
-            <li><a href="./legal.html#politique-confidentialite">Terms of Use</a></li>
-            <li><a href="./legal.html#cgu">Privacy Policy</a></li>
-            <li><a href="./legal.html#mentions-legales">Legal Notice</a></li>
+            <li><a href="./legal.html#terms">Terms of Use</a></li>
+            <li><a href="./legal.html#privacy">Privacy Policy</a></li>
+            <li><a href="./legal.html#legal-notice">Legal Notice</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h3>Contact</h3>
           <ul>
-            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>          
+            <li><a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
+
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
 
   <script src="../script.js"></script>
 </body>

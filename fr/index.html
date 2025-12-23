@@ -73,7 +73,7 @@
 
 </head>
 
-<body id="home" class="montserrat-font text-white w-full lg:text-xl">
+<body id="home" class="montserrat-font text-white w-full lg:text-xl" data-billed-annually="Facturé annuellement">
 
   <!-- AJOUT Bouton Scroll to Top -->
   <button id="scrollToTopBtn"
@@ -114,7 +114,7 @@
           </div>
         </div>
       </div>
-      <button class="close-btn" id="close-alternating-banner" title="Fermer cette annonce">×</button>
+      <!-- <button class="close-btn" id="close-alternating-banner" title="Fermer cette annonce">×</button> -->
     </div>
     <div class="container">
       <div class="header-container flex justify-between items-center px-2">
@@ -261,11 +261,13 @@
         <!-- 1. ENREGISTREMENT -->
         <div class="feature-card">
           <div class="feature-image">
-            <img src="../images/fonctions/1. enregistrement.png" alt="Enregistrement écran">
+            <img src="../images/fonctions/Enregistrement.png" alt="Enregistrement écran">
           </div>
           <h3>Enregistrement</h3>
           <p>
-          Enregistrez vos réunions directement depuis notre interface sécurisée, sans logiciel supplémentaire. Même hors connexion, vos enregistrements se synchronisent automatiquement dès que le réseau est disponible. Vous pouvez aussi importer un fichier audio ou vidéo, y compris depuis votre dictaphone.
+            Enregistrez vos réunions directement depuis notre interface sécurisée, sans logiciel supplémentaire. Même
+            hors connexion, vos enregistrements se synchronisent automatiquement dès que le réseau est disponible. Vous
+            pouvez aussi importer un fichier audio ou vidéo, y compris depuis votre dictaphone.
           </p>
           <div class="tags">
             <span class="tag">Dictaphone</span>
@@ -276,11 +278,13 @@
         <!-- 2. TRANSCRIPTION -->
         <div class="feature-card">
           <div class="feature-image">
-            <img src="../images/fonctions/2. transcription.png" alt="Exemple de transcription">
+            <img src="../images/fonctions/Transcription.png" alt="Exemple de transcription">
           </div>
           <h3>Transcription</h3>
           <p>
-          Obtenez une transcription fiable générée en quelques secondes, compatible suisse allemand, allemand, français et anglais. Les intervenants sont automatiquement identifiés et chaque échange peut être horodaté afin de retrouver instantanément les informations essentielles.
+            Obtenez une transcription fiable générée en quelques secondes, compatible suisse allemand, allemand,
+            français et anglais. Les intervenants sont automatiquement identifiés et chaque échange peut être horodaté
+            afin de retrouver instantanément les informations essentielles.
           </p>
           <div class="tags">
             <span class="tag">Suisse allemand</span>
@@ -291,11 +295,13 @@
         <!-- 3. COMPTE-RENDU -->
         <div class="feature-card">
           <div class="feature-image">
-            <img src="../images/fonctions/3. compte-rendu.png" alt="Exemple de compte rendu">
+            <img src="../images/fonctions/Compte-rendu.png" alt="Exemple de compte rendu">
           </div>
           <h3>Compte-rendu</h3>
           <p>
-          Générez en quelques secondes des comptes rendus clairs et structurés, immédiatement exploitables. Et parce que chaque besoin est différent, des synthèses sur mesure peuvent être développées lors de projets pilotes, intégrant votre lexique et votre contexte métier.
+            Générez en quelques secondes des comptes rendus clairs et structurés, immédiatement exploitables. Et parce
+            que chaque besoin est différent, des synthèses sur mesure peuvent être développées lors de projets pilotes,
+            intégrant votre lexique et votre contexte métier.
           </p>
           <div class="tags">
             <span class="tag">Synthèses sur mesure</span>
@@ -306,11 +312,13 @@
         <!-- API -->
         <div class="feature-card">
           <div class="feature-image">
-            <img src="../lucie_tentative_files/Api_bientot.png" alt="API Swiss Transcript">
+            <img src="../images/fonctions/API.png" alt="API Swiss Transcript">
           </div>
           <h3>API</h3>
           <p>
-          Dès mars 2026, l’API Swiss Transcript permettra d’utiliser nos fonctionnalités directement depuis vos outils internes, sans modifier vos habitudes. Un simple bouton suffira pour lancer l’enregistrement, la transcription et le compte rendu.
+            Dès mars 2026, l’API Swiss Transcript permettra d’utiliser nos fonctionnalités directement depuis vos outils
+            internes, sans modifier vos habitudes. Un simple bouton suffira pour lancer l’enregistrement, la
+            transcription et le compte rendu.
           </p>
           <div class="tags">
             <span class="tag">Mars 2026</span>
@@ -331,8 +339,6 @@
 
     </div>
   </section>
-
-
 
   <section class="usp">
     <div class="container">
@@ -394,81 +400,88 @@
 
       <div class="pricing-cards">
 
-        <!-- COLONNE 1 : PREPAID -->
         <div class="pricing-card prepaid">
           <h3 class="card-title">À la minute</h3>
           <p class="card-subtitle">
-            Idéal pour un besoin ponctuel, <strong>sans engagement</strong>
+            Idéal pour un besoin ponctuel, <br><strong>sans engagement</strong>
           </p>
 
+          <div class="plans prepaid-plans" role="radiogroup" aria-label="Choisir une formule prepaid">
 
-          <div class="minute-pill">
-            <div class="minute-pill-main">
-              <span class="minute-value">0.20</span>
-              <span class="minute-unit">CHF/min</span>
+            <div class="minute-pill">
+              <div class="minute-pill-main">
+                <span class="minute-value">0.20</span>
+                <span class="minute-unit">CHF/min</span>
+              </div>
+              <div class="minute-pill-sub">= 12 CHF / heure</div>
             </div>
-            <div class="minute-pill-sub">= 12 CHF / heure</div>
+
+            <div class="packs-wrap">
+              <p class="packs-intro">
+                Packs<br>
+                <span class="packs-sub">Sélectionner un pack de crédits avantageux,<br>sans limite de validité</span>
+              </p>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack1">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 1</span>
+                  <span class="plan-hours">1 h créditée</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">10 CHF</span>
+                  <span class="plan-hint">= 10 CHF / heure</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack5">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 5</span>
+                  <span class="plan-hours">5 h créditées</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">40 CHF</span>
+                  <span class="plan-hint">= 8 CHF / heure</span>
+                </div>
+              </button>
+
+              <button type="button" class="plan prepaid-choice" data-prepaid="pack10">
+                <div class="plan-top">
+                  <span class="plan-name">Pack 10</span>
+                  <span class="plan-hours">10 h créditées</span>
+                </div>
+                <div class="plan-bottom">
+                  <span class="plan-price">70 CHF</span>
+                  <span class="plan-hint">= 7 CHF / heure</span>
+                </div>
+              </button>
+            </div>
+
+            <button type="button" class="plan prepaid-choice" data-prepaid="trial">
+              <div class="plan-top">
+                <span class="plan-name">Essayez 30 minutes gratuitement</span>
+              </div>
+              <div class="plan-bottom">
+                <span class="plan-hint">Profitez de l’essai gratuit sans fournir votre carte de crédit.</span>
+                <span></span>
+              </div>
+            </button>
+
           </div>
 
-          <div class="packs-wrap">
-            <p class="packs-intro">
-              Possibilité d’acheter des packs de crédits avantageux,<br>
-              sans limite de validité :
-            </p>
+          <a href="/signup" class="cta-btn prepaid-btn" id="prepaidBtn">Commencer</a>
 
-            <div class="pack-row">
-              <div class="pack-left">
-                <strong>Pack 1</strong>
-                <span>1 h créditée</span>
-              </div>
-              <div class="pack-right">
-                <strong>10 CHF</strong>
-                <span>= 10.00 CHF / heure</span>
-              </div>
-            </div>
-
-            <div class="pack-row">
-              <div class="pack-left">
-                <strong>Pack 5</strong>
-                <span>5 h créditées</span>
-              </div>
-              <div class="pack-right">
-                <strong>40 CHF</strong>
-                <span>= 8.00 CHF / heure</span>
-              </div>
-            </div>
-
-            <div class="pack-row">
-              <div class="pack-left">
-                <strong>Pack 10</strong>
-                <span>10 h créditées</span>
-              </div>
-              <div class="pack-right">
-                <strong>70 CHF</strong>
-                <span>= 7.00 CHF / heure</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="trial-box">
-            Essayez 30 min gratuitement
-          </div>
-          <p class="trial-note">
-            Profitez de l’essai gratuit sans fournir votre carte de crédit.
-          </p>
-
-
-          <a href="/signup" class="cta-btn prepaid-btn">Commencer</a>
+          <input type="hidden" id="chosenPrepaid" name="chosenPrepaid" value="">
         </div>
 
-        <!-- COLONNE 2 : ABONNEMENTS -->
+
         <div class="pricing-card subs" id="subsCard">
           <h3 class="card-title">Abonnements</h3>
           <p class="card-subtitle">Réduisez le prix horaire selon votre volume</p>
 
           <div class="billing-switch" role="tablist" aria-label="Facturation">
             <button type="button" class="billing-tab is-active" data-billing="monthly">Mensuel</button>
-            <button type="button" class="billing-tab" data-billing="annual">Annuel <span class="discount">-20%</span></button>
+            <button type="button" class="billing-tab" data-billing="annual">Annuel <span
+                class="discount">-20%</span></button>
           </div>
 
           <div class="plans" role="radiogroup" aria-label="Choisir un abonnement">
@@ -532,7 +545,11 @@
             Pour des volumes supérieurs, <a class="subs-link" href="/contact">contactez-nous</a>
           </p>
 
-          <a href="/signup" class="cta-btn subs-btn" id="chooseBtn">Choisir un abonnement</a>
+          <a href="/signup" class="cta-btn subs-btn" id="chooseBtn" data-text-default="Choisir un abonnement"
+            data-text-selected="Choisir cet abonnement">
+            Choisir un abonnement
+          </a>
+
 
           <input type="hidden" id="chosenPlan" name="chosenPlan" value="">
           <input type="hidden" id="chosenBilling" name="chosenBilling" value="monthly">
@@ -547,40 +564,6 @@
       </div>
     </div>
   </section>
-
-  <!-- <section class="subscription-block">
-    <div class="container subscription-grid">
-
-      <div class="subscription-text">
-        <span class="subscription-eyebrow">ABONNEMENTS</span>
-
-        <h2 class="subscription-title">
-          Dès début 2026, Swiss Transcript proposera une gamme d’abonnements mensuels
-          de 2 à 1000 heures, adaptés aussi bien aux besoins individuels qu’aux grandes équipes.
-        </h2>
-
-        <p>
-          Ces formules flexibles donneront accès à la transcription sécurisée et aux comptes rendus
-          sur mesure, avec un tarif avantageux allant de 6 CHF à 2 CHF de l’heure,
-          selon le volume choisi.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Début 2026</span>
-          <span class="tag">Économique</span>
-          <span class="tag">Flexible</span>
-        </div>
-      </div>
-
-      <div class="subscription-divider"></div>
-
-      <div class="subscription-image">
-        <img src="../lucie_tentative_files/Api_bientot.png" alt="Abonnements Swiss Transcript">
-      </div>
-
-    </div>
-  </section> -->
-
 
   <section class="comparison pt-14">
     <div class="section-title">
@@ -638,41 +621,6 @@
       <a href="securite.html" class="btn mt-4 lg:mt-0">Voir la sécurité</a>
     </div>
   </section>
-
-  <!-- <section class="subscription-block">
-    <div class="container subscription-grid">
-
-      <div class="subscription-text">
-        <span class="subscription-eyebrow">API</span>
-
-        <h2 class="subscription-title">
-          Dès mars 2026, notre API vous permettra d’intégrer Swiss Transcript
-          directement dans vos outils internes, sans changer vos habitudes.
-        </h2>
-
-        <p>
-          SIRH, plateformes métiers, applications web ou environnements internes :
-          tout se connecte en quelques lignes de code, avec une intégration simple et fiable.
-          Un bouton “Enregistrer” suffit pour déclencher la transcription et le compte rendu,
-          exactement comme sur notre plateforme.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Mars 2026</span>
-          <span class="tag">API</span>
-          <span class="tag">Entreprise</span>
-        </div>
-      </div>
-
-      <div class="subscription-divider"></div>
-
-      <div class="subscription-image">
-        <img src="../lucie_tentative_files/Api_bientot.png" alt="API à venir">
-      </div>
-
-    </div>
-  </section> -->
-
 
   <section class="use-cases">
     <div class="container">
@@ -744,9 +692,6 @@
 
       </div>
     </div>
-  </section>
-
-  </div>
   </section>
 
   <section class="testimonials">
@@ -825,35 +770,6 @@
       </div>
     </div>
   </section>
-
-  <!-- <section class="devices">
-    <div class="container">
-      <div class="section-title">
-        <h2>Compatible avec tous vos appareils</h2>
-        <p>Utilisez vos enregistrements depuis n'importe quelle source</p>
-      </div>
-      <div class="devices-container">
-        <div class="device-card  flex flex-col">
-          <div class="device-icon">
-            <img src="../images/home/Smartphone.jpg" alt="Smartphone">
-          </div>
-          <h3 class="device-title">Smartphone, tablette, ordinateur</h3>
-          <p class="device-description mb-4">Enregistrez votre réunion en direct ou importez un fichier déjà enregistré.
-          </p>
-        </div>
-        <div class="device-card  flex flex-col">
-          <div class="device-icon">
-            <img src="../images/home/Dictaphone.jpg" alt="Dictaphone">
-          </div>
-          <h3 class="device-title">Dictaphone</h3>
-          <p class="device-description">Importez facilement les fichiers de votre dictaphone professionnel.</p>
-        </div>
-      </div>
-    </div>
-    <div class="mt-4 text-center">
-      <a href="/signup" class="btn primary mt-4">Essayer gratuitement</a>
-    </div>
-  </section> -->
 
   <section class="cta">
     <div class="container">
