@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <html lang="fr">
 
 <head>
@@ -8,57 +9,47 @@
   <title>Kontakt & Support | Transkription Kundendienst | Swiss Transcript</title>
   <meta name="description"
     content="Benötigen Sie Hilfe bei Ihrer Transkription? Unser Team in der Schweiz steht Ihnen zur Verfügung. Prioritätsunterstützung für Unternehmen, schnelle Antwort und personalisierte Hilfe für alle Ihre Projekte." />
-  <link rel="canonical" href="https://swisstranscript.com/de/kontakt.html" />
-  <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/contact.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/contact.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/kontakt.html" />
-  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/de/kontakt.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/de/kontakt.html" />
+  <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/contact.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/kontakt.html" />
+  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/de/kontakt.html" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swisstranscript.com/de/kontakt.html" />
+  <meta property="og:url" content="https://swisstranscript.ch/de/kontakt.html" />
   <meta property="og:title" content="Kontakt & Support | Transkription Kundendienst | Swiss Transcript" />
   <meta property="og:description"
     content="Kontaktieren Sie unser Team in der Schweiz für Fragen zu unseren Transkriptionsdiensten. Prioritätsunterstützung für Unternehmen und personalisierte Hilfe für alle Ihre Projekte." />
-  <meta property="og:image" content="https://swisstranscript.com/images/og-image-kontakt-de.jpg" />
+  <meta property="og:image" content="https://swisstranscript.ch/images/og-image-kontakt-de.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://swisstranscript.com/de/kontakt.html" />
+  <meta name="twitter:url" content="https://swisstranscript.ch/de/kontakt.html" />
   <meta name="twitter:title" content="Kontakt & Support | Transkription Kundendienst | Swiss Transcript" />
   <meta name="twitter:description"
     content="Kontaktieren Sie unser Team in der Schweiz für Fragen zu unseren Transkriptionsdiensten. Prioritätsunterstützung für Unternehmen und personalisierte Hilfe für alle Ihre Projekte." />
-  <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-kontakt-de.jpg" />
+  <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-kontakt-de.jpg" />
 
-  <link rel="canonical" href="https://swisstranscript.com/de/contact.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/fr/contact.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/en/contact.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/de/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/fr/contact.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/en/contact.html" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-  <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
   <!-- Indexation -->
   <meta name="robots" content="index, follow">
+  <script nonce="<?php echo $csp_nonce ?>" src="../lib/altcha/altcha.min.js" type="module" async defer></script>
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+  <?php writeGoogleTag() ?>
   <!-- End Google Tag Manager -->
 
 </head>
 
-<body id="contact" class="montserrat-font text-white w-full lg:text-xl">
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<body id="contact" class="montserrat-font text-white w-full lg:text-xl">
 
   <!-- AJOUT Bouton Scroll to Top -->
   <button id="scrollToTopBtn"
@@ -79,12 +70,12 @@
         <!-- Navigation desktop -->
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
           <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Startseite</a></li>
-            <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
-            <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
-            <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-            <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
-            <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
+            <li><a href="index.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Startseite</a></li>
+            <li><a href="preise.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Preise</a></li>
+            <li><a href="sicherheit.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sicherheit</a></li>
+            <li><a href="demo.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Demo</a></li>
+            <li><a href="about.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Über uns</a></li>
+            <li><a href="contact.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -95,7 +86,7 @@
               class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
               Anmelden
             </a>
-            <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+            <a href="/signup?lang=de" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Testen
             </a>
             <div id="languageSwitcher" class="hidden lg:flex space-x-2">
@@ -150,7 +141,7 @@
             class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
             Anmelden
           </a>
-          <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+          <a href="/signup?lang=de" class="px-3 py-1 text-sm rounded-md font-bold button-try">
             Testen
           </a>
         </div>
@@ -235,7 +226,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2026 Swiss Transcript. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>

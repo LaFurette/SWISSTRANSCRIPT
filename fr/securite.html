@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <html lang="fr">
 
 <head>
@@ -8,59 +9,46 @@
     <title>Sécurité & Confidentialité des Données | Transcription RGPD et LPD | Swiss Transcript</title>
     <meta name="description"
         content="Traitement 100% en Suisse avec chiffrement de bout en bout et conformité RGPD/LPD. Infrastructure sécurisée pour vos transcriptions confidentielles. IA locale Mistral, authentification double facteur et aucune API externe." />
-    <link rel="canonical" href="https://swisstranscript.com/fr/securite.html" />
-    <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/securite.html" />
-    <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/security.html" />
-    <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/sicherheit.html" />
-    <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/fr/securite.html" />
+    <link rel="canonical" href="https://swisstranscript.ch/fr/securite.html" />
+    <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/securite.html" />
+    <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/security.html" />
+    <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/sicherheit.html" />
+    <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/fr/securite.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://swisstranscript.com/fr/securite.html" />
-    <meta property="og:title"
-        content="Sécurité & Confidentialité des Données | Transcription RGPD | Swiss Transcript" />
+    <meta property="og:url" content="https://swisstranscript.ch/fr/securite.html" />
+    <meta property="og:title" content="Sécurité & Confidentialité des Données | Transcription RGPD | Swiss Transcript" />
     <meta property="og:description"
         content="Découvrez comment nous protégeons vos données sensibles: traitement 100% en Suisse, chiffrement de bout en bout, IA locale et conformité RGPD/LPD. Aucun stockage permanent de vos fichiers." />
-    <meta property="og:image" content="https://swisstranscript.com/images/og-image-securite-fr.jpg" />
+    <meta property="og:image" content="https://swisstranscript.ch/images/og-image-securite-fr.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://swisstranscript.com/fr/securite.html" />
+    <meta name="twitter:url" content="https://swisstranscript.ch/fr/securite.html" />
     <meta name="twitter:title"
         content="Sécurité & Confidentialité des Données | Transcription RGPD | Swiss Transcript" />
     <meta name="twitter:description"
         content="Découvrez comment nous protégeons vos données sensibles: traitement 100% en Suisse, chiffrement de bout en bout, IA locale et conformité RGPD/LPD. Aucun stockage permanent de vos fichiers." />
-    <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-securite-fr.jpg" />
+    <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-securite-fr.jpg" />
 
-    <link rel="canonical" href="https://swisstranscript.com/fr/securite.html" />
-    <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/security.html" />
-    <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/sicherheit.html" />
+    <link rel="canonical" href="https://swisstranscript.ch/fr/securite.html" />
+    <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/security.html" />
+    <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/sicherheit.html" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-    <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+    <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
     <!-- Indexation -->
     <meta name="robots" content="index, follow">
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+    <?php writeGoogleTag() ?>
     <!-- End Google Tag Manager -->
 
 </head>
 
 <body id="secu" class="montserrat-font text-white w-full lg:text-xl">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- AJOUT Bouton Scroll to Top -->
     <button id="scrollToTopBtn"
@@ -87,7 +75,7 @@
                                 class="px-4  py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Tarifs</a>
                         </li>
                         <li><a href="securite.html"
-                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sécurité</a>
+                                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active">Sécurité</a>
                         </li>
                         <li><a href="demo.html"
                                 class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Démo</a>
@@ -108,7 +96,7 @@
                             class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
                             Connexion
                         </a>
-                        <a href="tarifs.html" target="_blank"
+                        <a href="/signup?lang=fr" target="_blank"
                             class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
                             Essayer
                         </a>
@@ -165,7 +153,7 @@
                         class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
                         Connexion
                     </a>
-                    <a href="tarifs.html" target="_blank"
+                    <a href="/signup?lang=fr" target="_blank"
                         class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
                         Essayer
                     </a>
@@ -180,9 +168,6 @@
         <div class="container">
             <div class="security-intro">
                 <h2>Une sécurité sans compromis</h2>
-                <!-- <p>Chez Swiss Transcript, nous comprenons l'importance de la confidentialité de vos données. C'est
-                        pourquoi nous avons mis en place des mesures de sécurité rigoureuses pour protéger vos informations
-                        sensibles.</p> -->
             </div>
     
             <div class="security-content">
@@ -246,15 +231,12 @@
                     <div class="feature-card">
                         <div class="feature-number mx-auto">6</div>
                         <h3>Aucun accès au contenu par nos collaborateurs </h3>
-                        <p>La confidentialité est une valeur
-                            non négociable pour nous.
+                        <p>
                             Vos enregistrements, transcriptions
                             et résumés restent liés à votre
                             propre compte. Nos collaborateurs
                             n’ont aucun accès à votre contenu
-                            et vos données. vos données ne
-                            seront jamais partagées ni revendues
-                            à des tiers.</p>
+                            et vos données.</p>
                     </div>
                 </div>
             </div>
@@ -263,7 +245,7 @@
     <section class="compliance-section mb-0">
         <div class="container compliance-container">
             <div class="compliance-title">
-                <h2>Authentification à double facteur (2FA).</h2>
+                <h2>Authentification à double facteur (2FA)</h2>
             </div>
     
             <div class="compliance-cards">
@@ -393,7 +375,7 @@
             <h2>Prêt à essayer le service de transcription le plus sécurisé ?</h2>
             <p>Commencez dès aujourd'hui et découvrez comment Swiss Transcript peut vous faire gagner du temps tout en
                 préservant la confidentialité de vos données.</p>
-            <a href="tarifs.html" class="btn">Créer un compte</a>
+            <a href="/signup?lang=fr" class="btn">Créer un compte</a>
         </div>
     </section>
 
@@ -424,7 +406,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Swiss Transcript. Tous droits réservés.</p>
+                <p>&copy; 2026 Swiss Transcript. Tous droits réservés.</p>
             </div>
         </div>
     </footer>

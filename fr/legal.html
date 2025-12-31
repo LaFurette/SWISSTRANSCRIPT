@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <html lang="fr">
 
 <head>
@@ -5,28 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
   <title>Swiss Transcript | Conditions d'Utilisation et Politique de Confidentialité</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" href="../styles.css?v=2.0">
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+  <?php writeGoogleTag() ?>
   <!-- End Google Tag Manager -->
 
 </head>
 
 <body class="text-white w-full lg:text-xl">
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <button id="scrollToTopBtn"
     class="fixed z-50 bottom-6 right-6 bg-gradient-to-r from-[#011e61] to-[#2b4ca1] text-white p-4 rounded-full shadow-lg opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -72,7 +61,7 @@
               class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
               Connexion
             </a>
-            <a href="tarifs.html" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+            <a href="/signup?lang=fr" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Essayer
             </a>
             <div id="languageSwitcher" class="hidden lg:flex space-x-2">
@@ -117,7 +106,7 @@
               class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
               Connexion
             </a>
-            <a href="tarifs.html" target="_blank"
+            <a href="/signup?lang=fr" target="_blank"
               class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
               Essayer
             </a>
@@ -131,7 +120,7 @@
   <div id="confidentialite" class="flex text-justify md:text-left">
     <div class="w-full text-black p-4 md:p-8 lg:p-16">
       <a name="mentions_legales"></a>
-      <h3 class="text-left my-2 lg:my-4 font-bold text-3xl pt-12">
+      <h3 class="text-left my-2 lg:my-4 font-bold text-3xl">
         Mentions légales
       </h3>
       <p class="">
@@ -145,7 +134,7 @@
       <p class="">
         Responsable de la publication : M. Cédric Paternotte, fondateur.
       </p>
-      Contact : <a href="mailto:hello@swisstranscript.com">hello@swisstranscript.com</a>
+      Contact : <span class="contact-email-section"></span>
       <p class="">
         Hébergeur : INFOMANIAK NETWORK SA, société anonyme de droit suisse,
       </p>
@@ -174,23 +163,37 @@
         (ci-après les "Utilisateurs").
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">1. Description des Services</h3>
-      <p class="">
-        Swiss Transcript propose un service en ligne de transcription automatisée de fichiers
-        audio et vidéo en texte. Via notre interface web sécurisée, nos clients peuvent :
-        <br />
-        - Importer leurs fichiers audio ou vidéo (entretiens, réunions, conférences,
-        cours, vidéos, etc.)
-        <br />
-        - Lancer la transcription automatique de ces fichiers grâce à nos algorithmes de
-        reconnaissance vocale adaptés au français. En quelques minutes, sans intervention
-        humaine, le contenu oral est converti en texte.
-        <br />
-        - Obtenir le résultat sous la forme d'un fichier texte RTF qu'ils peuvent télécharger.
-        <br /><br />
-        Notre service s'adresse aussi bien aux particuliers (étudiants, chercheurs,
-        créateurs de contenu) qu'aux professionnels ayant un enjeu de confidentialité
-        (administrations, médias, psychologues, coachs RH, etc.).
+      <p>
+        Swiss Transcript propose un service en ligne de <strong>transcription automatique</strong> et de
+        <strong>génération de comptes rendus</strong> de fichiers audio et vidéo en texte, accessible
+        depuis une interface web sécurisée <strong>hébergée en Suisse</strong>.
       </p>
+
+      <p>
+        Via notre plateforme, nos clients peuvent&nbsp;:
+      </p>
+
+      <ul class="list-disc  pl-6">
+        <li>
+          Importer des fichiers audio ou vidéo (réunions, entretiens, conférences, cours, etc.)
+          ou enregistrer directement leurs réunions depuis l’interface.
+        </li>
+        <li>
+          Lancer la transcription automatique grâce à nos modèles de reconnaissance vocale,
+          compatibles avec plusieurs langues (français, allemand, anglais et suisse allemand).
+        </li>
+        <li>
+          Obtenir des transcriptions fiables et des comptes rendus structurés, générés en quelques
+          secondes et disponibles au téléchargement.
+        </li>
+      </ul>
+
+      <p>
+        Swiss Transcript met l’accent sur la <strong>confidentialité</strong> et la
+        <strong>sécurité des données</strong>&nbsp;: toutes les données sont traitées et hébergées
+        en Suisse, sans recours à des serveurs étrangers.
+      </p>
+
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         2. Acceptation des CGU
@@ -206,16 +209,17 @@
         3. Tarification et paiement
       </h3>
       <p class="">
-        Swiss Transcript facture ses services de transcription automatique à la minute
-        d'audio/vidéo traitée, au tarif unique de 0.20 EUR par minute.
-        <br />
-        Le paiement s'effectue à l'acte, après validation par le client du devis
-        calculé automatiquement en fonction de la durée totale des fichiers importés.
-        Aucun abonnement ni frais récurrents ne sont appliqués.
-        <br />
-        Les paiements sont réalisés via la solution sécurisée de notre partenaire
-        SaferPay/SixPayment, garantissant une transaction fiable pour nos clients et
-        nous-mêmes.
+        Swiss Transcript facture ses services de transcription automatique à la minute d’audio/vidéo traitée. Le tarif
+        de base est de 0,20 CHF par minute (swisstranscript.ch). Dans ce cas, le paiement s’effectue à l’acte, après
+        validation par le client du devis calculé automatiquement en fonction de la durée totale des fichiers importés.
+        Aucun abonnement ni frais récurrents n’est appliqué pour l’offre à la minute.
+        <br>
+        Des packs de crédits avantageux et des abonnements mensuels ou annuels sont également proposés pour les besoins
+        plus fréquents ou les volumes importants, avec des tarifs dégressifs. Pour les volumes plus élevés, le prix
+        d’abonnement peut en moyenne atteindre environ 3 CHF de l’heure.
+        <br>
+        Les paiements sont réalisés via la solution sécurisée de notre partenaire SaferPay / SixPayment, garantissant
+        une transaction fiable pour nos clients et pour nous-mêmes.
       </p>
 
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
@@ -505,7 +509,7 @@
       <p class="">
         Vous disposez d'un droit d'accès, de rectification et de suppression
         de vos données, que vous pouvez exercer en nous contactant à l'adresse
-        <a href="mailto:hello@swisstranscript.com">hello@swisstranscript.com</a>
+        <span class="contact-email-section"></span>
       </p>
       <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
         7. Législation applicable
@@ -519,7 +523,6 @@
       </p>
     </div>
   </div>
-
   <!-- Section 11 -->
   <footer>
     <div class="container">
@@ -531,9 +534,9 @@
 
         <div class="footer-col">
           <ul>
-            <li><a href="./legal.html#cgu">Conditions d'utilisation</a></li>
-            <li><a href="./legal.html#politique-confidentialite">Politique de confidentialité</a></li>
-            <li><a href="./legal.html#mentions-legales">Mentions légales</a></li>
+            <li><a href="#cgu">Conditions d'utilisation</a></li>
+            <li><a href="#politique-confidentialite">Politique de confidentialité</a></li>
+            <li><a href="#mentions_legales">Mentions légales</a></li>
           </ul>
         </div>
 
@@ -547,7 +550,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Tous droits réservés.</p>
+        <p>&copy; 2026 Swiss Transcript. Tous droits réservés.</p>
       </div>
     </div>
   </footer>

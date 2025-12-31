@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -9,59 +10,47 @@
   <title>Audio & Video Transkriptionspreise | Transparente Tarife ohne Bindung | Swiss Transcript</title>
   <meta name="description"
     content="Nutzungsbasierte Preise ab 0,20CHF/Min. Wirtschaftliche Pakete: -20% für 5h, -25% für 10h. Keine Bindung, 30 Minuten kostenlose Testversion. Sichere Zahlungsoptionen. Alle Funktionen inklusive." />
-  <link rel="canonical" href="https://swisstranscript.com/de/preise.html" />
-  <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/tarifs.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/pricing.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/preise.html" />
-  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/de/preise.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/de/preise.html" />
+  <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/tarifs.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/pricing.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/preise.html" />
+  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/de/preise.html" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swisstranscript.com/de/preise.html" />
+  <meta property="og:url" content="https://swisstranscript.ch/de/preise.html" />
   <meta property="og:title"
     content="Audio & Video Transkriptionspreise | Transparente Tarife ohne Bindung | Swiss Transcript" />
   <meta property="og:description"
     content="Entdecken Sie unsere transparenten Preise: ab 0,20CHF/Min, wirtschaftliche Pakete mit Rabatten bis zu 25%, 30 Minuten kostenlose Testversion. Keine Bindung, sichere Zahlung und alle Funktionen inklusive." />
-  <meta property="og:image" content="https://swisstranscript.com/images/og-image-preise-de.jpg" />
+  <meta property="og:image" content="https://swisstranscript.ch/images/og-image-preise-de.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://swisstranscript.com/de/preise.html" />
+  <meta name="twitter:url" content="https://swisstranscript.ch/de/preise.html" />
   <meta name="twitter:title"
     content="Audio & Video Transkriptionspreise | Transparente Tarife ohne Bindung | Swiss Transcript" />
   <meta name="twitter:description"
     content="Entdecken Sie unsere transparenten Preise: ab 0,20CHF/Min, wirtschaftliche Pakete mit Rabatten bis zu 25%, 30 Minuten kostenlose Testversion. Keine Bindung, sichere Zahlung und alle Funktionen inklusive." />
-  <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-preise-de.jpg" />
+  <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-preise-de.jpg" />
 
-  <link rel="canonical" href="https://swisstranscript.com/de/preise.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/fr/tarifs.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/en/pricing.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/de/preise.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/fr/tarifs.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/en/pricing.html" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-  <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
   <!-- Indexation -->
   <meta name="robots" content="index, follow">
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+  <?php writeGoogleTag() ?>
   <!-- End Google Tag Manager -->
 
 </head>
 
-<body id="tarif" class="montserrat-font text-white w-full lg:text-xl">
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<body id="tarif" class="montserrat-font text-white w-full lg:text-xl" data-billed-annually="Jährliche Abrechnung">
 
   <!-- AJOUT Bouton Scroll to Top -->
   <button id="scrollToTopBtn"
@@ -82,12 +71,12 @@
         <!-- Navigation desktop -->
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
           <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Startseite</a></li>
-            <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
-            <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
-            <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-            <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
-            <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
+            <li><a href="index.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Startseite</a></li>
+            <li><a href="preise.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active">Preise</a></li>
+            <li><a href="sicherheit.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sicherheit</a></li>
+            <li><a href="demo.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Demo</a></li>
+            <li><a href="about.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Über uns</a></li>
+            <li><a href="contact.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -98,7 +87,7 @@
               class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
               Anmelden
             </a>
-            <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+            <a href="/signup?lang=de" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Testen
             </a>
             <div id="languageSwitcher" class="hidden lg:flex space-x-2">
@@ -153,7 +142,7 @@
             class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
             Anmelden
           </a>
-          <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+          <a href="/signup?lang=de" class="px-3 py-1 text-sm rounded-md font-bold button-try">
             Testen
           </a>
         </div>
@@ -167,13 +156,11 @@
       <div class="pricing-intro">
         <h2>Wählen Sie das Angebot, das zu Ihnen passt</h2>
         <p>
-          Ob Sie eine gelegentliche oder regelmäßige Transkription benötigen, wir haben die Lösung, die auf Ihre
+          Ob Sie eine gelegentliche oder regelmässige Transkription benötigen, wir haben die Lösung, die auf Ihre
           Bedürfnisse
           zugeschnitten ist.
         </p>
       </div>
-
-
 
       <div class="pricing-cards">
 
@@ -204,8 +191,8 @@
 
               <button type="button" class="plan prepaid-choice" data-prepaid="pack1">
                 <div class="plan-top">
-                  <span class="plan-name">Paket 1</span>
-                  <span class="plan-hours">1 Stunde gutgeschrieben</span>
+                  <span class="plan-name">Paket 1 Stunde</span>
+                  <!-- <span class="plan-hours">1 Stunde</span> -->
                 </div>
                 <div class="plan-bottom">
                   <span class="plan-price">10 CHF</span>
@@ -215,8 +202,8 @@
 
               <button type="button" class="plan prepaid-choice" data-prepaid="pack5">
                 <div class="plan-top">
-                  <span class="plan-name">Paket 5</span>
-                  <span class="plan-hours">5 Stunden gutgeschrieben</span>
+                  <span class="plan-name">Paket 5 Stunden</span>
+                  <!-- <span class="plan-hours">5 Stunden</span> -->
                 </div>
                 <div class="plan-bottom">
                   <span class="plan-price">40 CHF</span>
@@ -226,8 +213,8 @@
 
               <button type="button" class="plan prepaid-choice" data-prepaid="pack10">
                 <div class="plan-top">
-                  <span class="plan-name">Paket 10</span>
-                  <span class="plan-hours">10 Stunden gutgeschrieben</span>
+                  <span class="plan-name">Paket 10 Stunden</span>
+                  <!-- <span class="plan-hours">10 Stunden</span> -->
                 </div>
                 <div class="plan-bottom">
                   <span class="plan-price">70 CHF</span>
@@ -242,13 +229,14 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-hint">
-                  Genießen Sie die kostenlose Testphase, ohne Ihre Kreditkarte anzugeben.
+                  Geniessen Sie die kostenlose Testphase, ohne Ihre Kreditkarte anzugeben.
                 </span>
                 <span></span>
               </div>
             </button>
 
           </div>
+
 
           <a href="/signup" class="cta-btn prepaid-btn" id="prepaidBtn">Starten</a>
 
@@ -275,6 +263,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">25</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -285,6 +274,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">40</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -295,6 +285,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">75</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -305,6 +296,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">150</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -315,12 +307,13 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">275</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
           </div>
 
           <p class="subs-footer">
-            Für größere Volumen <a class="subs-link" href="contact.html">kontaktieren Sie uns</a>
+            Für grössere Volumen <a class="subs-link" href="contact.html">kontaktieren Sie uns</a>
           </p>
 
           <a href="/signup" class="cta-btn subs-btn" id="chooseBtn" data-text-default="Abonnement auswählen"
@@ -335,79 +328,67 @@
       </div>
       <div class="pricing-footer text-center mt-4">
         <p>
-          Für große Volumen oder API-Integrationsprojekte begleitet Sie unser Team Schritt für Schritt.
+          Für grosse Volumen oder API-Integrationsprojekte begleitet Sie unser Team Schritt für Schritt.
         </p>
         <a href="contact.html" class="btn primary mt-4">Kontaktieren Sie uns</a>
       </div>
 
-      <div class="info-boxes">
-        <div class="info-box">
-          <h3>Transparente Preisgestaltung</h3>
-          <p>
-            Bei Swiss Transcript setzen wir auf eine einfache und transparente Preisgestaltung.
-            Sie zahlen nur für das, was Sie tatsächlich nutzen, ohne versteckte Kosten.
-          </p>
-          <ul>
-            <li>Abrechnung pro Minute, auf die nächste Minute aufgerundet</li>
-            <li>Detaillierte Rechnung in Ihrem Kundenbereich verfügbar</li>
-          </ul>
-          <p>
-            Für Unternehmen mit hohem Bedarf
-            <a href="mailto:info@swisstranscript.com" class="highlight">kontaktieren Sie uns</a>
-            für ein individuelles Angebot.
-          </p>
-        </div>
 
-        <div class="info-box">
-          <h3>Garantierte Qualität</h3>
-          <p>
-            Unsere automatische Transkriptionstechnologie bietet eine außergewöhnliche Genauigkeit
-            bei den meisten klaren Aufnahmen. Hier einige Tipps, um die besten Ergebnisse zu erzielen:
-          </p>
-          <ul>
-            <li>Verwenden Sie ein hochwertiges Mikrofon für Ihre Aufnahmen</li>
-            <li>Vermeiden Sie laute Umgebungen</li>
-            <li>Bitten Sie die Sprecher:innen, deutlich zu sprechen</li>
-            <li>Begrenzen Sie Sprachüberlappungen</li>
-          </ul>
-
-          <div class="security-box">
-            <p class="security-title">Sicherheit und Datenschutz</p>
-            <ul class="security-list">
-              <li>Datenverarbeitung in der Schweiz</li>
-              <li>DSGVO- und DSG-Konformität</li>
-              <li>Keine Speicherung in ausländischen Clouds</li>
-              <li>Ende-zu-Ende-Verschlüsselung</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-section" id="faq">
+      <div class="faq-section pt-8" id="faq">
         <h3 class="faq-section-title">Häufig gestellte Fragen zu den Preisen</h3>
 
         <div class="faq-item">
           <div class="faq-question">Wie funktioniert die Preisgestaltung?</div>
           <div class="faq-answer">
             <p>
-              Sie erhalten <strong>30 kostenlose Minuten</strong> und bis zu <strong>3 Zusammenfassungen</strong> zum
-              Testen.
-              Danach erfolgt die Abrechnung pro Minute mit zwei Optionen:
+              Sie erhalten <strong>30 kostenlose Minuten</strong>, um die Plattform zu testen, und können
+              bis zu <strong>3 Berichte pro Transkription</strong> erstellen.
+            </p>
+            <p>
+              Anschliessend wählen Sie das Angebot, das am besten zu Ihrem Bedarf passt:
             </p>
             <ul>
-              <li><strong>Pay-as-you-go</strong>: Bezahlung pro Minute, bis zu 3 herunterladbare Zusammenfassungen pro
-                Datei.</li>
-              <li><strong>Abonnement</strong>: 12 CHF/Stunde oder 90 CHF für 10 Stunden.</li>
+              <li>
+                <strong>Einmaliger Bedarf</strong>: Abrechnung pro Minute, ohne Verpflichtung.
+              </li>
+              <li>
+                <strong>Gelegentlicher Bedarf</strong>: Kauf von Stundenpaketen mit gestaffelten Rabatten.
+              </li>
+              <li>
+                <strong>Regelmässiger Bedarf</strong>: Monatliche oder jährliche Abonnements je nach
+                Volumen und Nutzung.
+              </li>
             </ul>
             <p>
-              Die Abrechnung erfolgt minutengenau, auf die nächste Minute aufgerundet
-              (z.&nbsp;B. 10:15 → 11 Minuten berechnet).
-              Für größere Bedarfe siehe unsere <a href="tarifs.html">Angebote</a> oder
-              <a href="contact.html">kontaktieren Sie uns</a>.
+              Die Erstellung von Berichten ist im Preis enthalten, bis zu
+              <strong>3 pro Transkription</strong>.
             </p>
           </div>
         </div>
-
+        <div class="faq-item">
+          <div class="faq-question">Wie kann ich mein Abonnement kündigen?</div>
+          <div class="faq-answer">
+            <p>
+              Sie können Ihr Abonnement jederzeit in Ihrem Kundenbereich kündigen:
+            </p>
+            <ul>
+              <li>Melden Sie sich in Ihrem Konto an</li>
+              <li>Klicken Sie auf <em>Mein Abonnement verwalten</em> und anschliessend auf <em>Kündigen</em></li>
+            </ul>
+            <p>
+              Sobald die Kündigung bestätigt wurde, bleibt Ihr Abonnement bis zum Ende des bereits
+              bezahlten Zeitraums aktiv (es werden keine Teilrückerstattungen vorgenommen).
+              Danach werden Ihnen keine weiteren Gebühren berechnet.
+            </p>
+            <p>
+              <strong>Daten &amp; Konto</strong>: Ihre Daten bleiben bis zur Löschung des Kontos zugänglich.
+            </p>
+            <p>
+              Brauchen Sie Hilfe? Kontaktieren Sie uns unter
+              <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a>
+            </p>
+          </div>
+        </div>
         <div class="faq-item">
           <div class="faq-question">Bieten Sie Pauschalen oder Staffelpreise an?</div>
           <div class="faq-answer">
@@ -436,7 +417,6 @@
             <p><strong>Nein</strong>, es gibt kein Ablaufdatum: Sie können es jederzeit verwenden.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question">Kann ich eine Rechnung erhalten?</div>
           <div class="faq-answer">
@@ -448,8 +428,9 @@
           </div>
         </div>
       </div>
-
-      <a href="contact.html" class="btn" style="max-width: 400px;">Kontaktieren Sie uns</a>
+      <div class="text-center">
+        <a href="contact.html" class="btn" style="max-width: 400px;">Kontaktieren Sie uns</a>
+      </div>
 
 
     </div>
@@ -490,7 +471,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2026 Swiss Transcript. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>

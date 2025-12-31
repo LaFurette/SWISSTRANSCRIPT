@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <html lang="fr">
 
 <head>
@@ -41,24 +42,12 @@
     <meta name="robots" content="index, follow">
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+    <?php writeGoogleTag() ?>
     <!-- End Google Tag Manager -->
 
 </head>
 
 <body id="faq" class="montserrat-font text-white w-full lg:text-xl">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- AJOUT Bouton Scroll to Top -->
     <button id="scrollToTopBtn"
@@ -100,9 +89,9 @@
                 <!-- Login / Signup + Lang switch -->
                 <div class="flex items-center">
                     <div class="hidden md:flex items-center space-x-5">
-                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=fr"
+                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=en"
                             target="_blank">Log in</a>
-                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="pricing.html"
+                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="/signup?lang=en"
                             target="_blank">Try</a>
                         <div class="hidden lg:flex space-x-2" id="languageSwitcher">
                             <a class="lang-link font-bold py-1 rounded-md text-sm active" href="/fr/">FR</a>
@@ -142,16 +131,16 @@
                         <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="flex space-x-2 px-2 py-3" id="languageSwitcherMobile">
-                        <a class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300" href="/fr/">FR</a>
-                        <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/en/">EN</a>
-                        <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/de/">DE</a>
+                        <a class="lang-link py-1 text-sm" href="/fr/">FR</a>
+                        <a class="lang-link py-1 text-sm active" href="/en/">EN</a>
+                        <a class="lang-link py-1 text-sm" href="/de/">DE</a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
                     <a class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login"
-                        href="/login?lang=fr" target="_blank">Log in</a>
+                        href="/login?lang=en" target="_blank">Log in</a>
                     <a class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try"
-                        href="pricing.html" target="_blank">Try</a>
+                        href="/signup?lang=en" target="_blank">Try</a>
                 </div>
             </div>
             <!-- Drawer overlay -->
@@ -500,60 +489,88 @@
         <div class="faq-section">
             <h3 class="faq-section-title">Pricing and Payment</h3>
 
-            <div class="faq-item">
-                <div class="faq-question">How does pricing work?</div>
-                <div class="faq-answer">
-                    <p>
-                        You receive <strong>30 free minutes</strong> and up to <strong>3 summaries</strong> to test the
-                        service.
-                        After that, billing is per minute with two options:
-                    </p>
-                    <ul>
-                        <li><strong>Pay-as-you-go:</strong> pay per minute, up to 3 downloadable summaries per file</li>
-                        <li><strong>Subscription:</strong> CHF 12/hour or CHF 90 for 10 hours</li>
-                    </ul>
-                    <p>
-                        Billing is rounded up to the next minute (e.g. 10:15 → billed as 11 minutes).
-                    </p>
-                </div>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">How does pricing work?</div>
+          <div class="faq-answer">
+            <p>
+              You receive <strong>30 free minutes</strong> and up to <strong>3 summaries</strong> to test.
+              After that, billing is per minute with two options:
+            </p>
+            <ul>
+              <li><strong>Pay-as-you-go</strong>: pay per minute, up to 3 downloadable summaries per file.</li>
+              <li><strong>Subscription</strong>: 12 CHF/hour or 90 CHF for 10 hours.</li>
+            </ul>
+            <p>
+              Billing is per minute, rounded up to the next minute
+              (e.g.&nbsp;10:15 → billed as 11 minutes).
+              For larger needs, see our <a href="tarifs.html">offers</a> or
+              <a href="contact.html">contact us</a>.
+            </p>
+          </div>
+        </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Do you offer packages or volume discounts?</div>
-                <div class="faq-answer">
-                    <p>
-                        Yes, through <strong>credit packs</strong> (e.g. 10 hours ≈ 25% discount).
-                        Custom pricing is available for businesses.
-                    </p>
-                </div>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you offer packages or volume discounts?</div>
+          <div class="faq-answer">
+            <p>
+              Yes, via <strong>credit packs</strong> (e.g.&nbsp;10 hours: approx.&nbsp;25% discount).
+              Customized pricing is also available for businesses
+              (<a href="contact.html">contact us</a>).
+            </p>
+          </div>
+        </div>
 
-            <div class="faq-item">
-                <div class="faq-question">How can I purchase a credit pack?</div>
-                <div class="faq-answer">
-                    <p>
-                        Log in to your account, go to <em>Buy Credit</em>, select the desired pack and pay online.
-                        Credit is added instantly.
-                    </p>
-                </div>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">How can I purchase a credit pack?</div>
+          <div class="faq-answer">
+            <p>
+              Log in to your account, go to the <em>Buy Credit</em> section.
+              Select the desired pack and pay online—the credit is added to your account immediately.
+            </p>
+          </div>
+        </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Does the credit expire?</div>
-                <div class="faq-answer">
-                    <p><strong>No.</strong> Credits never expire.</p>
-                </div>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">Does the credit expire?</div>
+          <div class="faq-answer">
+            <p><strong>No</strong>, there is no expiration date: you can use it whenever you want.</p>
+          </div>
+        </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Can I get an invoice?</div>
-                <div class="faq-answer">
-                    <p>
-                        Yes. After each transcription, an invoice is available in your account.
-                        Periodic billing (monthly/annual) is also available for recurring needs.
-                    </p>
-                </div>
-            </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I get an invoice?</div>
+          <div class="faq-answer">
+            <p>
+              Yes. After each transcription, an invoice is available in your account.
+              For recurring needs, we also offer <strong>periodic billing</strong>
+              (monthly/annual).
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How can I cancel my subscription?</div>
+          <div class="faq-answer">
+            <p>
+              You can cancel your subscription at any time from your customer account:
+            </p>
+            <ul>
+              <li>Log in to your account</li>
+              <li>Click on <em>Manage my subscription</em> and then <em>Cancel</em></li>
+            </ul>
+            <p>
+              Once the cancellation is confirmed, your subscription will remain active until the end of the period
+              already paid
+              (no partial refunds are issued). You will not be charged again afterwards.
+            </p>
+            <p>
+              <strong>Data &amp; account:</strong> Your data will remain accessible until the account is deleted.
+            </p>
+            <p>
+              Need help? Contact us at
+              <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a>
+            </p>
+          </div>
+        </div>
         </div>
 
         <!-- ROADMAP -->
@@ -602,7 +619,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
+                <p>&copy; 2026 Swiss Transcript. All rights reserved.</p>
             </div>
         </div>
     </footer>

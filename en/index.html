@@ -1,78 +1,48 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords"
-    content="audio transcription, video transcription, speech to text, transcription service, automated transcription, AI transcription, Swiss transcription, secure transcription, confidential transcription, voice recognition, GDPR compliant" />
+  <meta name="keywords" content="audio transcription, video transcription, speech to text, transcription service, automated transcription, AI transcription, Swiss transcription, secure transcription, confidential transcription, voice recognition, GDPR compliant" />
   <title>Secure Audio & Video Transcription in Switzerland | Local AI Service | Swiss Transcript</title>
-  <meta name="description"
-    content="Convert your audio and video files to text with Swiss Transcript. 100% Swiss service with local AI, secure and GDPR/DPA compliant. From CHF0.20/min, 30-minute free trial. Speaker differentiation and precise timestamps." />
-  <link rel="canonical" href="https://swisstranscript.com/en/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/index.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/en/index.html" />
-
+  <meta name="description" content="Convert your audio and video files to text with Swiss Transcript. 100% Swiss service with local AI, secure and GDPR/FADP compliant. From CHF0.20/min, 30-minute free trial. Speaker differentiation and precise timestamps." />
+  <link rel="canonical" href="https://swisstranscript.ch/en/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/index.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/en/index.html" />
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swisstranscript.com/en/index.html" />
+  <meta property="og:url" content="https://swisstranscript.ch/en/index.html" />
   <meta property="og:title" content="Secure Audio & Video Transcription Service in Switzerland | Swiss Transcript" />
-  <meta property="og:description"
-    content="Convert your recordings to text with our local AI. 100% Swiss service, secure and GDPR compliant. 30-minute free trial, no commitment required." />
-  <meta property="og:image" content="https://swisstranscript.com/images/og-image-en.jpg" />
-
+  <meta property="og:description" content="Convert your recordings to text with our local AI. 100% Swiss service, secure and GDPR compliant. 30-minute free trial, no commitment required." />
+  <meta property="og:image" content="https://swisstranscript.ch/images/og-image-en.jpg" />
+  
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://swisstranscript.com/en/index.html" />
+  <meta name="twitter:url" content="https://swisstranscript.ch/en/index.html" />
   <meta name="twitter:title" content="Secure Audio & Video Transcription Service in Switzerland | Swiss Transcript" />
-  <meta name="twitter:description"
-    content="Convert your recordings to text with our local AI. 100% Swiss service, secure and GDPR compliant. 30-minute free trial, no commitment required." />
-  <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-en.jpg" />
+  <meta name="twitter:description" content="Convert your recordings to text with our local AI. 100% Swiss service, secure and GDPR compliant. 30-minute free trial, no commitment required." />
+  <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-en.jpg" />
 
-  <link rel="canonical" href="https://swisstranscript.com/en/index.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/index.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/en/index.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/index.html" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-  <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
   <!-- Indexation -->
   <meta name="robots" content="index, follow">
-  <!-- LIBRARY : SWIPER -->
-  <link rel="stylesheet" href="../lib/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="../lib/slick-carousel/1.8.1/slick-theme.min.css">
-  <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
-  <script src="../lib/slick-carousel/1.8.1/slick.min.js"></script>
-  <script nonce="576c9d92fa40fde0c1a7d94a4bce085c" src="../lib/altcha/altcha.min.js" type="module" async defer></script>
 
   <!-- Google Tag Manager -->
-  <script nonce='576c9d92fa40fde0c1a7d94a4bce085c'>(function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = (l != 'dataLayer') ? '&l=' + l : '';
-
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-
-      var n = d.querySelector('[nonce]');
-      if (n) {
-        j.setAttribute('nonce', n.nonce || n.getAttribute('nonce'));
-      }
-
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script> <!-- End Google Tag Manager -->
+  <?php writeGoogleTag() ?>
+  <!-- End Google Tag Manager -->
 
 </head>
-
 <body class="montserrat-font text-white w-full lg:text-xl" id="home" data-billed-annually="Billed annually">
   <!-- AJOUT Bouton Scroll to Top -->
   <button
@@ -129,7 +99,7 @@
         <!-- Navigation desktop -->
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
           <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active"
                 href="index.html">Home</a>
             </li>
             <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
@@ -194,16 +164,16 @@
             <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Contact</a></li>
           </ul>
           <div class="flex space-x-2 px-2 py-3" id="languageSwitcherMobile">
-            <a class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300" href="/fr/">FR</a>
-            <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/en/">EN</a>
-            <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/de/">DE</a>
+            <a class="lang-link py-1 text-sm" href="/fr/">FR</a>
+            <a class="lang-link py-1 text-sm active" href="/en/">EN</a>
+            <a class="lang-link py-1 text-sm" href="/de/">DE</a>
           </div>
         </div>
         <div class="flex flex-col gap-1">
           <a class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login"
-            href="/login?lang=fr" target="_blank">Log in</a>
+            href="/login?lang=en" target="_blank">Log in</a>
           <a class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try"
-            href="pricing.html" target="_blank">Try</a>
+            href="/signup?lang=en" target="_blank">Try</a>
         </div>
       </div>
       <!-- Drawer overlay -->
@@ -232,7 +202,7 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="pricing.html" class="btn primary">Try 30 minutes for free</a>
+          <a href="/signup?lang=en" class="btn primary">Try 30 minutes for free</a>
           <a href="/login?lang=en" class="btn button-login">Login</a>
         </div>
       </div>
@@ -320,7 +290,7 @@
       </div>
 
       <div class="text-center mt-8">
-        <a href="https://lafurette.github.io/signup" class="btn btn-primary mr-4">
+        <a href="/signup?lang=fr" class="btn btn-primary mr-4 my-4">
           Try for free
         </a>
         <a href="contact.html" class="btn button-login">
@@ -386,7 +356,7 @@
       </div>
 
       <div class="usp-cta-actions text-center">
-        <a href="pricing.html" class="btn primary">Try for free</a>
+        <a href="/signup?lang=en" class="btn primary">Try for free</a>
       </div>
 
     </div>
@@ -498,6 +468,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">25</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -508,6 +479,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">40</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -518,6 +490,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">75</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -528,6 +501,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">150</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -538,6 +512,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">275</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
           </div>
@@ -787,8 +762,8 @@
       <p>
         Start today and discover how our service can save you time while protecting the confidentiality of your data.
       </p>
-      <a href="/signup" class="btn button-login">Try for free</a>
-      <a href="pricing.html" class="btn">View pricing</a>
+      <a href="/signup?lang=en" class="btn button-login">Try for free</a>
+      <a href="pricing.html" class="btn my-4">View pricing</a>
     </div>
   </section>
 
@@ -819,7 +794,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
+        <p>&copy; 2026 Swiss Transcript. All rights reserved.</p>
       </div>
     </div>
   </footer>

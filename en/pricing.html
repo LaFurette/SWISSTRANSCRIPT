@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,59 +10,47 @@
   <title>Audio & Video Transcription Pricing | Transparent No-Commitment Rates | Swiss Transcript</title>
   <meta name="description"
     content="Usage-based pricing from CHF0.20/min. Economic packages: -20% for 5h, -25% for 10h. No commitment, 30-minute free trial. Secure payment options. All features included." />
-  <link rel="canonical" href="https://swisstranscript.com/en/pricing.html" />
-  <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/tarifs.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/pricing.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/preise.html" />
-  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/en/pricing.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/en/pricing.html" />
+  <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/tarifs.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/pricing.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/preise.html" />
+  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/en/pricing.html" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swisstranscript.com/en/pricing.html" />
+  <meta property="og:url" content="https://swisstranscript.ch/en/pricing.html" />
   <meta property="og:title"
     content="Audio & Video Transcription Pricing | Transparent No-Commitment Rates | Swiss Transcript" />
   <meta property="og:description"
     content="Discover our transparent pricing: from CHF0.20/min, economic packages with discounts up to 25%, 30-minute free trial. No commitment, secure payment and all features included." />
-  <meta property="og:image" content="https://swisstranscript.com/images/og-image-pricing-en.jpg" />
+  <meta property="og:image" content="https://swisstranscript.ch/images/og-image-pricing-en.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://swisstranscript.com/en/pricing.html" />
+  <meta name="twitter:url" content="https://swisstranscript.ch/en/pricing.html" />
   <meta name="twitter:title"
     content="Audio & Video Transcription Pricing | Transparent No-Commitment Rates | Swiss Transcript" />
   <meta name="twitter:description"
     content="Discover our transparent pricing: from CHF0.20/min, economic packages with discounts up to 25%, 30-minute free trial. No commitment, secure payment and all features included." />
-  <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-pricing-en.jpg" />
+  <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-pricing-en.jpg" />
 
-  <link rel="canonical" href="https://swisstranscript.com/en/pricing.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/fr/tarifs.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/preise.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/en/pricing.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/fr/tarifs.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/preise.html" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-  <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
   <!-- Indexation -->
   <meta name="robots" content="index, follow">
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+  <?php writeGoogleTag() ?>
   <!-- End Google Tag Manager -->
 
 </head>
 
-<body id="tarif" class="montserrat-font text-white w-full lg:text-xl">
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<body id="tarif" class="montserrat-font text-white w-full lg:text-xl" data-billed-annually="Billed annually">
 
   <!-- ADD Scroll to Top Button -->
   <button id="scrollToTopBtn"
@@ -83,7 +72,8 @@
             <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
                 href="index.html">Home</a>
             </li>
-            <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
+            <li><a
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active"
                 href="pricing.html">Pricing</a>
             </li>
             <li><a class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition"
@@ -103,9 +93,9 @@
         <!-- Login / Signup + Lang switch -->
         <div class="flex items-center">
           <div class="hidden md:flex items-center space-x-5">
-            <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=fr"
+            <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=en"
               target="_blank">Log in</a>
-            <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="pricing.html"
+            <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="/signup?lang=en"
               target="_blank">Try</a>
             <div class="hidden lg:flex space-x-2" id="languageSwitcher">
               <a class="lang-link font-bold py-1 rounded-md text-sm active" href="/fr/">FR</a>
@@ -145,16 +135,16 @@
             <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Contact</a></li>
           </ul>
           <div class="flex space-x-2 px-2 py-3" id="languageSwitcherMobile">
-            <a class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300" href="/fr/">FR</a>
-            <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/en/">EN</a>
-            <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/de/">DE</a>
+            <a class="lang-link py-1 text-sm" href="/fr/">FR</a>
+            <a class="lang-link py-1 text-sm active" href="/en/">EN</a>
+            <a class="lang-link py-1 text-sm" href="/de/">DE</a>
           </div>
         </div>
         <div class="flex flex-col gap-1">
           <a class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login"
-            href="/login?lang=fr" target="_blank">Log in</a>
+            href="/login?lang=en" target="_blank">Log in</a>
           <a class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try"
-            href="pricing.html" target="_blank">Try</a>
+            href="/signup?lang=en" target="_blank">Try</a>
         </div>
       </div>
       <!-- Drawer overlay -->
@@ -170,7 +160,6 @@
           Whether you need occasional or regular transcription, we have the solution tailored to your needs.
         </p>
       </div>
-
 
       <div class="pricing-cards">
 
@@ -272,6 +261,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">25</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -282,6 +272,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">40</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -292,6 +283,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">75</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -302,6 +294,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">150</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -312,6 +305,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">275</span> CHF <span class="per">/ month</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
           </div>
@@ -330,6 +324,7 @@
         </div>
 
       </div>
+
       <div class="pricing-footer text-center mt-4">
         <p>
           For large volumes or API integration projects, our team will guide you step by step.
@@ -337,50 +332,8 @@
         <a href="contact.html" class="btn primary mt-4">Contact us</a>
       </div>
 
-      <div class="info-boxes">
-        <div class="info-box">
-          <h3>Transparent Pricing</h3>
-          <p>
-            At Swiss Transcript, we believe in simple and transparent pricing.
-            You only pay for what you actually use, with no hidden fees.
-          </p>
-          <ul>
-            <li>Billed per minute, rounded up to the next minute</li>
-            <li>Detailed invoice available in your customer account</li>
-          </ul>
-          <p>
-            For businesses with high volume needs,
-            <a href="mailto:info@swisstranscript.com" class="highlight">contact us</a>
-            for a customized offer.
-          </p>
-        </div>
 
-        <div class="info-box">
-          <h3>Guaranteed Quality</h3>
-          <p>
-            Our automatic transcription technology offers exceptional accuracy for most clear recordings.
-            Here are some tips to achieve the best results:
-          </p>
-          <ul>
-            <li>Use a high-quality microphone for your recordings</li>
-            <li>Avoid noisy environments</li>
-            <li>Ask speakers to speak clearly</li>
-            <li>Limit overlapping speech</li>
-          </ul>
-
-          <div class="security-box">
-            <p class="security-title">Security and Privacy</p>
-            <ul class="security-list">
-              <li>Data processing in Switzerland</li>
-              <li>GDPR and Swiss Data Protection Act (DSG) compliant</li>
-              <li>No storage on foreign clouds</li>
-              <li>End-to-end encryption</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-section" id="faq">
+      <div class="faq-section pt-8" id="faq">
         <h3 class="faq-section-title">Frequently Asked Questions About Pricing</h3>
 
         <div class="faq-item">
@@ -441,10 +394,35 @@
             </p>
           </div>
         </div>
+        <div class="faq-item">
+          <div class="faq-question">How can I cancel my subscription?</div>
+          <div class="faq-answer">
+            <p>
+              You can cancel your subscription at any time from your customer account:
+            </p>
+            <ul>
+              <li>Log in to your account</li>
+              <li>Click on <em>Manage my subscription</em> and then <em>Cancel</em></li>
+            </ul>
+            <p>
+              Once the cancellation is confirmed, your subscription will remain active until the end of the period
+              already paid
+              (no partial refunds are issued). You will not be charged again afterwards.
+            </p>
+            <p>
+              <strong>Data &amp; account:</strong> Your data will remain accessible until the account is deleted.
+            </p>
+            <p>
+              Need help? Contact us at
+              <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a>
+            </p>
+          </div>
+        </div>
+
       </div>
-
-      <a href="contact.html" class="btn" style="max-width: 400px;">Contact us</a>
-
+      <div class="text-center">
+        <a href="contact.html" class="btn" style="max-width: 400px;">Contact us</a>
+      </div>
     </div>
   </section>
 
@@ -484,7 +462,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
+        <p>&copy; 2026 Swiss Transcript. All rights reserved.</p>
       </div>
     </div>
   </footer>

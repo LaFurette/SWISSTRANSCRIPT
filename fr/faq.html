@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <html lang="fr">
 
 <head>
@@ -41,24 +42,12 @@
   <meta name="robots" content="index, follow">
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+  <?php writeGoogleTag() ?>
   <!-- End Google Tag Manager -->
 
 </head>
 
 <body id="faq" class="montserrat-font text-white w-full lg:text-xl">
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <!-- AJOUT Bouton Scroll to Top -->
   <button id="scrollToTopBtn"
@@ -106,7 +95,7 @@
               class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
               Connexion
             </a>
-            <a href="tarifs.html" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+            <a href="/signup?lang=fr" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Essayer
             </a>
             <div id="languageSwitcher" class="hidden lg:flex space-x-2">
@@ -162,7 +151,7 @@
             class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
             Connexion
           </a>
-          <a href="tarifs.html" target="_blank"
+          <a href="/signup?lang=fr" target="_blank"
             class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
             Essayer
           </a>
@@ -231,7 +220,7 @@
           <div class="faq-question">Quelle est la précision de vos transcriptions&nbsp;?</div>
           <div class="faq-answer">
             <p>
-              Notre technologie atteint généralement une précision de <strong>95&nbsp;%+</strong> pour des
+              Notre technologie atteint généralement une précision de <strong>95&nbsp;%</strong> pour des
               enregistrements de bonne qualité.
               Pour de meilleurs résultats&nbsp;:
             </p>
@@ -376,15 +365,20 @@
         <div class="faq-item">
           <div class="faq-question">Comment fonctionne l’enregistrement en direct sur smartphone&nbsp;?</div>
           <div class="faq-answer">
-            <ul>
-              <li>Les enregistrements en direct restent <strong>locaux</strong> tant qu’ils n’ont pas été importés.</li>
-              <li>Ils n’apparaissent pas sur desktop avant l’upload.</li>
-              <li>Une fois importés ou transcrits, ils sont accessibles sur tous vos appareils.</li>
-            </ul>
-            <p><em>Astuce&nbsp;:</em> un appel téléphonique peut mettre l’enregistrement en pause&nbsp;; revenez sur la
-              page pour vérifier la reprise.</p>
+            <p>
+              Les enregistrements en direct restent <strong>locaux</strong> tant qu’ils n’ont pas été importés.
+              Ils n’apparaîtront donc pas sur un autre appareil avant leur importation.
+            </p>
+            <p>
+              Une fois importés ou transcrits, ils seront accessibles sur tous vos appareils.
+            </p>
+            <p>
+              <strong>Attention&nbsp;:</strong> un appel téléphonique peut mettre l’enregistrement en pause&nbsp;;
+              revenez sur la page pour vérifier la reprise.
+            </p>
           </div>
         </div>
+
 
         <div class="faq-item">
           <div class="faq-question">Pourquoi je ne vois pas mes enregistrements mobile sur desktop&nbsp;?</div>
@@ -520,20 +514,21 @@
           <div class="faq-question">Comment fonctionne la tarification&nbsp;?</div>
           <div class="faq-answer">
             <p>
-              Vous bénéficiez de <strong>30&nbsp;minutes gratuites</strong> et jusqu’à <strong>3 résumés</strong> pour
-              tester.
-              Ensuite, tarification à la minute avec deux options&nbsp;:
+              Vous bénéficiez de <strong>30&nbsp;minutes gratuites</strong> pour tester la plateforme et pouvez générer
+              jusqu’à <strong>3 comptes rendus par transcription</strong>.
+            </p>
+            <p>
+              Ensuite, choisissez l’offre la plus adaptée à votre usage&nbsp;:
             </p>
             <ul>
-              <li><strong>Pay-as-you-go</strong>&nbsp;: paiement à la minute, jusqu’à 3 résumés téléchargeables par
-                fichier.</li>
-              <li><strong>Abonnement</strong>&nbsp;: 12&nbsp;CHF/heure ou 90&nbsp;CHF pour 10&nbsp;heures.</li>
+              <li><strong>Besoin ponctuel</strong>&nbsp;: facturation à la minute, sans engagement.</li>
+              <li><strong>Besoin occasionnel</strong>&nbsp;: achat de packs d’heures à tarif dégressif.</li>
+              <li><strong>Besoin régulier</strong>&nbsp;: abonnements mensuels ou annuels selon votre volume et votre
+                activité.</li>
             </ul>
             <p>
-              La facturation est à la minute, arrondie à la minute supérieure (ex.&nbsp;10:15 → facturé
-              11&nbsp;minutes).
-              Pour des besoins importants, voir nos <a href="tarifs.html">offres</a> ou
-              <a href="contact.html">contactez-nous</a>.
+              La génération de comptes rendus est incluse dans le prix, jusqu’à
+              <strong>3 par transcription</strong>.
             </p>
           </div>
         </div>
@@ -544,7 +539,8 @@
             <p>
               Oui, via des <strong>packs de crédit</strong> (ex.&nbsp;10&nbsp;heures&nbsp;: env.&nbsp;25&nbsp;% de
               réduction).
-              Des tarifs personnalisés sont possibles pour les entreprises (<a href="contact.html">nous contacter</a>).
+              Des tarifs personnalisés sont possibles pour les entreprises
+              (<a href="contact.html">nous contacter</a>).
             </p>
           </div>
         </div>
@@ -553,8 +549,8 @@
           <div class="faq-question">Comment acheter un pack de crédit&nbsp;?</div>
           <div class="faq-answer">
             <p>
-              Connectez-vous à votre compte, section <em>Acheter du crédit</em>. Sélectionnez le pack souhaité et réglez
-              en ligne&nbsp;:
+              Connectez-vous à votre compte, section <em>Acheter du crédit</em>.
+              Sélectionnez le pack souhaité et réglez en ligne&nbsp;:
               le crédit est ajouté immédiatement à votre compte.
             </p>
           </div>
@@ -571,9 +567,34 @@
           <div class="faq-question">Puis-je obtenir une facture&nbsp;?</div>
           <div class="faq-answer">
             <p>
-              Oui. Après chaque transcription, une facture est disponible dans votre compte. Pour des besoins
-              récurrents,
-              nous proposons aussi des <strong>facturations périodiques</strong> (mensuelle/annuelle) adaptées.
+              Oui. Après chaque transcription, une facture est disponible dans votre compte.
+              Pour des besoins récurrents, nous proposons aussi des
+              <strong>facturations périodiques</strong> (mensuelle/annuelle) adaptées.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Comment résilier mon abonnement&nbsp;?</div>
+          <div class="faq-answer">
+            <p>Vous pouvez résilier votre abonnement à tout moment depuis votre espace client&nbsp;:</p>
+            <ul>
+              <li>Connectez-vous à votre compte</li>
+              <li>Cliquez sur <em>Gérer mon abonnement</em> puis sur <em>Résilier</em></li>
+            </ul>
+            <p>
+              Une fois la résiliation confirmée, votre abonnement restera actif jusqu’à la fin de la
+              période déjà payée (aucun remboursement partiel n’est effectué).
+              Vous ne serez plus facturé(e) par la suite.
+            </p>
+            <p>
+              <strong>Données &amp; compte</strong>&nbsp;: vos données resteront accessibles jusqu’à la
+              suppression du compte.
+            </p>
+            <p>
+              Besoin d’aide&nbsp;?
+              Contactez-nous à
+              <a href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a>
             </p>
           </div>
         </div>
@@ -604,7 +625,7 @@
       <h2>Prêt à essayer le service de transcription le plus sécurisé ?</h2>
       <p>Commencez dès aujourd'hui et découvrez comment Swiss Transcript peut vous faire gagner du temps tout en
         préservant la confidentialité de vos données.</p>
-      <a href="tarifs.html" class="btn">Créer un compte</a>
+      <a href="/signup?lang=fr" class="btn">Créer un compte</a>
     </div>
   </section>
 
@@ -635,7 +656,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Tous droits réservés.</p>
+        <p>&copy; 2026 Swiss Transcript. Tous droits réservés.</p>
       </div>
     </div>
   </footer>

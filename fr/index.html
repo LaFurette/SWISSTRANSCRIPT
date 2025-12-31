@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,69 +10,43 @@
   <title>Transcription Audio & Vidéo Sécurisée en Suisse | Service IA Local | Swiss Transcript</title>
   <meta name="description"
     content="Convertissez vos fichiers audio et vidéo en texte avec Swiss Transcript. Service 100% suisse avec IA locale, sécurisé et conforme RGPD/LPD. Dès 0.20CHF/min, essai gratuit de 30 minutes. Différenciation des intervenants et horodatage précis." />
-  <link rel="canonical" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/index.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/fr/index.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/index.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/fr/index.html" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swisstranscript.com/fr/index.html" />
+  <meta property="og:url" content="https://swisstranscript.ch/fr/index.html" />
   <meta property="og:title" content="Service de transcription audio et vidéo sécurisé en Suisse | Swiss Transcript" />
   <meta property="og:description"
     content="Convertissez vos enregistrements en texte avec notre IA locale. Service 100% suisse, sécurisé et conforme RGPD. Essai gratuit de 30 minutes, sans engagement." />
-  <meta property="og:image" content="https://swisstranscript.com/images/og-image-fr.jpg" />
+  <meta property="og:image" content="https://swisstranscript.ch/images/og-image-fr.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://swisstranscript.com/fr/index.html" />
+  <meta name="twitter:url" content="https://swisstranscript.ch/fr/index.html" />
   <meta name="twitter:title" content="Service de transcription audio et vidéo sécurisé en Suisse | Swiss Transcript" />
   <meta name="twitter:description"
     content="Convertissez vos enregistrements en texte avec notre IA locale. Service 100% suisse, sécurisé et conforme RGPD. Essai gratuit de 30 minutes, sans engagement." />
-  <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-fr.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="canonical" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/index.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/index.html" />
+  <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-fr.jpg" />
+  <link rel="canonical" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/index.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/index.html" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-  <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
-
+  <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
   <!-- Indexation -->
   <meta name="robots" content="index, follow">
-  <!-- LIBRARY : SWIPER -->
-  <link rel="stylesheet" href="../lib/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="../lib/slick-carousel/1.8.1/slick-theme.min.css">
-  <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
-  <script src="../lib/slick-carousel/1.8.1/slick.min.js"></script>
-  <script nonce="576c9d92fa40fde0c1a7d94a4bce085c" src="../lib/altcha/altcha.min.js" type="module" async defer></script>
 
   <!-- Google Tag Manager -->
-  <script nonce='576c9d92fa40fde0c1a7d94a4bce085c'>(function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = (l != 'dataLayer') ? '&l=' + l : '';
-
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-
-      var n = d.querySelector('[nonce]');
-      if (n) {
-        j.setAttribute('nonce', n.nonce || n.getAttribute('nonce'));
-      }
-
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script> <!-- End Google Tag Manager -->
+  <?php writeGoogleTag() ?>
+  <!-- End Google Tag Manager -->
 
 </head>
+
 
 <body id="home" class="montserrat-font text-white w-full lg:text-xl" data-billed-annually="Facturé annuellement">
 
@@ -129,7 +104,7 @@
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
           <ul class="lg:flex justify-center items-center flex-1 space-x-2 2xl:space-x-4">
             <li><a href="index.html"
-                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Accueil</a>
+                class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active">Accueil</a>
             </li>
             <li><a href="tarifs.html"
                 class="px-4  py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Tarifs</a>
@@ -156,7 +131,7 @@
               class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
               Connexion
             </a>
-            <a href="tarifs.html" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+            <a href="/signup?lang=fr" target="_blank" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Essayer
             </a>
             <div id="languageSwitcher" class="hidden lg:flex space-x-2">
@@ -212,7 +187,7 @@
             class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login">
             Connexion
           </a>
-          <a href="tarifs.html" target="_blank"
+          <a href="/signup?lang=fr" target="_blank"
             class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try">
             Essayer
           </a>
@@ -238,7 +213,7 @@
         </h1>
         <p class="hero-subtitle">Hébergés en Suisse pour une confidentialité totale</p>
         <div class="hero-buttons">
-          <a href="tarifs.html" class="btn primary">Essayer 30 min gratuitement</a>
+          <a href="/signup?lang=fr" class="btn primary">Essayer 30 min gratuitement</a>
           <a href="/login?lang=fr" target="_blank" class="btn button-login">Connexion</a>
         </div>
       </div>
@@ -329,10 +304,10 @@
       </div>
 
       <div class="text-center mt-8">
-        <a href="https://lafurette.github.io/signup" class="btn btn-primary mr-4">
-          Essayez gratuitement
+        <a href="/signup?lang=fr" class="btn btn-primary mr-4 my-4">
+          Essayer !
         </a>
-        <a href="https://lafurette.github.io/SWISTRANSCRIPT/fr/contact.html" class="btn button-login">
+        <a href="contact.html" class="btn button-login">
           Contactez-nous
         </a>
       </div>
@@ -378,7 +353,7 @@
           </div>
           <div class="usp-card-content">
             <h3>Efficacité & flexibilité</h3>
-            <p>Vous réduisez instantanément 50 à 70 % du temps dédié aux notes, comptes rendus et
+            <p>Vous réduisez instantanément 50 à 70% du temps dédié aux notes, comptes rendus et
               tâches administratives.<br><br>
               La solution fonctionne partout; en présentiel, en visio, en déplacement et même hors réseau.</p>
           </div>
@@ -386,7 +361,7 @@
       </div>
 
       <div class="usp-cta-actions text-center">
-        <a href="tarifs.html" class="btn primary">Essayer gratuitement</a>
+        <a href="/signup?lang=fr" class="btn primary">Essayer gratuitement</a>
       </div>
 
     </div>
@@ -396,6 +371,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Tarifs transparents</h2>
+        <p>Les tarifs incluent la génération de 3 comptes rendus maximum par transcription.</p>
       </div>
 
       <div class="pricing-cards">
@@ -584,7 +560,7 @@
           <td><span class="cross">✗</span> États-Unis, Asie ou cloud global</td>
         </tr>
         <tr>
-          <td>Conformité LDP + RGPD</td>
+          <td>Conformité LPD & RGPD</td>
           <td><span class="check">✓</span> Complète</td>
           <td><span class="cross">✗</span> Partielle ou incertaine selon le pays</td>
         </tr>
@@ -617,7 +593,7 @@
     </table>
 
     <div class="mt-8 text-center">
-      <a href="/signup" class="btn button-login mr-2">Essayer gratuitement</a>
+      <a href="/signup?lang=fr" class="btn button-login mr-2">Essayer gratuitement</a>
       <a href="securite.html" class="btn mt-4 lg:mt-0">Voir la sécurité</a>
     </div>
   </section>
@@ -675,7 +651,7 @@
           </div>
           <div class="use-case-content">
             <h3>Réseaux de soins et santé mentale</h3>
-            <p>Simplifiez la prise de notes facile pour gagner du temps et vous concentrer sur vos patients.</p>
+            <p>Simplifiez la prise de notes pour gagner du temps et vous concentrer sur vos patients.</p>
           </div>
         </div>
 
@@ -776,7 +752,7 @@
       <h2>Profitez de 30 minutes gratuites pour essayer!</h2>
       <p>Commencez dès aujourd'hui et découvrez comment notre service peut vous faire gagner du temps tout en préservant
         la confidentialité de vos données.</p>
-      <a href="/signup" class="btn button-login">Essayer gratuitement</a>
+      <a href="/signup?lang=fr" class="btn button-login my-4">Essayer !</a>
       <a href="tarifs.html" class="btn">Voir les tarifs</a>
     </div>
   </section>
@@ -808,7 +784,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Tous droits réservés.</p>
+        <p>&copy; 2026 Swiss Transcript. Tous droits réservés.</p>
       </div>
     </div>
   </footer>

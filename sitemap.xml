@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="w3.org/TR/xhtml11/xhtml11_schema.html"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -8,133 +9,112 @@
 
 <url>
   <loc>https://swisstranscript.ch/</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://swisstranscript.ch/fr/</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <loc>https://swisstranscript.ch/fr/index.html</loc>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://swisstranscript.ch/de/</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <loc>https://swisstranscript.ch/de/index.html</loc>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://swisstranscript.ch/en/</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <loc>https://swisstranscript.ch/en/index.html</loc>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<url>
-  <loc>https://swisstranscript.ch/fr/fonctionnalites.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<url>
-  <loc>https://swisstranscript.ch/de/funktionen.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<url>
-  <loc>https://swisstranscript.ch/en/features.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/fr/tarifs.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/de/preise.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/en/pricing.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://swisstranscript.ch/fr/faq.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <loc>https://swisstranscript.ch/fr/demo.html</loc>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://swisstranscript.ch/de/faq.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <loc>https://swisstranscript.ch/de/demo.html</loc>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://swisstranscript.ch/en/faq.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <loc>https://swisstranscript.ch/en/demo.html</loc>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/fr/securite.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.50</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/de/sicherheit.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.50</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/en/security.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.50</priority>
-  <changefreq>monthly</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/fr/legal.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.10</priority>
   <changefreq>never</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/de/legal.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.10</priority>
   <changefreq>never</changefreq>
 </url>
 
 <url>
   <loc>https://swisstranscript.ch/en/legal.html</loc>
-  <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  <lastmod>2025-05-03T00:00:00+00:00</lastmod>
   <priority>0.10</priority>
   <changefreq>never</changefreq>
 </url>

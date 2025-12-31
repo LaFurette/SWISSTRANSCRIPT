@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -9,66 +10,41 @@
   <title>Sichere Audio & Video Transkription in der Schweiz | Lokaler KI-Dienst | Swiss Transcript</title>
   <meta name="description"
     content="Konvertieren Sie Ihre Audio- und Videodateien mit Swiss Transcript in Text. 100% Schweizer Dienst mit lokaler KI, sicher und DSGVO/DSG-konform. Ab 0,20CHF/Min, 30 Minuten kostenlose Testversion." />
-  <link rel="canonical" href="https://swisstranscript.com/de/index.html" />
-  <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/index.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/index.html" />
-  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/de/index.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/de/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/index.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/de/index.html" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://swisstranscript.com/de/index.html" />
+  <meta property="og:url" content="https://swisstranscript.ch/de/index.html" />
   <meta property="og:title" content="Sicherer Audio & Video Transkriptionsdienst in der Schweiz | Swiss Transcript" />
   <meta property="og:description"
     content="Konvertieren Sie Ihre Aufnahmen mit unserer lokalen KI in Text. 100% Schweizer Dienst, sicher und DSGVO-konform. 30 Minuten kostenlose Testversion, keine Verpflichtung." />
-  <meta property="og:image" content="https://swisstranscript.com/images/og-image-de.jpg" />
+  <meta property="og:image" content="https://swisstranscript.ch/images/og-image-de.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://swisstranscript.com/de/index.html" />
+  <meta name="twitter:url" content="https://swisstranscript.ch/de/index.html" />
   <meta name="twitter:title" content="Sicherer Audio & Video Transkriptionsdienst in der Schweiz | Swiss Transcript" />
   <meta name="twitter:description"
     content="Konvertieren Sie Ihre Aufnahmen mit unserer lokalen KI in Text. 100% Schweizer Dienst, sicher und DSGVO-konform. 30 Minuten kostenlose Testversion, keine Verpflichtung." />
-  <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-de.jpg" />
+  <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-de.jpg" />
 
-  <link rel="canonical" href="https://swisstranscript.com/de/index.html" />
-  <link rel="alternate" hreflang="en" href="https://swisstranscript.com/fr/index.html" />
-  <link rel="alternate" hreflang="de" href="https://swisstranscript.com/en/index.html" />
+  <link rel="canonical" href="https://swisstranscript.ch/de/index.html" />
+  <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/fr/index.html" />
+  <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/en/index.html" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-  <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+  <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
   <!-- Indexation -->
   <meta name="robots" content="index, follow">
-  <!-- LIBRARY : SWIPER -->
-  <link rel="stylesheet" href="../lib/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="../lib/slick-carousel/1.8.1/slick-theme.min.css">
-  <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
-  <script src="../lib/slick-carousel/1.8.1/slick.min.js"></script>
-  <script nonce="576c9d92fa40fde0c1a7d94a4bce085c" src="../lib/altcha/altcha.min.js" type="module" async defer></script>
 
   <!-- Google Tag Manager -->
-  <script nonce='576c9d92fa40fde0c1a7d94a4bce085c'>(function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = (l != 'dataLayer') ? '&l=' + l : '';
-
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-
-      var n = d.querySelector('[nonce]');
-      if (n) {
-        j.setAttribute('nonce', n.nonce || n.getAttribute('nonce'));
-      }
-
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script> <!-- End Google Tag Manager -->
+  <?php writeGoogleTag() ?>
+  <!-- End Google Tag Manager -->
 
 </head>
 
@@ -93,7 +69,7 @@
 
           <div class="banner-message">
             <span class="banner-text">
-              Große Transkriptionsvolumen? Wir bieten maßgeschneiderte Angebote und individuelle Betreuung.
+              Grosse Transkriptionsvolumen? Wir bieten massgeschneiderte Angebote und individuelle Betreuung.
             </span>
             <a href="contact.html" class="learn-more">Kontaktieren Sie uns</a>
           </div>
@@ -108,7 +84,7 @@
 
           <div class="banner-message">
             <span class="banner-text">
-              Große Transkriptionsvolumen? Wir bieten maßgeschneiderte Angebote und individuelle Betreuung.
+              Grosse Transkriptionsvolumen? Wir bieten massgeschneiderte Angebote und individuelle Betreuung.
             </span>
             <a href="contact.html" class="learn-more">Kontaktieren Sie uns →</a>
           </div>
@@ -130,12 +106,12 @@
         <!-- Navigation desktop -->
         <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
           <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-            <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Startseite</a></li>
-            <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
-            <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
-            <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-            <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
-            <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
+            <li><a href="index.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active">Startseite</a></li>
+            <li><a href="preise.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Preise</a></li>
+            <li><a href="sicherheit.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Sicherheit</a></li>
+            <li><a href="demo.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Demo</a></li>
+            <li><a href="about.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Über uns</a></li>
+            <li><a href="contact.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Kontakt</a></li>
           </ul>
         </nav>
 
@@ -146,7 +122,7 @@
               class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
               Anmelden
             </a>
-            <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+            <a href="/signup?lang=de" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
               Testen
             </a>
             <div id="languageSwitcher" class="hidden lg:flex space-x-2">
@@ -201,7 +177,7 @@
             class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
             Anmelden
           </a>
-          <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+          <a href="/signup?lang=de" class="px-3 py-1 text-sm rounded-md font-bold button-try">
             Testen
           </a>
         </div>
@@ -232,7 +208,7 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="preise.html" class="btn primary">30 Minuten kostenlos testen</a>
+          <a href="/signup?lang=de" class="btn primary">30 Minuten kostenlos testen</a>
           <a href="/login?lang=de" class="btn button-login">Anmelden</a>
         </div>
       </div>
@@ -260,9 +236,9 @@
           </div>
           <h3>Aufzeichnung</h3>
           <p>
-            Zeichnen Sie Ihre Meetings direkt über unsere sichere Oberfläche auf – ganz ohne zusätzliche Software.
+            Zeichnen Sie Ihre Meetings direkt über unsere sichere Plattform auf – ganz ohne zusätzliche Software.
             Selbst im Offline-Modus werden Ihre Aufnahmen automatisch synchronisiert, sobald eine Internetverbindung
-            verfügbar ist. Sie können auch Audio- oder Videodateien importieren, einschließlich Aufnahmen von Ihrem
+            verfügbar ist. Sie können auch Audio- oder Videodateien importieren, einschliesslich Aufnahmen von Ihrem
             Diktiergerät.
           </p>
           <div class="tags">
@@ -295,11 +271,11 @@
           <p>
             Erstellen Sie in wenigen Sekunden klare und strukturierte Protokolle, die sofort nutzbar sind. Da jeder
             Bedarf
-            unterschiedlich ist, können bei Pilotprojekten maßgeschneiderte Zusammenfassungen entwickelt werden, die Ihr
+            unterschiedlich ist, können bei Pilotprojekten massgeschneiderte Zusammenfassungen entwickelt werden, die Ihr
             Glossar und Ihren Geschäftskontext einbeziehen.
           </p>
           <div class="tags">
-            <span class="tag">Maßgeschneiderte Zusammenfassungen</span>
+            <span class="tag">Massgeschneiderte Zusammenfassungen</span>
             <span class="tag">Zeitersparnis</span>
           </div>
         </div>
@@ -352,7 +328,7 @@
           <div class="usp-card-content">
             <h3>Sicherheit &amp; Datenschutz</h3>
             <p>
-              Ihre Daten werden ausschließlich in der Schweiz verarbeitet und gehostet, ohne Nutzung von GAFAM oder
+              Ihre Daten werden ausschliesslich in der Schweiz verarbeitet und gehostet, ohne Nutzung von GAFAM oder
               ausländischen Clouds.<br><br>
               Ihre Sicherheit ist dank fortschrittlicher Verschlüsselung, automatischer Löschung von Dateien und der
               Einhaltung von DSG und DSGVO garantiert.
@@ -384,7 +360,7 @@
             <p>
               Sie reduzieren sofort 50 bis 70&nbsp;% der Zeit, die für Notizen, Protokolle und administrative Aufgaben
               aufgewendet wird.<br><br>
-              Die Lösung funktioniert überall: vor Ort, per Video, unterwegs und sogar offline.
+              Der Service funktioniert überall: vor Ort, per Video, unterwegs und sogar offline.
             </p>
           </div>
         </div>
@@ -392,7 +368,7 @@
       </div>
 
       <div class="usp-cta-actions text-center">
-        <a href="preise.html" class="btn primary">Kostenlos testen</a>
+        <a href="/signup?lang=de" class="btn primary">Kostenlos testen</a>
       </div>
 
     </div>
@@ -434,8 +410,8 @@
 
               <button type="button" class="plan prepaid-choice" data-prepaid="pack1">
                 <div class="plan-top">
-                  <span class="plan-name">Paket 1</span>
-                  <span class="plan-hours">1 Stunde gutgeschrieben</span>
+                  <span class="plan-name">Paket 1 Stunde</span>
+                  <!-- <span class="plan-hours">1 Stunde</span> -->
                 </div>
                 <div class="plan-bottom">
                   <span class="plan-price">10 CHF</span>
@@ -445,8 +421,8 @@
 
               <button type="button" class="plan prepaid-choice" data-prepaid="pack5">
                 <div class="plan-top">
-                  <span class="plan-name">Paket 5</span>
-                  <span class="plan-hours">5 Stunden gutgeschrieben</span>
+                  <span class="plan-name">Paket 5 Stunden</span>
+                  <!-- <span class="plan-hours">5 Stunden</span> -->
                 </div>
                 <div class="plan-bottom">
                   <span class="plan-price">40 CHF</span>
@@ -456,8 +432,8 @@
 
               <button type="button" class="plan prepaid-choice" data-prepaid="pack10">
                 <div class="plan-top">
-                  <span class="plan-name">Paket 10</span>
-                  <span class="plan-hours">10 Stunden gutgeschrieben</span>
+                  <span class="plan-name">Paket 10 Stunden</span>
+                  <!-- <span class="plan-hours">10 Stunden</span> -->
                 </div>
                 <div class="plan-bottom">
                   <span class="plan-price">70 CHF</span>
@@ -472,13 +448,14 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-hint">
-                  Genießen Sie die kostenlose Testphase, ohne Ihre Kreditkarte anzugeben.
+                  Geniessen Sie die kostenlose Testphase, ohne Ihre Kreditkarte anzugeben.
                 </span>
                 <span></span>
               </div>
             </button>
 
           </div>
+
 
           <a href="/signup" class="cta-btn prepaid-btn" id="prepaidBtn">Starten</a>
 
@@ -505,6 +482,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">25</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -515,6 +493,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">40</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -525,6 +504,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">75</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -535,6 +515,7 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">150</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
 
@@ -545,12 +526,13 @@
               </div>
               <div class="plan-bottom">
                 <span class="plan-price"><span class="price-val">275</span> CHF <span class="per">/ Monat</span></span>
+                <span class="plan-hint"></span>
               </div>
             </button>
           </div>
 
           <p class="subs-footer">
-            Für größere Volumen <a class="subs-link" href="contact.html">kontaktieren Sie uns</a>
+            Für grössere Volumen <a class="subs-link" href="contact.html">kontaktieren Sie uns</a>
           </p>
 
           <a href="/signup" class="cta-btn subs-btn" id="chooseBtn" data-text-default="Abonnement auswählen"
@@ -566,7 +548,7 @@
 
       <div class="pricing-footer text-center mt-4">
         <p>
-          Für große Volumen oder API-Integrationsprojekte begleitet Sie unser Team Schritt für Schritt.
+          Für grosse Volumen oder API-Integrationsprojekte begleitet Sie unser Team Schritt für Schritt.
         </p>
         <a href="contact.html" class="btn primary mt-4">Kontaktieren Sie uns</a>
       </div>
@@ -701,7 +683,7 @@
           <div class="use-case-content">
             <h3>Pflegenetzwerke und psychische Gesundheit</h3>
             <p>
-              Erleichtern Sie das Notieren, um Zeit zu sparen und sich auf Ihre Patient:innen zu konzentrieren.
+              Vereinfachen Sie die Notizerfassung, sparen Sie Zeit und konzentrieren Sie sich auf Ihre Patienten.
             </p>
           </div>
         </div>
@@ -799,7 +781,7 @@
         Starten Sie noch heute und entdecken Sie, wie unser Service Ihnen Zeit spart und gleichzeitig die
         Vertraulichkeit Ihrer Daten schützt.
       </p>
-      <a href="/signup" class="btn button-login">Kostenlos testen</a>
+      <a href="/signup?lang=de" class="btn button-login">Kostenlos testen</a>
       <a href="preise.html" class="btn">Preise ansehen</a>
     </div>
   </section>
@@ -831,7 +813,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2026 Swiss Transcript. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>

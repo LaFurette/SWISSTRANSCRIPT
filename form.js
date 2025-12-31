@@ -13,14 +13,15 @@ form.addEventListener("submit", function (e) {
       {
         alert("Message envoyé", "success");
         e.target.reset();
+        hideCaptacha();
       }
       else
       {
-        alert(res.message || "Une erreur c'est produite");
+        alert(res.message || "Une erreur s'est produite");
       }
     })
     .catch((err) => {
-      alert("Une erreur c'est produite");
+      alert("Une erreur s'est produite");
       console.log("err", err);
     });
 });
@@ -36,3 +37,44 @@ function alert(message, status) {
     messageWrapper.innerHTML = "";
   }, 4000);
 }
+
+var captchaShown = false;        
+window.addEventListener("load", function() {
+    let messageElem = document.getElementById('message');
+    if (messageElem !== null)
+    {
+        console.log("value : " + messageElem.value );
+        if (messageElem.value > "")
+        {
+            showCaptacha();
+        }
+        else 
+        {
+            messageElem.addEventListener('input', () => {
+                if (!captchaShown)
+                {
+                    showCaptacha();
+                }
+            });
+        }
+    }
+});
+        
+function showCaptacha() {
+    let captchaDiv = document.getElementById('altcha_div');
+    if (captchaDiv !== null)
+    {
+        captchaDiv.className = captchaDiv.className.replace("captcha-invisible","");
+        captchaDiv.style.setProperty("display", "block", "important");
+        captchaShown = true;
+    }    
+}        
+
+function hideCaptacha() {
+    let captchaDiv = document.getElementById('altcha_div');
+    if (captchaDiv !== null)
+    {
+        captchaDiv.style.setProperty("display", "none", "important");
+        captchaShown = false;
+    }    
+}  

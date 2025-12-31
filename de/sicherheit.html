@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -9,59 +10,47 @@
     <title>Datensicherheit & Vertraulichkeit | DSGVO-konforme Transkription | Swiss Transcript</title>
     <meta name="description"
         content="100% Verarbeitung in der Schweiz mit Ende-zu-Ende-Verschlüsselung und DSGVO/DSG-Konformität. Sichere Infrastruktur für Ihre vertraulichen Transkriptionen. Lokale Mistral KI, Zwei-Faktor-Authentifizierung." />
-    <link rel="canonical" href="https://swisstranscript.com/de/sicherheit.html" />
-    <link rel="alternate" hreflang="fr" href="https://swisstranscript.com/fr/securite.html" />
-    <link rel="alternate" hreflang="en" href="https://swisstranscript.com/en/security.html" />
-    <link rel="alternate" hreflang="de" href="https://swisstranscript.com/de/sicherheit.html" />
-    <link rel="alternate" hreflang="x-default" href="https://swisstranscript.com/de/sicherheit.html" />
+    <link rel="canonical" href="https://swisstranscript.ch/de/sicherheit.html" />
+    <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/securite.html" />
+    <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/en/security.html" />
+    <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/sicherheit.html" />
+    <link rel="alternate" hreflang="x-default" href="https://swisstranscript.ch/de/sicherheit.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://swisstranscript.com/de/sicherheit.html" />
+    <meta property="og:url" content="https://swisstranscript.ch/de/sicherheit.html" />
     <meta property="og:title"
         content="Datensicherheit & Vertraulichkeit | DSGVO-konforme Transkription | Swiss Transcript" />
     <meta property="og:description"
         content="Entdecken Sie, wie wir Ihre sensiblen Daten schützen: 100% Verarbeitung in der Schweiz, Ende-zu-Ende-Verschlüsselung, lokale KI und DSGVO/DSG-Konformität. Keine dauerhafte Speicherung Ihrer Dateien." />
-    <meta property="og:image" content="https://swisstranscript.com/images/og-image-sicherheit-de.jpg" />
+    <meta property="og:image" content="https://swisstranscript.ch/images/og-image-sicherheit-de.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://swisstranscript.com/de/sicherheit.html" />
+    <meta name="twitter:url" content="https://swisstranscript.ch/de/sicherheit.html" />
     <meta name="twitter:title"
         content="Datensicherheit & Vertraulichkeit | DSGVO-konforme Transkription | Swiss Transcript" />
     <meta name="twitter:description"
         content="Entdecken Sie, wie wir Ihre sensiblen Daten schützen: 100% Verarbeitung in der Schweiz, Ende-zu-Ende-Verschlüsselung, lokale KI und DSGVO/DSG-Konformität. Keine dauerhafte Speicherung Ihrer Dateien." />
-    <meta name="twitter:image" content="https://swisstranscript.com/images/twitter-card-sicherheit-de.jpg" />
+    <meta name="twitter:image" content="https://swisstranscript.ch/images/twitter-card-sicherheit-de.jpg" />
 
-    <link rel="canonical" href="https://swisstranscript.com/de/sicherheit.html" />
-    <link rel="alternate" hreflang="en" href="https://swisstranscript.com/fr/securite.html" />
-    <link rel="alternate" hreflang="de" href="https://swisstranscript.com/en/security.html" />
+    <link rel="canonical" href="https://swisstranscript.ch/de/sicherheit.html" />
+    <link rel="alternate" hreflang="en" href="https://swisstranscript.ch/fr/securite.html" />
+    <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/en/security.html" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-    <link href="../lib/fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../tailwind-min.css" />
-    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link href="../fonts/Montserrat/Montserrat-font.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+    <link rel="stylesheet" type="text/css" href="../styles.css?v=2.0" />
     <!-- Indexation -->
     <meta name="robots" content="index, follow">
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+    <?php writeGoogleTag() ?>
     <!-- End Google Tag Manager -->
 
 </head>
 
 <body id="secu" class="montserrat-font text-white w-full lg:text-xl">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- AJOUT Bouton Scroll to Top -->
     <button id="scrollToTopBtn"
@@ -69,99 +58,98 @@
         <span class="text-2xl font-bold px-2">&#8679;</span>
     </button>
     <header>
-        <div class="container">
-            <div class="header-container flex justify-between items-center px-2">
+    <div class="container">
+      <div class="header-container flex justify-between items-center px-2">
 
-                <!-- Logo -->
-                <div class="logo flex items-center">
-                    <a href="index.html" class="font-bold ml-5">
-                        <img src="../images/logo_purple.png" alt="Swiss Transcript Logo" width="150">
-                    </a>
-                </div>
-
-                <!-- Navigation desktop -->
-                <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
-                    <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
-                        <li><a href="index.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Startseite</a></li>
-                        <li><a href="preise.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Preise</a></li>
-                        <li><a href="sicherheit.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Sicherheit</a></li>
-                        <li><a href="demo.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Demo</a></li>
-                        <li><a href="about.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Über uns</a></li>
-                        <li><a href="contact.html" class="px-2 2xl:px-4 py-2 text-sm xl:text-lg">Kontakt</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Login / Lang -->
-                <div class="flex items-center">
-                    <div class="hidden md:flex items-center space-x-5">
-                        <a href="/login?lang=de" target="_blank"
-                            class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
-                            Anmelden
-                        </a>
-                        <a href="preise.html" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
-                            Testen
-                        </a>
-                        <div id="languageSwitcher" class="hidden lg:flex space-x-2">
-                            <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm">FR</a>
-                            <span>|</span>
-                            <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm active">DE</a>
-                            <span>|</span>
-                            <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm">EN</a>
-                        </div>
-                    </div>
-
-                    <!-- Mobile menu button -->
-                    <div class="block lg:hidden mx-4">
-                        <button id="toggleDrawer" class="focus:outline-none">
-                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Drawer menu mobile -->
-            <div
-                class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
-                <div class="p-4 md:p-3">
-                    <div class="flex items-center pt-6 pb-4">
-                        <a href="index.html">
-                            <img src="../images/logo_white.svg" alt="Swiss Transcript Logo" width="150">
-                        </a>
-                    </div>
-
-                    <ul class="space-y-3">
-                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Startseite</a></li>
-                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="preise.html">Preise</a></li>
-                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="sicherheit.html">Sicherheit</a></li>
-                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
-                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">Über uns</a></li>
-                        <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Kontakt</a></li>
-                    </ul>
-
-                    <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
-                        <a href="/fr/" class="lang-link py-1 text-sm">FR</a>
-                        <a href="/de/" class="lang-link py-1 text-sm font-bold">DE</a>
-                        <a href="/en/" class="lang-link py-1 text-sm">EN</a>
-                    </div>
-                </div>
-
-                <div class="flex flex-col gap-1">
-                    <a href="/login?lang=de" target="_blank"
-                        class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
-                        Anmelden
-                    </a>
-                    <a href="preise.html" class="px-3 py-1 text-sm rounded-md font-bold button-try">
-                        Testen
-                    </a>
-                </div>
-            </div>
-
-            <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+        <!-- Logo -->
+        <div class="logo flex items-center">
+          <a href="index.html" class="font-bold ml-5">
+            <img src="../images/logo_purple.png" alt="Swiss Transcript Logo" width="150">
+          </a>
         </div>
+
+        <!-- Navigation desktop -->
+        <nav class="hidden lg:flex items-center mt-4 lg:mt-0">
+          <ul class="lg:flex justify-center flex-1 space-x-2 2xl:space-x-4">
+            <li><a href="index.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Startseite</a></li>
+            <li><a href="preise.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Preise</a></li>
+            <li><a href="sicherheit.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition active">Sicherheit</a></li>
+            <li><a href="demo.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Demo</a></li>
+            <li><a href="about.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Über uns</a></li>
+            <li><a href="contact.html" class="px-4 py-2 text-sm text-xl-15 text-neutral-700 font-medium hover:text-[#8961FF] transition">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <!-- Login / Lang -->
+        <div class="flex items-center">
+          <div class="hidden md:flex items-center space-x-5">
+            <a href="/login?lang=de" target="_blank"
+              class="px-4 py-2 rounded-md font-bold text-center text-sm button-login">
+              Anmelden
+            </a>
+            <a href="/signup?lang=de" class="px-4 py-2 rounded-md font-bold text-center text-sm button-try">
+              Testen
+            </a>
+            <div id="languageSwitcher" class="hidden lg:flex space-x-2">
+              <a href="/fr/" class="lang-link font-bold py-1 rounded-md text-sm">FR</a>
+              <span>|</span>
+              <a href="/de/" class="lang-link font-bold py-1 rounded-md text-sm active">DE</a>
+              <span>|</span>
+              <a href="/en/" class="lang-link font-bold py-1 rounded-md text-sm">EN</a>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="block lg:hidden mx-4">
+            <button id="toggleDrawer" class="focus:outline-none">
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h18v2H3v-2z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawer menu mobile -->
+      <div
+        class="z-50 drawer bg-gray-800 text-white fixed left-0 top-0 bottom-0 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col items-center md:w-1/4 w-3/4">
+        <div class="p-4 md:p-3">
+          <div class="flex items-center pt-6 pb-4">
+            <a href="index.html">
+              <img src="../images/logo_white.svg" alt="Swiss Transcript Logo" width="150">
+            </a>
+          </div>
+
+          <ul class="space-y-3">
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="index.html">Startseite</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="preise.html">Preise</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="sicherheit.html">Sicherheit</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="demo.html">Demo</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="about.html">Über uns</a></li>
+            <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Kontakt</a></li>
+          </ul>
+
+          <div id="languageSwitcherMobile" class="flex space-x-2 px-2 py-3">
+            <a href="/fr/" class="lang-link py-1 text-sm">FR</a>
+            <a href="/de/" class="lang-link py-1 text-sm font-bold">DE</a>
+            <a href="/en/" class="lang-link py-1 text-sm">EN</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <a href="/login?lang=de" target="_blank"
+            class="border border-white px-3 py-1 text-sm rounded-md font-bold button-login">
+            Anmelden
+          </a>
+          <a href="/signup?lang=de" class="px-3 py-1 text-sm rounded-md font-bold button-try">
+            Testen
+          </a>
+        </div>
+      </div>
+
+      <div class="drawer-overlay fixed inset-0 bg-black opacity-30 z-40 hidden md:opacity-20"></div>
+    </div>
     </header>
     <section class="security-container">
         <div class="container">
@@ -181,12 +169,12 @@
                         oder private Zeugnisse.
                     </p>
                     <p>
-                        Swiss Transcript verarbeitet alle Ihre Daten ausschließlich auf sicheren
+                        Swiss Transcript verarbeitet alle Ihre Daten ausschliesslich auf sicheren
                         Servern in der Schweiz und gewährleistet so deren Vertraulichkeit und
                         Schutz nach den höchsten Standards.
                     </p>
                     <p>
-                        Unser Sicherheitsansatz ist keine bloße Zusatzfunktion, sondern die
+                        Unser Sicherheitsansatz ist keine blosse Zusatzfunktion, sondern die
                         Grundlage unseres Services.
                     </p>
                 </div>
@@ -222,7 +210,7 @@
                         <p>
                             Unsere Praktiken entsprechen vollständig dem Schweizer Datenschutzgesetz
                             (DSG) sowie der Datenschutz-Grundverordnung (DSGVO) der EU und gewährleisten
-                            eine rechtmäßige und sichere Verarbeitung aller personenbezogenen und
+                            eine rechtmässige und sichere Verarbeitung aller personenbezogenen und
                             medizinischen Daten.
                         </p>
                     </div>
@@ -251,11 +239,10 @@
                         <div class="feature-number mx-auto">6</div>
                         <h3>Kein Zugriff auf Inhalte durch unsere Mitarbeitenden</h3>
                         <p>
-                            Vertraulichkeit ist für uns nicht verhandelbar. Ihre Aufnahmen,
-                            Transkriptionen und Zusammenfassungen bleiben ausschließlich mit Ihrem
+                            Ihre Aufnahmen,
+                            Transkriptionen und Zusammenfassungen bleiben ausschliesslich mit Ihrem
                             eigenen Konto verknüpft. Unsere Mitarbeitenden haben keinen Zugriff auf
-                            Ihre Inhalte oder Daten. Ihre Daten werden niemals weitergegeben oder
-                            verkauft.
+                            Ihre Inhalte oder Daten.
                         </p>
                     </div>
 
@@ -365,7 +352,7 @@
                 <div class="faq-question">Werden meine Daten zur Schulung Ihrer KI-Modelle verwendet?</div>
                 <div class="faq-answer">
                     <p>
-                        Nein. Ihre Dateien, Transkriptionen und Zusammenfassungen werden ausschließlich
+                        Nein. Ihre Dateien, Transkriptionen und Zusammenfassungen werden ausschliesslich
                         zur Bereitstellung des Services genutzt.
                     </p>
                 </div>
@@ -421,7 +408,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Swiss Transcript. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Swiss Transcript. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>

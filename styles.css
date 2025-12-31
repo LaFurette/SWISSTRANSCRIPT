@@ -248,8 +248,11 @@ header#main {
 
 }
 
-header#main nav ul li a {
+header nav ul li a {
   color: #000 !important;
+}
+header nav ul li a.active {
+    color: #6D28D9!important;
 }
 
 nav ul li {
@@ -527,7 +530,11 @@ nav ul li a:hover {
     justify-content: flex-start;
   }
 }
-
+@media (max-width: 370px) {
+  .btn {
+    width: 90%!important;
+  }
+}
 
 /* USP Section */
 .usp {
@@ -546,7 +553,7 @@ nav ul li a:hover {
 }
 
 .section-title p {
-  font-size: 18px;
+  font-size: 20px;
   color: #666;
   max-width: 800px;
   margin: 0 auto;
@@ -910,13 +917,6 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-.section-title p {
-  font-size: 17px;
-  color: #444;
-  margin-bottom: 50px;
-  line-height: 1.6;
-}
-
 /* SECTION */
 .pricing {
   padding: 60px 20px;
@@ -1218,7 +1218,11 @@ nav ul li a:hover {
   font-weight: 900;
   color: #2461c8;
 }
-
+@media (max-width: 350px) {
+  .plan-hours {
+    display: none;
+  }
+}
 .plan-bottom {
   padding: 10px 14px 12px;
   display: flex;
@@ -1647,7 +1651,7 @@ nav ul li a:hover {
   padding: 30px 0;
 }
 
-.a-propos-text h2 {
+h2.a-propos-text {
   font-size: 32px;
 }
 
@@ -1675,6 +1679,8 @@ h2.equipe {
 
   #equipe .a-propos-text {
     width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
   }
 
   #equipe img.img-drapeau {
@@ -2342,6 +2348,8 @@ footer {
   padding: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
@@ -2371,6 +2379,9 @@ footer {
 .feature-card p {
   color: #666;
   font-size: 17px;
+}
+.security-features .feature-card h3 {
+  min-height: 3em; 
 }
 
 /* Compliance Section */
@@ -2494,6 +2505,7 @@ footer {
   overflow: hidden;
   table-layout: fixed;
   hyphens: auto;
+  
 }
 
 .comparison-title {
@@ -2534,7 +2546,9 @@ td {
   border-bottom: 1px solid #ddd;
   color: #000;
   font-size: 17px;
-  word-break: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 td:not(:first-child) {
@@ -2646,6 +2660,9 @@ td:not(:first-child) {
 }
 
 @media (max-width: 480px) {
+  .comparison {
+    margin: 0 5px;
+  }
   .comparison-table {
     font-size: 12px;
   }
@@ -3029,6 +3046,12 @@ td:not(:first-child) {
     width: 80%;
   }
 }
+@media (max-width: 380px) {
+.image-circle {
+width: 340px;
+height: 340px;
+}
+}
 
 
 @keyframes fadeInUp {
@@ -3141,7 +3164,6 @@ td:not(:first-child) {
   margin-bottom: 20px;
 }
 
-/* IMAGE SMARTPHONE */
 .feature-image {
   display: flex;
   justify-content: center;
@@ -3150,16 +3172,14 @@ td:not(:first-child) {
 .feature-image img {
   width: 100%;
   max-width: 180px;
-  /* border-radius: 26px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, .25); */
 }
 
-/* TAGS (complets + centrés) */
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  margin-top: auto;
 }
 
 .tag {
@@ -3171,7 +3191,6 @@ td:not(:first-child) {
   font-weight: 600;
 }
 
-/* TABLETTE */
 @media (max-width: 1024px) {
   .features-cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3179,7 +3198,6 @@ td:not(:first-child) {
   }
 }
 
-/* MOBILE */
 @media (max-width: 600px) {
   .features-cards-grid {
     grid-template-columns: 1fr;
@@ -3200,7 +3218,6 @@ td:not(:first-child) {
   }
 }
 
-/* Use Cases Section */
 .use-cases {
   padding: 80px 0;
   background-color: white;
@@ -3304,11 +3321,9 @@ td:not(:first-child) {
   gap: 80px;
 }
 
-/* ✅ “ABONNEMENTS” PLUS GROS */
 .subscription-eyebrow {
   display: inline-block;
   font-size: 22px;
-  /* ⬆️ plus grand */
   font-weight: 900;
   color: #5b35d5;
   letter-spacing: 0.12em;
@@ -3331,7 +3346,6 @@ td:not(:first-child) {
   margin-bottom: 26px;
 }
 
-/* ✅ LIGNE VERTICALE DÉGRADÉE */
 .subscription-divider {
   width: 2px;
   height: 260px;
@@ -3341,7 +3355,6 @@ td:not(:first-child) {
       rgba(26, 35, 126, 0));
 }
 
-/* ✅ IMAGE POSÉE SUR LE FOND (SANS CADRE) */
 .subscription-image {
   display: flex;
   justify-content: center;
@@ -3351,11 +3364,8 @@ td:not(:first-child) {
   width: 100%;
   max-width: 320px;
   border-radius: 0;
-  /* ✅ PAS d’arrondi de cadre */
   box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
-  /* ✅ ombre “posé” */
   background: transparent;
-  /* ✅ pas d'encadré */
 }
 
 /* TAGS */
@@ -3365,7 +3375,6 @@ td:not(:first-child) {
   gap: 12px;
 }
 
-/* ✅ RESPONSIVE */
 @media (max-width: 900px) {
   .subscription-grid {
     grid-template-columns: 1fr;
@@ -3375,7 +3384,6 @@ td:not(:first-child) {
 
   .subscription-divider {
     display: none;
-    /* la ligne disparaît sur mobile */
   }
 
   .subscription-block .tags {
@@ -3390,3 +3398,12 @@ td:not(:first-child) {
     font-size: 16px;
   }
 }
+
+@media (max-width: 1030px) {
+ #confidentialite {
+  padding-top: 5rem!important;
+ }
+}
+ #confidentialite {
+  padding-top: 2rem;
+ } 

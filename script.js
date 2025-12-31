@@ -1,14 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const billingTabs = document.querySelectorAll('.billing-tab');
-  const plans = document.querySelectorAll('.plan');
+  const subsCard = document.getElementById('subsCard');
+
+  const billingTabs = subsCard ? subsCard.querySelectorAll('.billing-tab') : [];
+  const plans = subsCard ? subsCard.querySelectorAll('.plan') : [];
   const chooseBtn = document.getElementById('chooseBtn');
 
-  const prepaidChoices = document.querySelectorAll('.minute-pill, .pack-row, .trial-box');
+  const prepaidCard = document.querySelector('.pricing-card.prepaid');
+  const prepaidChoices = prepaidCard ? prepaidCard.querySelectorAll('.minute-pill, .plan.prepaid-choice') : [];
 
-  const billedAnnuallyText =
-    document.body.dataset.billedAnnually || '';
+  const lang = document.documentElement.lang || 'fr';
 
-  let billing = 'monthly';
+  const billedAnnuallyByLang = {
+    fr: 'Facturé annuellement',
+    en: 'Billed annually',
+    de: 'Jährlich abgerechnet'
+  };
+
+  const billedAnnuallyText = billedAnnuallyByLang[lang] || billedAnnuallyByLang.fr;
+
+  const activeTab = subsCard ? subsCard.querySelector('.billing-tab.is-active') : null;
+  let billing = activeTab ? activeTab.dataset.billing : 'monthly';
   let selectedPlan = null;
   let selectedPrepaid = null;
 
@@ -85,8 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
   applyBilling();
 });
 
-
-
 const toggleButton = document.getElementById("toggleDrawer");
 const drawer = document.querySelector(".drawer");
 const overlay = document.querySelector(".drawer-overlay");
@@ -145,63 +154,97 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // DROPDOWN LANGUE
-const currentLang = window.location.pathname.split('/')[1] || 'fr';
+const pathParts = window.location.pathname.split('/').filter(Boolean);
+
+const currentLang = pathParts[0] || 'fr';
+const currentFile = pathParts[1] || 'index.html';
 
 const pageMap = {
-  fr: {
-    index: 'index',
-    about: 'a_propos',
-    contact: 'contact',
-    demo: 'demo',
-    faq: 'faq',
-    pricing: 'tarifs',
-    legal: 'legal',
-    security: 'securite'
+  'index.html': {
+    fr: 'index.html',
+    en: 'index.html',
+    de: 'index.html'
   },
-  de: {
-    index: 'index',
-    about: 'about',
-    contact: 'contact',
-    demo: 'demo',
-    faq: 'faq',
-    pricing: 'preise',
-    legal: 'legal',
-    security: 'sicherheit'
+  'a_propos.html': {
+    fr: 'a_propos.html',
+    en: 'about.html',
+    de: 'about.html'
   },
-  en: {
-    index: 'index',
-    about: 'about',
-    contact: 'contact',
-    demo: 'demo',
-    faq: 'faq',
-    pricing: 'pricing',
-    legal: 'legal',
-    security: 'security'
+  'about.html': {
+    fr: 'a_propos.html',
+    en: 'about.html',
+    de: 'about.html'
+  },
+  'tarifs.html': {
+    fr: 'tarifs.html',
+    en: 'pricing.html',
+    de: 'preise.html'
+  },
+  'pricing.html': {
+    fr: 'tarifs.html',
+    en: 'pricing.html',
+    de: 'preise.html'
+  },
+  'preise.html': {
+    fr: 'tarifs.html',
+    en: 'pricing.html',
+    de: 'preise.html'
+  },
+  'securite.html': {
+    fr: 'securite.html',
+    en: 'security.html',
+    de: 'sicherheit.html'
+  },
+  'security.html': {
+    fr: 'securite.html',
+    en: 'security.html',
+    de: 'sicherheit.html'
+  },
+  'sicherheit.html': {
+    fr: 'securite.html',
+    en: 'security.html',
+    de: 'sicherheit.html'
+  },
+  'contact.html': {
+    fr: 'contact.html',
+    en: 'contact.html',
+    de: 'contact.html'
+  },
+  'demo.html': {
+    fr: 'demo.html',
+    en: 'demo.html',
+    de: 'demo.html'
+  },
+  'faq.html': {
+    fr: 'faq.html',
+    en: 'faq.html',
+    de: 'faq.html'
+  },
+  'legal.html': {
+    fr: 'legal.html',
+    en: 'legal.html',
+    de: 'legal.html'
   }
 };
 
-const currentPage = window.location.pathname.split('/')[2] ? window.location.pathname.split('/')[2].replace('.html', '') : 'index';
-
 function updateLanguageUrl(newLang) {
-  const newPage = pageMap[newLang][currentPage] || 'index';
-  const newUrl = `/${newLang}/${newPage === 'index' ? '' : `${newPage}.html`}`;
-  window.location.href = newUrl;
+  const targetFile =
+    pageMap[currentFile]?.[newLang] || 'index.html';
+
+  window.location.href = `/${newLang}/${targetFile}`;
 }
 
 document.querySelectorAll('.lang-link').forEach(link => {
   const lang = link.getAttribute('href').split('/')[1];
-  if (lang === currentLang) {
-    link.classList.add('active');
-  } else {
-    link.classList.remove('active');
-  }
 
-  link.addEventListener('click', function (e) {
+  link.classList.toggle('active', lang === currentLang);
+
+  link.addEventListener('click', e => {
     e.preventDefault();
-    const newLang = this.getAttribute('href').split('/')[1];
-    updateLanguageUrl(newLang);
+    updateLanguageUrl(lang);
   });
 });
+
 
 // FAQ
 document.addEventListener('DOMContentLoaded', function () {
@@ -215,7 +258,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
+// contact email link
+document.addEventListener('DOMContentLoaded', function() {
+  const user = "hello";
+  const domain = "swisstranscript.ch";
+  const email = `${user}@${domain}`;
+    
+  document.querySelectorAll(".contact-email-section").forEach(el => {      
+    el.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+  });
+  
+  document.querySelectorAll(".contact-email-link").forEach(el => {
+    el.href = `mailto:${email}`;
+  });
+});
 // RESTER INFORME
 const wrap = document.querySelector(".notify-wrap");
 const toggle = document.getElementById("notifyToggle");

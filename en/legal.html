@@ -1,3 +1,4 @@
+<?php require "../../srv/headers.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,29 +6,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
-    <title>Swiss Transcript | Legal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Swiss Transcript | Terms of Use and Privacy Policy</title>
+    <link rel="canonical" href="https://swisstranscript.ch/en/legal.html" />
+    <link rel="alternate" hreflang="de" href="https://swisstranscript.ch/de/legal.html" />
+    <link rel="alternate" hreflang="fr" href="https://swisstranscript.ch/fr/legal.html" />
+    <link rel="stylesheet" type="text/css" href="../tailwind-min.css?v=2.0" />
+    <link rel="stylesheet" href="../styles.css?v=2.0">
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M99ZGTSW');</script>
+    <?php writeGoogleTag() ?>
     <!-- End Google Tag Manager -->
 
 </head>
 
+
 <body id="secu" class="montserrat-font text-white w-full lg:text-xl">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M99ZGTSW" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ADD Scroll to Top Button -->
     <button id="scrollToTopBtn"
@@ -69,9 +63,9 @@
                 <!-- Login / Signup + Lang switch -->
                 <div class="flex items-center">
                     <div class="hidden md:flex items-center space-x-5">
-                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=fr"
+                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-login" href="/login?lang=en"
                             target="_blank">Log in</a>
-                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="pricing.html"
+                        <a class="px-4 py-2 rounded-md font-bold text-center text-sm button-try" href="/signup?lang=en"
                             target="_blank">Try</a>
                         <div class="hidden lg:flex space-x-2" id="languageSwitcher">
                             <a class="lang-link font-bold py-1 rounded-md text-sm active" href="/fr/">FR</a>
@@ -111,16 +105,16 @@
                         <li><a class="drawer-btn px-2 py-1 hover:opacity-80" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="flex space-x-2 px-2 py-3" id="languageSwitcherMobile">
-                        <a class="lang-link font-bold py-1 text-sm rounded-md hover:text-gray-300" href="/fr/">FR</a>
-                        <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/en/">EN</a>
-                        <a class="lang-link py-1 text-sm rounded-md hover:text-gray-300" href="/de/">DE</a>
+                        <a class="lang-link py-1 text-sm" href="/fr/">FR</a>
+                        <a class="lang-link py-1 text-sm active" href="/en/">EN</a>
+                        <a class="lang-link py-1 text-sm" href="/de/">DE</a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
                     <a class="border border-white px-3 py-1 text-sm rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-login"
-                        href="/login?lang=fr" target="_blank">Log in</a>
+                        href="/login?lang=en" target="_blank">Log in</a>
                     <a class="px-3 py-1 text-sm text-center rounded-md font-bold hover:bg-white hover:text-gray-800 transition button-try"
-                        href="pricing.html" target="_blank">Try</a>
+                        href="/signup?lang=en" target="_blank">Try</a>
                 </div>
             </div>
             <!-- Drawer overlay -->
@@ -128,11 +122,10 @@
         </div>
     </header>
 
-
     <div id="confidentialite" class="flex text-justify md:text-left">
         <div class="w-full text-black p-4 md:p-8 lg:p-16">
             <a name="legal-notice"></a>
-            <h3 class="text-left my-2 lg:my-4 font-bold text-3xl pt-12">
+            <h3 class="text-left my-2 lg:my-4 font-bold text-3xl">
                 Legal Notice
             </h3>
             <p class="">
@@ -146,8 +139,7 @@
             <p class="">
                 Publisher: Mr. Cédric Paternotte, founder.
             </p>
-            Contact: <span class="contact-email-section"><a
-                    href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></span>
+            Contact: <span class="contact-email-section"></span>
             <p class="">
                 Hosting provider: INFOMANIAK NETWORK SA, a Swiss corporation,
             </p>
@@ -171,23 +163,38 @@
                 Sarl
                 (hereinafter "Swiss Machina"), for its individual and professional clients (hereinafter "Users").
             </p>
-            <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">1. Service Description</h3>
-            <p class="">
-                SwissTranscript offers an online service for automatic transcription of audio and video files into text.
-                Through
-                our secure web interface, our clients can:
-                <br>
-                - Upload their audio or video files (interviews, meetings, conferences, lectures, videos, etc.)
-                <br>
-                - Initiate the automatic transcription of these files using our speech recognition algorithms adapted to
-                French.
-                In a few minutes, without human intervention, the oral content is converted into text.
-                <br>
-                - Obtain the result in the form of an RTF text file which they can download.
-                <br><br>
-                Our service is available to both individuals (students, researchers, content creators) and professionals
-                with
-                confidentiality concerns (administrations, media, psychologists, HR coaches, etc.).
+            <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
+                1. Service Description
+            </h3>
+            <p>
+                Swiss Transcript offers an online service for <strong>automatic transcription and report
+                    generation</strong>
+                from audio and video files, accessible through a <strong>secure web interface hosted in
+                    Switzerland</strong>.
+            </p>
+
+            <p>
+                Through our platform, customers can:
+            </p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>
+                    Upload audio or video files (meetings, interviews, conferences, lectures, etc.) or record meetings
+                    directly
+                    from the interface.
+                </li>
+                <li>
+                    Launch automatic transcription using our speech recognition models, compatible with multiple
+                    languages
+                    (<strong>French, German, English, and Swiss German</strong>).
+                </li>
+                <li>
+                    Obtain reliable transcriptions and structured summaries, generated within seconds and available for
+                    download.
+                </li>
+            </ul>
+            <p>
+                Swiss Transcript places strong emphasis on <strong>data confidentiality and security</strong>:
+                all data is processed and hosted in Switzerland, without the use of foreign servers.
             </p>
 
             <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
@@ -202,19 +209,32 @@
             <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
                 3. Pricing and Payment
             </h3>
-            <p class="">
-                SwissTranscript charges for its automated transcription services by the minute of audio/video processed,
-                at a
-                flat rate of 0.20 CHF per minute.
-                <br>
-                Payment is made per transaction, after the client validates the quote automatically calculated based on
-                the
-                total duration of the uploaded files. No subscription or recurring fees are applied.
-                <br>
-                Payments are made via the secure solution of our partner SaferPay/SixPayment, ensuring a reliable
-                transaction
-                for both our clients and ourselves.
+            <p>
+                Swiss Transcript charges its <strong>automatic transcription services per minute</strong> of processed
+                audio or
+                video. The base rate is <strong>CHF&nbsp;0.20 per minute</strong> for pay-per-use.
             </p>
+
+            <p>
+                For this option, payment is made <strong>per use</strong>, after the customer validates the
+                automatically generated
+                quote based on the total duration of the imported files. <strong>No subscription or recurring
+                    fees</strong> apply
+                to the pay-per-minute offer.
+            </p>
+
+            <p>
+                For more frequent needs or larger volumes, <strong>discounted credit packs</strong> as well as
+                <strong>monthly or yearly subscriptions</strong> are available, offering decreasing hourly rates.
+                For higher volumes, subscription pricing can average around <strong>CHF&nbsp;3 per hour</strong>.
+            </p>
+
+            <p>
+                Payments are processed through the <strong>secure solution of our partner SaferPay /
+                    SixPayment</strong>,
+                ensuring a reliable transaction for both our customers and ourselves.
+            </p>
+
 
             <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
                 4. Access to the Service
@@ -284,7 +304,7 @@
                 fully automated nature of the process, Swiss Machina cannot guarantee a perfect transcription free from
                 errors
                 or approximations.
-                <br>
+                <br />
                 The quality of the transcriptions depends on several factors, such as the audio quality of the source
                 file,
                 accents, background noise, technical or specialized terms, which Swiss Machina cannot control.
@@ -301,7 +321,7 @@
                 However, due to the technical complexity of the service and its dependence on electronic communication
                 networks,
                 Swiss Machina cannot guarantee permanent and uninterrupted availability.
-                <br>
+                <br />
                 Access to the platform may be temporarily suspended, without notice or compensation, for maintenance,
                 updates,
                 cyberattacks, or requests from authorities. Swiss Machina commits to minimizing the frequency and
@@ -316,7 +336,7 @@
                 Transcription is generally delivered within a few minutes after payment confirmation, thanks to our
                 cutting-edge
                 algorithms.
-                <br>
+                <br />
                 Processing time may vary slightly depending on the duration and audio quality of the source files.
             </p>
 
@@ -327,14 +347,14 @@
                 SwissTranscript makes every effort to provide the best possible transcription quality. However, the
                 service
                 performance may be affected by the audio quality of the files provided by the client.
-                <br>
+                <br />
                 In case of complete transcription failure due to a malfunction of our platform, the client will be fully
                 refunded with a credit of the equivalent amount to their account, usable for future services.
-                <br>
+                <br />
                 These provisions do not apply in case of poor audio quality in the source files provided by the client,
                 who
                 remains responsible for ensuring the suitability of their files for our service.
-                <br>
+                <br />
                 The User assumes full responsibility for the content they submit for transcription. They agree to only
                 process
                 files for which they hold the necessary rights of use.
@@ -358,17 +378,17 @@
             </h3>
             <p class="">
                 SwissTranscript places the highest importance on the confidentiality and security of its clients' data:
-                <br>
+                <br />
                 - All files and data are encrypted and stored exclusively on secure servers in Switzerland
-                <br>
+                <br />
                 - No data is transferred outside Swiss territory
-                <br>
+                <br />
                 - Access is strictly reserved for authorized employees bound by confidentiality clauses
-                <br>
+                <br />
                 - Source files are automatically deleted once transcription is complete
-                <br>
+                <br />
                 - Transcriptions are stored securely until deleted by the client
-                <br><br>
+                <br /><br />
                 All processing is in compliance with Swiss and European legal requirements (LPD, GDPR).
             </p>
 
@@ -380,7 +400,7 @@
                 property
                 of Swiss Machina and are protected by intellectual property laws. Any reproduction, modification, or
                 unauthorized use of the platform’s content is strictly prohibited.
-                <br>
+                <br />
                 The User remains the owner of the files and content they upload to the platform. However, by using the
                 service,
                 the User grants Swiss Machina the right to process and store their data for the duration of the
@@ -413,9 +433,8 @@
             <p class="">
                 For any questions, comments, or support requests, users can contact us via email at the following
                 address:
-                <br>
-                <span class="contact-email-section"><a
-                        href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></span>
+                <br />
+                <span class="contact-email-section"></span>
             </p>
 
             <a name="privacy-policy"></a>
@@ -498,8 +517,7 @@
                 You have the right to access, correct, and delete your data, which you can exercise by contacting us at
                 the
                 following email address:
-                <span class="contact-email-section"><a
-                        href="mailto:hello@swisstranscript.ch">hello@swisstranscript.ch</a></span>
+                <span class="contact-email-section"></span>
             </p>
             <h3 class="text-left mt-2 lg:mt-4 font-bold text-2xl">
                 7. Applicable Legislation
@@ -515,7 +533,6 @@
         </div>
     </div>
 
-
     <footer>
         <div class="container">
             <div class="footer-container">
@@ -527,9 +544,9 @@
 
                 <div class="footer-col">
                     <ul>
-                        <li><a href="./legal.html#terms">Terms of Use</a></li>
-                        <li><a href="./legal.html#privacy">Privacy Policy</a></li>
-                        <li><a href="./legal.html#legal-notice">Legal Notice</a></li>
+                        <li><a href="#terms-of-use">Terms of Use</a></li>
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#legal-notice">Legal Notice</a></li>
                     </ul>
                 </div>
 
@@ -543,7 +560,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Swiss Transcript. All rights reserved.</p>
+                <p>&copy; 2026 Swiss Transcript. All rights reserved.</p>
             </div>
         </div>
     </footer>
